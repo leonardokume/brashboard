@@ -41,157 +41,55 @@ def get_data(ibge_code):
     df = pd.read_json(json.dumps(data))
     return (df)
 
-def generate_graph_cases(state, city, children):
+def generate_fig(x, y, type):
+    if(type == 'last_available_confirmed'):
+        color = '#008cff'
+        title = 'Casos acumulados'
+    else:
+        color = '#ff0000'
+        title = 'Mortes acumuladas'
+    fig = go.Figure(data=[go.Scatter(x=x,
+                    y=y,
+                    mode='lines+markers',
+                    line_color=color)])
+    fig.update_layout(title_text=title)
+    return(fig)
+
+
+def generate_graph(state, city, children, variable):
     if(city is not None):
         # Get city data
         df = get_data(city)
+        fig = generate_fig(x=df['date'], y=df[variable], type=variable)
         if(children):
             # There was already a children with graph
-            children[0]["props"]["figure"] = {
-                'data': [dict(
-                    x=df['date'],
-                    y=df['last_available_confirmed'],
-                    mode='lines+markers',
-                    name='Casos Acumulados',
-                )],
-                'layout': dict(
-                    title=df['city'].unique().item()
-                ),
-            }
+            children[0]["props"]["figure"] = fig
         else:
             # There wasn't a graph before, so append a children with graph data
             children.append(
                 dcc.Graph(
-                    figure = {
-                        'data': [dict(
-                            x=df['date'],
-                            y=df['last_available_confirmed'],
-                            mode='lines+markers',
-                            name='Casos Acumulados',
-                        )],
-                        'layout': dict(
-                            title=df['city'].unique().item()
-                        ),
-                    }
+                    figure = fig
                 )
             )            
     else:
         if(state is not None):
             # Get state data
             df = get_data(state)
+            fig = generate_fig(x=df['date'], y=df[variable], type=variable)
             if(children):
                 # There was already a children with graph, so subtitute the children
-                children[0]["props"]["figure"] = {
-                    'data': [dict(
-                        x=df['date'],
-                        y=df['last_available_confirmed'],
-                        mode='lines+markers',
-                        name='Casos Acumulados',
-                    )],
-                    'layout': dict(
-                        title=df['state'].unique().item()
-                    ),
-                }
+                children[0]["props"]["figure"] = fig
             else:
                 # There wasn't a graph before, so append a children with graph data
                 children.append(
                     dcc.Graph(
-                        figure = {
-                            'data': [dict(
-                                x=df['date'],
-                                y=df['last_available_confirmed'],
-                                mode='lines+markers',
-                                name='Casos Acumulados',
-                            )],
-                            'layout': dict(
-                                title=df['state'].unique().item()
-                            ),
-                        }
+                        figure = fig
                     )
                 )
         else:
             # City is not selected and State is not selected, return empty children
             children = []
     return(children)
-
-def generate_graph_deaths(state, city, children):
-    if(city is None):
-        if(state is None):
-            children = []
-        else:
-            PARAMS = {'city_ibge_code':state}
-            r = requests.get(url = URL_data, params = PARAMS)
-            data = r.json()
-            data = data['results']
-            df = pd.read_json(json.dumps(data))
-            if(children):
-                children[0]["props"]["figure"] = {
-                    'data': [dict(
-                        x=df['date'],
-                        y=df['last_available_deaths'],
-                        mode='lines+markers',
-                        line_color="#ff0000",
-                        name='Mortes Acumulados',
-                    )],
-                    'layout': dict(
-                        title=df['state'].unique().item()
-                    ),
-                }
-            else:
-                children.append(
-                    dcc.Graph(
-                        figure = {
-                            'data': [dict(
-                                x=df['date'],
-                                y=df['last_available_deaths'],
-                                mode='lines+markers',
-                                line_color="#ff0000",
-                                name='Mortes Acumulados',
-                            )],
-                            'layout': dict(
-                                title=df['state'].unique().item()
-                            ),
-                        }
-                    )
-                )
-    else:
-        PARAMS = {'city_ibge_code':city}
-        r = requests.get(url = URL_data, params = PARAMS)
-        data = r.json()
-        data = data['results']
-        df = pd.read_json(json.dumps(data))
-        if(children):
-            children[0]["props"]["figure"] = {
-                'data': [dict(
-                    x=df['date'],
-                    y=df['last_available_confirmed'],
-                    mode='lines+markers',
-                    line_color="#ff0000",
-                    name='Casos Acumulados',
-                )],
-                'layout': dict(
-                    title=df['city'].unique().item()
-                ),
-            }
-        else:
-            children.append(
-                dcc.Graph(
-                    figure = {
-                        'data': [dict(
-                            x=df['date'],
-                            y=df['last_available_confirmed'],
-                            mode='lines+markers',
-                            line_color="#ff0000",
-                            name='Casos Acumulados',
-                        )],
-                        'layout': dict(
-                            title=df['city'].unique().item()
-                        ),
-                    }
-                )
-            )
-    return(children)    
-
 
 NAVBAR = dbc.Navbar(
     children=[
@@ -214,7 +112,6 @@ NAVBAR = dbc.Navbar(
 )
 
 DROPDOWNS = [
-    dbc.Card(
         dbc.Row(
             [
                 dbc.Col(
@@ -222,55 +119,40 @@ DROPDOWNS = [
                         dcc.Dropdown(
                             id="state",
                             options=get_dropdown_states(),
-                            placeholder="Selecione o estado",
+                            value=None, placeholder="Selecione o estado", 
                         ),
                     ],
-                    md=6, 
+                    width='3',
                 ),
                 dbc.Col(
                     [
                         dcc.Dropdown(
                             id="city",
                             options=[],
-                            disabled=True, placeholder="Digite o nome da cidade",
+                            value=None, placeholder="Digite o nome da cidade", disabled=True,
                         ),
                     ],
-                    md=6,
+                    width='3',
                 ),
-            ]
+            ], justify='center',
         ),
-        body=True,
-    )
 ]
 
 
 GRAPH_CASES = [
-    dbc.CardHeader(html.H5("Casos acumulados")),
-    dbc.CardBody(
-        [ 
-            dbc.Spinner(
-                id="loading-cases-graph", color="#3badff",
-                children=[
-                    dbc.Alert(
-                        "Something's gone wrong! Give us a moment, but try loading this page again if problem persists.",
-                        id="no-data-alert",
-                        color="warning",
-                        style={"display": "none"},
-                    ),
-                    html.Div([], id="graph-cases"),
-                    html.Div([], id="graph-deaths")
-                ],
-            )
-        ], style={"marginTop": 0, "marginBottom": 0},
+    dbc.Row(
+        [
+            dbc.Col([dbc.CardHeader('Casos acumulados'), dbc.CardBody([html.Div([], id="graph-cases")])]),
+            dbc.Col([dbc.CardHeader('Mortes acumulados'), dbc.CardBody([html.Div([], id="graph-deaths")])]),
+        ]
     ),
 ]
 
 BODY = dbc.Container(
     [
-        dbc.Row([dbc.Col(dbc.Card(DROPDOWNS)),], style={"marginTop": 30}),
-        dbc.Row([dbc.Col(dbc.Card(GRAPH_CASES)),], style={"marginTop": 30}),
-    ],
-    className="mt-12",
+        dbc.Row([dbc.Col(DROPDOWNS)], style={"marginTop": 30}),
+        dbc.Row([dbc.Col(GRAPH_CASES),], style={"marginTop": 30}),
+    ], fluid=True,
 )
 
 app.layout = html.Div(children=[NAVBAR, BODY])
@@ -285,8 +167,8 @@ app.layout = html.Div(children=[NAVBAR, BODY])
     [State('graph-cases', 'children'),
     State('graph-deaths', 'children')])
 def update_graphs(state, city, children_c, children_d):
-    children_cases = generate_graph_cases(state, city, children_c)
-    children_deaths = generate_graph_deaths(state, city, children_d)
+    children_cases = generate_graph(state, city, children_c, variable='last_available_confirmed')
+    children_deaths = generate_graph(state, city, children_d, variable='last_available_deaths')
     if(state is None):
         return([], True, children_cases, children_deaths)
     else:
