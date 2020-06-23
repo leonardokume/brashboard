@@ -44,15 +44,26 @@ def get_data(ibge_code):
 def generate_fig(x, y, type):
     if(type == 'last_available_confirmed'):
         color = '#008cff'
-        title = 'Casos acumulados'
+        fcolor = 'rgba(0,140,255,0.3)'
     else:
         color = '#ff0000'
-        title = 'Mortes acumuladas'
-    fig = go.Figure(data=[go.Scatter(x=x,
-                    y=y,
-                    mode='lines+markers',
-                    line_color=color)])
-    fig.update_layout(title_text=title)
+        fcolor = 'rgba(255,0,0,0.3)'
+    fig = go.Figure(data=[go.Scatter(
+                        x=x,
+                        y=y,
+                        mode='lines+markers',
+                        line_color=color,
+                        fill='tozeroy',
+                        fillcolor=fcolor
+                        )]
+                    )
+    fig.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        yaxis=dict(gridcolor='#d6d6d6'),
+        xaxis_tickformat = '%d/%m'
+    )
     return(fig)
 
 
@@ -68,7 +79,8 @@ def generate_graph(state, city, children, variable):
             # There wasn't a graph before, so append a children with graph data
             children.append(
                 dcc.Graph(
-                    figure = fig
+                    figure = fig,
+                    config = {'displayModeBar': False}
                 )
             )            
     else:
@@ -83,7 +95,8 @@ def generate_graph(state, city, children, variable):
                 # There wasn't a graph before, so append a children with graph data
                 children.append(
                     dcc.Graph(
-                        figure = fig
+                        figure = fig,
+                        config = {'displayModeBar': False}
                     )
                 )
         else:
@@ -140,19 +153,30 @@ DROPDOWNS = [
 
 
 GRAPH_CASES = [
-    dbc.Row(
-        [
-            dbc.Col([dbc.CardHeader('Casos acumulados'), dbc.CardBody([html.Div([], id="graph-cases")])]),
-            dbc.Col([dbc.CardHeader('Mortes acumulados'), dbc.CardBody([html.Div([], id="graph-deaths")])]),
-        ]
+    dbc.Col(
+        dbc.Card(
+            [
+                dbc.CardHeader('Casos acumulados'),
+                dbc.CardBody([html.Div([], id="graph-cases")])
+            ]
+        )
     ),
+    dbc.Col(
+        dbc.Card(
+            [
+                dbc.CardHeader('Mortes acumuladas'),
+                dbc.CardBody([html.Div([], id="graph-deaths")])
+            ]
+        )
+    )
 ]
 
 BODY = dbc.Container(
     [
         dbc.Row([dbc.Col(DROPDOWNS)], style={"marginTop": 30}),
-        dbc.Row([dbc.Col(GRAPH_CASES),], style={"marginTop": 30}),
-    ], fluid=True,
+        dbc.Row(dbc.Spinner(GRAPH_CASES), style={"marginTop": 30}),
+    ],
+    fluid=True,
 )
 
 app.layout = html.Div(children=[NAVBAR, BODY])
