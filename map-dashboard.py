@@ -41,13 +41,14 @@ def get_data(ibge_code):
     df = pd.read_json(json.dumps(data))
     return (df)
 
-def generate_fig(x, y, type):
+def generate_scatter_fig(x, y, type):
     if(type == 'last_available_confirmed'):
         color = '#008cff'
         fcolor = 'rgba(0,140,255,0.3)'
     else:
         color = '#ff0000'
         fcolor = 'rgba(255,0,0,0.3)'
+
     fig = go.Figure(data=[go.Scatter(
                         x=x,
                         y=y,
@@ -66,12 +67,34 @@ def generate_fig(x, y, type):
     )
     return(fig)
 
+def generate_bar_fig(x, y, type):
+    if(type == 'new_confirmed'):
+        color = '#008cff'
+    else:
+        color = '#ff0000'
 
-def generate_graph(state, city, children, variable):
+    fig = go.Figure(data=[go.Bar(
+                        x=x,
+                        y=y,
+                        marker_color=color,
+                        )]
+                    )
+    fig.update_layout(
+        margin=dict(l=0, r=0, t=0, b=0),
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)',
+        yaxis=dict(gridcolor='#d6d6d6'),
+        xaxis_tickformat = '%d/%m'
+    )
+    return(fig)
+
+def generate_scatter_graph(state, city, children, variable):
     if(city is not None):
         # Get city data
         df = get_data(city)
-        fig = generate_fig(x=df['date'], y=df[variable], type=variable)
+        df.loc[df[variable] < 0, variable] = 0
+
+        fig = generate_scatter_fig(x=df['date'], y=df[variable], type=variable)
         if(children):
             # There was already a children with graph
             children[0]["props"]["figure"] = fig
@@ -87,7 +110,45 @@ def generate_graph(state, city, children, variable):
         if(state is not None):
             # Get state data
             df = get_data(state)
-            fig = generate_fig(x=df['date'], y=df[variable], type=variable)
+            fig = generate_scatter_fig(x=df['date'], y=df[variable], type=variable)
+            if(children):
+                # There was already a children with graph, so subtitute the children
+                children[0]["props"]["figure"] = fig
+            else:
+                # There wasn't a graph before, so append a children with graph data
+                children.append(
+                    dcc.Graph(
+                        figure = fig,
+                        config = {'displayModeBar': False}
+                    )
+                )
+        else:
+            # City is not selected and State is not selected, return empty children
+            children = []
+    return(children)
+
+def generate_bar_graph(state, city, children, variable):
+    if(city is not None):
+        # Get city data
+        df = get_data(city)
+        df.loc[df[variable] < 0, variable] = 0
+        fig = generate_bar_fig(x=df['date'], y=df[variable], type=variable)
+        if(children):
+            # There was already a children with graph
+            children[0]["props"]["figure"] = fig
+        else:
+            # There wasn't a graph before, so append a children with graph data
+            children.append(
+                dcc.Graph(
+                    figure = fig,
+                    config = {'displayModeBar': False}
+                )
+            )            
+    else:
+        if(state is not None):
+            # Get state data
+            df = get_data(state)
+            fig = generate_bar_fig(x=df['date'], y=df[variable], type=variable)
             if(children):
                 # There was already a children with graph, so subtitute the children
                 children[0]["props"]["figure"] = fig
@@ -164,17 +225,40 @@ GRAPH_CASES = [
     dbc.Col(
         dbc.Card(
             [
-                dbc.CardHeader('Mortes acumuladas'),
+                dbc.CardHeader('Óbitos acumuladas'),
                 dbc.CardBody([html.Div([], id="graph-deaths")])
             ]
         )
     )
 ]
 
+CASES_PER_DAY = dbc.Col(
+    dbc.Card(
+        [
+            dbc.CardHeader('Casos por dia de notificação'),
+            dbc.CardBody([html.Div([], id="graph-cases-day")])
+        ]
+    )
+)
+
+DEATHS_PER_DAY = dbc.Col(
+    dbc.Card(
+        [
+            dbc.CardHeader('Óbitos por dia de notificação'),
+            dbc.CardBody([html.Div([], id="graph-deaths-day")])
+        ]
+    )
+)
+
 BODY = dbc.Container(
     [
         dbc.Row([dbc.Col(DROPDOWNS)], style={"marginTop": 30}),
-        dbc.Row(dbc.Spinner(GRAPH_CASES), style={"marginTop": 30}),
+        dbc.Spinner(
+            [
+                dbc.Row(GRAPH_CASES, style={"marginTop": 30}), 
+                dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 30}),
+            ] 
+        )
     ],
     fluid=True,
 )
@@ -185,18 +269,24 @@ app.layout = html.Div(children=[NAVBAR, BODY])
     [Output('city', 'options'),
     Output('city', 'disabled'),
     Output('graph-cases', 'children'),
-    Output('graph-deaths', 'children')],
+    Output('graph-deaths', 'children'),
+    Output('graph-cases-day', 'children'),
+    Output('graph-deaths-day', 'children')],
     [Input('state', 'value'),
     Input('city', 'value'),],
     [State('graph-cases', 'children'),
-    State('graph-deaths', 'children')])
-def update_graphs(state, city, children_c, children_d):
-    children_cases = generate_graph(state, city, children_c, variable='last_available_confirmed')
-    children_deaths = generate_graph(state, city, children_d, variable='last_available_deaths')
+    State('graph-deaths', 'children'),
+    State('graph-cases-day', 'children'),
+    State('graph-deaths-day', 'children')])
+def update_graphs(state, city, children_1, children_2, children_3, children_4):
+    children_cases = generate_scatter_graph(state, city, children_1, variable='last_available_confirmed')
+    children_deaths = generate_scatter_graph(state, city, children_2, variable='last_available_deaths')
+    children_cases_day = generate_bar_graph(state, city, children_3, variable='new_confirmed')
+    children_deaths_day = generate_bar_graph(state, city, children_4, variable='new_deaths')
     if(state is None):
-        return([], True, children_cases, children_deaths)
+        return([], True, children_cases, children_deaths, children_cases_day, children_deaths_day)
     else:
-        return(get_dropdown_cities(state), False, children_cases, children_deaths)
+        return(get_dropdown_cities(state), False, children_cases, children_deaths, children_cases_day, children_deaths_day)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
