@@ -13,7 +13,7 @@ pd.set_option('mode.chained_assignment', None)
 URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
 URL_ibge = 'https://raw.githubusercontent.com/leonardokume/covid-br-dashboard/master/dados/cities_ibge_code.csv'
 BRA_FLAG = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'
-
+#Define marginTop
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
 
 def get_dropdown_states():
@@ -220,15 +220,15 @@ GRAPH_CASES = [
                 dbc.CardHeader('Casos acumulados'),
                 dbc.CardBody([html.Div([], id="graph-cases")])
             ]
-        )
-    ),
+        ), lg={'order':1, 'size':6}, style={"marginTop": 15}
+    ), 
     dbc.Col(
         dbc.Card(
             [
                 dbc.CardHeader('Óbitos acumuladas'),
                 dbc.CardBody([html.Div([], id="graph-deaths")])
             ]
-        )
+        ), lg={'order':12, 'size':6}, style={"marginTop": 15}
     )
 ]
 
@@ -238,7 +238,7 @@ CASES_PER_DAY = dbc.Col(
             dbc.CardHeader('Casos por dia de notificação'),
             dbc.CardBody([html.Div([], id="graph-cases-day")])
         ]
-    )
+    ), lg={'order':1, 'size':6}, style={"marginTop": 15}
 )
 
 DEATHS_PER_DAY = dbc.Col(
@@ -247,7 +247,7 @@ DEATHS_PER_DAY = dbc.Col(
             dbc.CardHeader('Óbitos por dia de notificação'),
             dbc.CardBody([html.Div([], id="graph-deaths-day")])
         ]
-    )
+    ), lg={'order':12, 'size':6}, style={"marginTop": 15}
 )
 
 BODY = dbc.Container(
@@ -255,8 +255,8 @@ BODY = dbc.Container(
         dbc.Row([dbc.Col(DROPDOWNS)], style={"marginTop": 30}),
         dbc.Spinner(
             [
-                dbc.Row(GRAPH_CASES, style={"marginTop": 30}), 
-                dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 30}),
+                dbc.Row(GRAPH_CASES, style={"marginTop": 15}), 
+                dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
             ] 
         )
     ],
