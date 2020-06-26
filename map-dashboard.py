@@ -136,116 +136,109 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
         fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
         fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
         fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
-        if(children_cases):
-            # There was already a children with graph
-            children_cases[0]["props"]["figure"] = fig1
-            children_deaths[0]["props"]["figure"] = fig2
-            children_cases_day[0]["props"]["figure"] = fig3
-            children_deaths_day[0]["props"]["figure"] = fig4
-            children_cases_week[0]["props"]["figure"] = fig5
-            children_deaths_week[0]["props"]["figure"] = fig6
-        else:
-            # There wasn't a graph before, so append a children with graph data
-            children_cases.append(
-                dcc.Graph(
-                    figure = fig1,
-                    config = {'displayModeBar': False}
-                )
-            )
-            children_deaths.append(
-                dcc.Graph(
-                    figure = fig2,
-                    config = {'displayModeBar': False}
-                )
-            )
-            children_cases_day.append(
-                dcc.Graph(
-                    figure = fig3,
-                    config = {'displayModeBar': False}
-                )
-            ) 
-            children_deaths_day.append(
-                dcc.Graph(
-                    figure = fig4,
-                    config = {'displayModeBar': False}
-                )
-            )
-            children_cases_week.append(
-                dcc.Graph(
-                    figure = fig5,
-                    config = {'displayModeBar': False}
-                )
-            ) 
-            children_deaths_week.append(
-                dcc.Graph(
-                    figure = fig6,
-                    config = {'displayModeBar': False}
-                )
-            )                
+
+        children_cases = dcc.Graph(
+            figure = fig1,
+            config = {'displayModeBar': False}
+        )
+        children_deaths = dcc.Graph(
+            figure = fig2,
+            config = {'displayModeBar': False}
+        )
+        children_cases_day = dcc.Graph(
+            figure = fig3,
+            config = {'displayModeBar': False}
+        )
+        
+        children_deaths_day = dcc.Graph(
+            figure = fig4,
+            config = {'displayModeBar': False}
+        )
+        
+        children_cases_week = dcc.Graph(
+            figure = fig5,
+            config = {'displayModeBar': False}
+        )
+        children_deaths_week = dcc.Graph(
+            figure = fig6,
+            config = {'displayModeBar': False}
+        )
     else:
         if(state is not None):
             # Get state data
             df = get_data(state)
+            num = df._get_numeric_data()
+            num[num < 0] = 0
+            
             fig1 = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed')
             fig2 = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths')
             fig3 = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed')
             fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
             fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
             fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
-            if(children_cases):
-                # There was already a children with graph, so subtitute the children
-                children_cases[0]["props"]["figure"] = fig1
-                children_deaths[0]["props"]["figure"] = fig2
-                children_cases_day[0]["props"]["figure"] = fig3
-                children_deaths_day[0]["props"]["figure"] = fig4
-                children_cases_week[0]["props"]["figure"] = fig5
-                children_deaths_week[0]["props"]["figure"] = fig6
-            else:
-                # There wasn't a graph before, so append a children with graph data
-                children_cases.append(
-                    dcc.Graph(
-                        figure = fig1,
-                        config = {'displayModeBar': False}
-                    )
-                )
-                children_deaths.append(
-                    dcc.Graph(
-                        figure = fig2,
-                        config = {'displayModeBar': False}
-                    )
-                )
-                children_cases_day.append(
-                    dcc.Graph(
-                        figure = fig3,
-                        config = {'displayModeBar': False}
-                    )
-                ) 
-                children_deaths_day.append(
-                    dcc.Graph(
-                        figure = fig4,
-                        config = {'displayModeBar': False}
-                    )
-                )
-                children_cases_week.append(
-                    dcc.Graph(
-                        figure = fig5,
-                        config = {'displayModeBar': False}
-                    )
-                ) 
-                children_deaths_week.append(
-                    dcc.Graph(
-                        figure = fig6,
-                        config = {'displayModeBar': False}
-                    )
-                ) 
+            
+            children_cases = dcc.Graph(
+                figure = fig1,
+                config = {'displayModeBar': False}
+            )
+            children_deaths = dcc.Graph(
+                figure = fig2,
+                config = {'displayModeBar': False}
+            )
+            children_cases_day = dcc.Graph(
+                figure = fig3,
+                config = {'displayModeBar': False}
+            )
+            children_deaths_day = dcc.Graph(
+                figure = fig4,
+                config = {'displayModeBar': False}
+            )
+            children_cases_week = dcc.Graph(
+                figure = fig5,
+                config = {'displayModeBar': False}
+            )
+            children_deaths_week = dcc.Graph(
+                figure = fig6,
+                config = {'displayModeBar': False}
+            )
         else:
             # City is not selected and State is not selected, return empty children
-            children_cases = []
-            children_deaths = []
-            children_cases_day = []
-            children_deaths_day = []
-            children_cases_week = []
-            children_deaths_week = []
+            df = get_br_data()
+            aux = df.groupby(['date']).sum()
+            aux = aux.reset_index()
+            aux2 = df.groupby(['epidemiological_week']).sum()
+            aux2 = aux2.reset_index()
+            fig1 = generate_scatter_fig(x=aux['date'], y=aux['last_available_confirmed'], type='last_available_confirmed')
+            fig2 = generate_scatter_fig(x=aux['date'], y=aux['last_available_deaths'], type='last_available_deaths')
+            fig3 = generate_bar_fig(x=aux['date'], y=aux['new_confirmed'], type='new_confirmed')
+            fig4 = generate_bar_fig(x=aux['date'], y=aux['new_deaths'], type='new_deaths')
+            fig5 = generate_histogram_fig(x=aux2['epidemiological_week'], y=aux2['new_confirmed'], type='new_confirmed')
+            fig6 = generate_histogram_fig(x=aux2['epidemiological_week'], y=aux2['new_deaths'], type='new_deaths')
+
+            children_cases  = dcc.Graph(
+                figure = fig1,
+                config = {'displayModeBar': False}
+            )
+            children_deaths = dcc.Graph(
+                figure = fig2,
+                config = {'displayModeBar': False}
+            )
+            children_cases_day = dcc.Graph(
+                figure = fig3,
+                config = {'displayModeBar': False}
+            )
+            children_deaths_day = dcc.Graph(
+                figure = fig4,
+                config = {'displayModeBar': False}
+            )
+            children_cases_week = dcc.Graph(
+                figure = fig5,
+                config = {'displayModeBar': False}
+            )
+            children_deaths_week = dcc.Graph(
+                figure = fig6,
+                config = {'displayModeBar': False}
+            )
     return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
 
 NAVBAR = dbc.Navbar(
@@ -389,6 +382,8 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 def update_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week):
     children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week = generate_graphs(
         state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+    
+    # Fix changing states when city is selected, does not update city value to None, maybe a submit will solve it
     if(state is None):
         return([], True, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
     else:
