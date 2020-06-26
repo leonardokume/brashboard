@@ -88,82 +88,96 @@ def generate_bar_fig(x, y, type):
     )
     return(fig)
 
-def generate_scatter_graph(state, city, children, variable):
+def generate_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day):
     if(city is not None):
         # Get city data
         df = get_data(city)
-        df.loc[df[variable] < 0, variable] = 0
+        num = df._get_numeric_data()
+        num[num < 0] = 0
 
-        fig = generate_scatter_fig(x=df['date'], y=df[variable], type=variable)
-        if(children):
+        fig1 = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed')
+        fig2 = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths')
+        fig3 = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed')
+        fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
+        if(children_cases):
             # There was already a children with graph
-            children[0]["props"]["figure"] = fig
+            children_cases[0]["props"]["figure"] = fig1
+            children_deaths[0]["props"]["figure"] = fig2
+            children_cases_day[0]["props"]["figure"] = fig3
+            children_deaths_day[0]["props"]["figure"] = fig4
         else:
             # There wasn't a graph before, so append a children with graph data
-            children.append(
+            children_cases.append(
                 dcc.Graph(
-                    figure = fig,
+                    figure = fig1,
                     config = {'displayModeBar': False}
                 )
-            )            
+            )
+            children_deaths.append(
+                dcc.Graph(
+                    figure = fig2,
+                    config = {'displayModeBar': False}
+                )
+            )
+            children_cases_day.append(
+                dcc.Graph(
+                    figure = fig3,
+                    config = {'displayModeBar': False}
+                )
+            ) 
+            children_deaths_day.append(
+                dcc.Graph(
+                    figure = fig4,
+                    config = {'displayModeBar': False}
+                )
+            )             
     else:
         if(state is not None):
             # Get state data
             df = get_data(state)
-            fig = generate_scatter_fig(x=df['date'], y=df[variable], type=variable)
-            if(children):
+            fig1 = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed')
+            fig2 = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths')
+            fig3 = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed')
+            fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
+            if(children_cases):
                 # There was already a children with graph, so subtitute the children
-                children[0]["props"]["figure"] = fig
+                children_cases[0]["props"]["figure"] = fig1
+                children_deaths[0]["props"]["figure"] = fig2
+                children_cases_day[0]["props"]["figure"] = fig3
+                children_deaths_day[0]["props"]["figure"] = fig4
             else:
                 # There wasn't a graph before, so append a children with graph data
-                children.append(
+                children_cases.append(
                     dcc.Graph(
-                        figure = fig,
+                        figure = fig1,
                         config = {'displayModeBar': False}
                     )
                 )
-        else:
-            # City is not selected and State is not selected, return empty children
-            children = []
-    return(children)
-
-def generate_bar_graph(state, city, children, variable):
-    if(city is not None):
-        # Get city data
-        df = get_data(city)
-        df.loc[df[variable] < 0, variable] = 0
-        fig = generate_bar_fig(x=df['date'], y=df[variable], type=variable)
-        if(children):
-            # There was already a children with graph
-            children[0]["props"]["figure"] = fig
-        else:
-            # There wasn't a graph before, so append a children with graph data
-            children.append(
-                dcc.Graph(
-                    figure = fig,
-                    config = {'displayModeBar': False}
-                )
-            )            
-    else:
-        if(state is not None):
-            # Get state data
-            df = get_data(state)
-            fig = generate_bar_fig(x=df['date'], y=df[variable], type=variable)
-            if(children):
-                # There was already a children with graph, so subtitute the children
-                children[0]["props"]["figure"] = fig
-            else:
-                # There wasn't a graph before, so append a children with graph data
-                children.append(
+                children_deaths.append(
                     dcc.Graph(
-                        figure = fig,
+                        figure = fig2,
                         config = {'displayModeBar': False}
                     )
                 )
+                children_cases_day.append(
+                    dcc.Graph(
+                        figure = fig3,
+                        config = {'displayModeBar': False}
+                    )
+                ) 
+                children_deaths_day.append(
+                    dcc.Graph(
+                        figure = fig4,
+                        config = {'displayModeBar': False}
+                    )
+                )  
         else:
             # City is not selected and State is not selected, return empty children
-            children = []
-    return(children)
+            children_cases = []
+            children_deaths = []
+            children_cases_day = []
+            children_deaths_day = []
+    return(children_cases, children_deaths, children_cases_day, children_deaths_day)
 
 NAVBAR = dbc.Navbar(
     children=[
@@ -225,7 +239,7 @@ GRAPH_CASES = [
     dbc.Col(
         dbc.Card(
             [
-                dbc.CardHeader('Óbitos acumuladas'),
+                dbc.CardHeader('Óbitos acumulados'),
                 dbc.CardBody([html.Div([], id="graph-deaths")])
             ]
         ), lg={'order':12, 'size':6}, style={"marginTop": 15}
@@ -278,11 +292,8 @@ app.layout = html.Div(children=[NAVBAR, BODY])
     State('graph-deaths', 'children'),
     State('graph-cases-day', 'children'),
     State('graph-deaths-day', 'children')])
-def update_graphs(state, city, children_1, children_2, children_3, children_4):
-    children_cases = generate_scatter_graph(state, city, children_1, variable='last_available_confirmed')
-    children_deaths = generate_scatter_graph(state, city, children_2, variable='last_available_deaths')
-    children_cases_day = generate_bar_graph(state, city, children_3, variable='new_confirmed')
-    children_deaths_day = generate_bar_graph(state, city, children_4, variable='new_deaths')
+def update_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day):
+    children_cases, children_deaths, children_cases_day, children_deaths_day = generate_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day)
     if(state is None):
         return([], True, children_cases, children_deaths, children_cases_day, children_deaths_day)
     else:
