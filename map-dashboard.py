@@ -14,6 +14,9 @@ URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
 URL_ibge = 'https://raw.githubusercontent.com/leonardokume/covid-br-dashboard/master/dados/cities_ibge_code.csv'
 BRA_FLAG = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'
 
+def add_sep(s, sep='.'):
+   return s if len(s) <= 3 else add_sep(s[:-3], sep) + sep + s[-3:]
+
 def get_dropdown_states():
     ibge = pd.read_csv('./dados/cities_ibge_code.csv')
     states = ibge.loc[ibge['type']=='state']
@@ -121,7 +124,14 @@ def generate_histogram_fig(x, y, type):
     )
     return(fig)
 
-def generate_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week):
+def generate_indicator(data, change):
+    fig = [
+        html.Center(html.H2(add_sep(str(data)))),
+        html.Center(html.H3('+ {}'.format(add_sep(str(change)))))
+    ]
+    return(fig)
+
+def generate_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths):
     if(city is not None):
         # Get city data
         df = get_data(city)
@@ -134,6 +144,12 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
         fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
         fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
         fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
+        ind_cases = generate_indicator(
+            data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
+            change=df.loc[df['is_last']==True, 'new_confirmed'].item())
+        ind_deaths = generate_indicator(
+            data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
+            change=df.loc[df['is_last']==True, 'new_deaths'].item())
 
         children_cases = dcc.Graph(
             figure = fig1,
@@ -174,6 +190,12 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
             fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
             fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
             fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
+            ind_cases = generate_indicator(
+                data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
+                change=df.loc[df['is_last']==True, 'new_confirmed'].item())
+            ind_deaths = generate_indicator(
+                data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
+                change=df.loc[df['is_last']==True, 'new_deaths'].item())
             
             children_cases = dcc.Graph(
                 figure = fig1,
@@ -208,6 +230,14 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
             fig4 = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths')
             fig5 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_confirmed'], type='new_confirmed')
             fig6 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_deaths'], type='new_deaths')
+            ind_cases = generate_indicator(
+                data=br_date.iloc[-1]['last_available_confirmed'].item(),
+                change=br_date.iloc[-1]['new_confirmed'].item()
+            )
+            ind_deaths = generate_indicator(
+                data=br_date.iloc[-1]['last_available_deaths'].item(),
+                change=br_date.iloc[-1]['new_deaths'].item()
+            )
 
             children_cases  = dcc.Graph(
                 figure = fig1,
@@ -233,7 +263,7 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
                 figure = fig6,
                 config = {'displayModeBar': False}
             )
-    return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+    return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
 
 NAVBAR = dbc.Navbar(
     children=[
@@ -282,6 +312,33 @@ DROPDOWNS = [
         ],
         sm=6, lg=1, style={'text-align': 'center', "marginTop": 15}
     ),
+]
+
+INDICATORS = [
+    dbc.Col(
+        [
+            dbc.Card(
+                [
+                    dbc.CardHeader('CASOS ACUMULADOS', style={'text-align': 'center'}),
+                    dbc.CardBody([html.Div([], id="indicator-cases")])
+                ],
+                color='info', inverse=True, style={"marginTop": 15},
+            ),
+        ],
+        sm=3, lg=3,
+    ),
+    dbc.Col(
+        [
+             dbc.Card(
+                [
+                    dbc.CardHeader('ÓBITOS ACUMULADOS', style={'text-align': 'center'}),
+                    dbc.CardBody([html.Div([], id="indicator-deaths")])
+                ],
+                color='danger', inverse=True, style={"marginTop": 15},
+            )
+        ],
+        sm=3, lg=3,
+    )
 ]
 
 
@@ -345,6 +402,7 @@ BODY = dbc.Container(
         dbc.Row(DROPDOWNS, justify='center', style={"marginTop": 30}),
         dbc.Spinner(
             [
+                dbc.Row(INDICATORS, justify='center', style={"marginTop": 15}),
                 dbc.Row(GRAPH_CASES, style={"marginTop": 15}), 
                 dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
                 dbc.Row([CASES_PER_WEEK, DEATHS_PER_WEEK], style={"marginTop": 15}),
@@ -381,7 +439,9 @@ def update_dropdowns(state):
     Output('graph-cases-day', 'children'),
     Output('graph-deaths-day', 'children'),
     Output('graph-cases-week', 'children'),
-    Output('graph-deaths-week', 'children')],
+    Output('graph-deaths-week', 'children'),
+    Output('indicator-cases', 'children'),
+    Output('indicator-deaths', 'children')],
 
     [Input('submit-button', 'n_clicks')],
 
@@ -392,16 +452,20 @@ def update_dropdowns(state):
     State('graph-cases-day', 'children'),
     State('graph-deaths-day', 'children'),
     State('graph-cases-week', 'children'),
-    State('graph-deaths-week', 'children')])
-def update_graphs(click, state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week):
-    children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week = generate_graphs(
-        state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
-    
-    # Fix changing states when city is selected, does not update city value to None, maybe a submit will solve it
+    State('graph-deaths-week', 'children'),
+    State('indicator-cases', 'children'),
+    State('indicator-deaths', 'children')])
+def update_graphs(click, state, city, children_cases, children_deaths,
+                    children_cases_day, children_deaths_day,
+                    children_cases_week, children_deaths_week,
+                    ind_cases, ind_deaths):
+    children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths = generate_graphs(
+        state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
+
     if(state is None):
-        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
     else:
-        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
