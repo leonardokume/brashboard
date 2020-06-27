@@ -14,8 +14,6 @@ URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
 URL_ibge = 'https://raw.githubusercontent.com/leonardokume/covid-br-dashboard/master/dados/cities_ibge_code.csv'
 BRA_FLAG = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
-
 def get_dropdown_states():
     ibge = pd.read_csv('./dados/cities_ibge_code.csv')
     states = ibge.loc[ibge['type']=='state']
@@ -203,17 +201,13 @@ def generate_graphs(state, city, children_cases, children_deaths, children_cases
             )
         else:
             # City is not selected and State is not selected, return empty children
-            df = get_br_data()
-            aux = df.groupby(['date']).sum()
-            aux = aux.reset_index()
-            aux2 = df.groupby(['epidemiological_week']).sum()
-            aux2 = aux2.reset_index()
-            fig1 = generate_scatter_fig(x=aux['date'], y=aux['last_available_confirmed'], type='last_available_confirmed')
-            fig2 = generate_scatter_fig(x=aux['date'], y=aux['last_available_deaths'], type='last_available_deaths')
-            fig3 = generate_bar_fig(x=aux['date'], y=aux['new_confirmed'], type='new_confirmed')
-            fig4 = generate_bar_fig(x=aux['date'], y=aux['new_deaths'], type='new_deaths')
-            fig5 = generate_histogram_fig(x=aux2['epidemiological_week'], y=aux2['new_confirmed'], type='new_confirmed')
-            fig6 = generate_histogram_fig(x=aux2['epidemiological_week'], y=aux2['new_deaths'], type='new_deaths')
+            
+            fig1 = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_confirmed'], type='last_available_confirmed')
+            fig2 = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_deaths'], type='last_available_deaths')
+            fig3 = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], type='new_confirmed')
+            fig4 = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths')
+            fig5 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_confirmed'], type='new_confirmed')
+            fig6 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_deaths'], type='new_deaths')
 
             children_cases  = dcc.Graph(
                 figure = fig1,
@@ -357,6 +351,14 @@ BODY = dbc.Container(
     ],
     fluid=True,
 )
+
+df = get_br_data()
+br_date = df.groupby(['date']).sum()
+br_date = br_date.reset_index()
+br_ew = df.groupby(['epidemiological_week']).sum()
+br_ew = br_ew.reset_index()
+
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
 
 app.layout = html.Div(children=[NAVBAR, BODY])
 
