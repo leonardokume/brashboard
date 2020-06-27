@@ -420,6 +420,8 @@ br_ew = br_ew.reset_index()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
 
+server = app.server
+
 app.layout = html.Div(children=[NAVBAR, BODY])
 
 @app.callback(
