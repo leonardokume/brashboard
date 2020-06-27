@@ -278,6 +278,12 @@ DROPDOWNS = [
                     ],
                     width='3',
                 ),
+                dbc.Col(
+                    [
+                        dbc.Button("Submeter", id="submit-button", color="info", className="mr-1")
+                    ],
+                    width='3',
+                ),
             ], justify='center',
         ),
 ]
@@ -365,31 +371,41 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 @app.callback(
     [Output('city', 'options'),
     Output('city', 'disabled'),
-    Output('graph-cases', 'children'),
+    Output('city', 'value')],
+    [Input('state', 'value')])
+def update_dropdowns(state):
+    if(state is not None):
+        return(get_dropdown_cities(state), False, None)
+    else:
+        return([], True, None)
+
+@app.callback(
+    [Output('graph-cases', 'children'),
     Output('graph-deaths', 'children'),
     Output('graph-cases-day', 'children'),
     Output('graph-deaths-day', 'children'),
     Output('graph-cases-week', 'children'),
     Output('graph-deaths-week', 'children')],
 
-    [Input('state', 'value'),
-    Input('city', 'value'),],
+    [Input('submit-button', 'n_clicks')],
 
-    [State('graph-cases', 'children'),
+    [State('state', 'value'),
+    State('city', 'value'),
+    State('graph-cases', 'children'),
     State('graph-deaths', 'children'),
     State('graph-cases-day', 'children'),
     State('graph-deaths-day', 'children'),
     State('graph-cases-week', 'children'),
     State('graph-deaths-week', 'children')])
-def update_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week):
+def update_graphs(click, state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week):
     children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week = generate_graphs(
         state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
     
     # Fix changing states when city is selected, does not update city value to None, maybe a submit will solve it
     if(state is None):
-        return([], True, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
     else:
-        return(get_dropdown_cities(state), False, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
+        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
