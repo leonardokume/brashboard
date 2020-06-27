@@ -1,4 +1,4 @@
-venv
+heroku
 *.pyc
 .DS_Store
 .env
