@@ -256,36 +256,32 @@ NAVBAR = dbc.Navbar(
 )
 
 DROPDOWNS = [
-        dbc.Row(
-            [
-                dbc.Col(
-                    [
-                        dcc.Dropdown(
-                            id="state",
-                            options=get_dropdown_states(),
-                            value=None, placeholder="Selecione o estado", 
-                        ),
-                    ],
-                    width='3',
-                ),
-                dbc.Col(
-                    [
-                        dcc.Dropdown(
-                            id="city",
-                            options=[],
-                            value=None, placeholder="Digite o nome da cidade", disabled=True,
-                        ),
-                    ],
-                    width='3',
-                ),
-                dbc.Col(
-                    [
-                        dbc.Button("Submeter", id="submit-button", color="info", className="mr-1")
-                    ],
-                    width='3',
-                ),
-            ], justify='center',
-        ),
+    dbc.Col(
+        [
+            dcc.Dropdown(
+                id="state",
+                options=get_dropdown_states(),
+                value=None, placeholder="Selecione o estado", 
+            ),
+        ],
+        sm=12, lg=3, style={"marginTop": 15}
+    ),
+    dbc.Col(
+        [
+            dcc.Dropdown(
+                id="city",
+                options=[],
+                value=None, placeholder="Digite o nome da cidade", disabled=True,
+            ),
+        ],
+        sm=12, lg=3, style={"marginTop": 15}
+    ),
+    dbc.Col(
+        [
+            dbc.Button("Submeter", id="submit-button", color="info", className="mr-1")
+        ],
+        sm=6, lg=1, style={'text-align': 'center', "marginTop": 15}
+    ),
 ]
 
 
@@ -346,7 +342,7 @@ DEATHS_PER_WEEK = dbc.Col(
 
 BODY = dbc.Container(
     [
-        dbc.Row([dbc.Col(DROPDOWNS)], style={"marginTop": 30}),
+        dbc.Row(DROPDOWNS, justify='center', style={"marginTop": 30}),
         dbc.Spinner(
             [
                 dbc.Row(GRAPH_CASES, style={"marginTop": 15}), 
