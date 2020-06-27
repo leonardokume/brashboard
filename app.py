@@ -294,7 +294,7 @@ DROPDOWNS = [
                 value=None, placeholder="Selecione o estado", 
             ),
         ],
-        sm=12, lg=3, style={"marginTop": 15}
+        md=12, lg=3, style={"marginTop": 15}
     ),
     dbc.Col(
         [
@@ -304,13 +304,13 @@ DROPDOWNS = [
                 value=None, placeholder="Digite o nome da cidade", disabled=True,
             ),
         ],
-        sm=12, lg=3, style={"marginTop": 15}
+        md=12, lg=3, style={"marginTop": 15}
     ),
     dbc.Col(
         [
             dbc.Button("Submeter", id="submit-button", color="info", className="mr-1")
         ],
-        sm=6, lg=1, style={'text-align': 'center', "marginTop": 15}
+        md=12, lg=1, style={'text-align': 'center', "marginTop": 15}
     ),
 ]
 
@@ -418,7 +418,14 @@ br_date = br_date.reset_index()
 br_ew = df.groupby(['epidemiological_week']).sum()
 br_ew = br_ew.reset_index()
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED],
+    meta_tags=[{
+        'name': 'viewport',
+        'content': 'width=device-width, initial-scale=1.0'
+    }],
+)
+
+app.title = 'BRASHBOARD'
 
 server = app.server
 
