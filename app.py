@@ -11,12 +11,9 @@ from dash.dependencies import Input, Output, State
 pd.set_option('mode.chained_assignment', None)
 
 URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
-URL_ibge = 'https://raw.githubusercontent.com/leonardokume/covid-br-dashboard/master/dados/cities_ibge_code.csv'
-BRA_FLAG = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'
 LOGO = './assets/logo.png'
+POP_BR = 210147125
 
-def add_sep(s, sep='.'):
-   return s if len(s) <= 3 else add_sep(s[:-3], sep) + sep + s[-3:]
 
 def get_dropdown_states():
     ibge = pd.read_csv('./dados/cities_ibge_code.csv')
@@ -66,11 +63,13 @@ def generate_scatter_fig(x, y, type):
                         mode='lines+markers',
                         line_color=color,
                         fill='tozeroy',
-                        fillcolor=fcolor
+                        fillcolor=fcolor,
+                        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
                         )]
                     )
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
+        dragmode=False,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis=dict(gridcolor='#d6d6d6'),
@@ -88,10 +87,12 @@ def generate_bar_fig(x, y, type):
                         x=x,
                         y=y,
                         marker_color=color,
+                        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
                         )]
                     )
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
+        dragmode=False,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis=dict(gridcolor='#d6d6d6'),
@@ -111,11 +112,13 @@ def generate_histogram_fig(x, y, type):
         y=y,
         marker_color=color,
         nbinsx=len(x.unique()),
-        autobinx = False
+        autobinx = False,
+        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
         )]
     )
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
+        dragmode=False,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis=dict(gridcolor='#d6d6d6'),
@@ -125,12 +128,71 @@ def generate_histogram_fig(x, y, type):
     )
     return(fig)
 
-def generate_indicator(data, change):
-    fig = [
-        html.Center(html.H2(add_sep(str(data)))),
-        html.Center(html.H3('+ {}'.format(add_sep(str(change)))))
-    ]
+def generate_indicator(data, change, type):
+    if(type == 'deaths'):
+        fig = [
+            html.Center(
+                [
+                    html.H2(data),
+                    html.H6('Óbitos totais'),
+                    html.Center(html.H3(change)),
+                    html.H6('Novos óbitos')
+                ]
+            )
+        ]
+    else:
+        fig = [
+            html.Center(
+                [
+                    html.H2(data),
+                    html.H6('Casos totais'),
+                    html.Center(html.H3(change)),
+                    html.H6('Novos casos')
+                ]
+            )
+        ]
     return(fig)
+
+def generate_growth_indicator(data, change):
+    diff = data - change
+    if(diff > 0):
+        fig = [
+            html.Center(
+                [
+                    html.H2('{:,.2f}'.format(data).replace('.',',')),
+                    html.H6('Novos casos a cada 100k habitantes')
+                ]
+            ),
+            html.Center(
+                [
+                    html.H3('▲ ' + '{:,.2f}'.format(diff).replace('.',',')),
+                    html.H6('Desde a semana anterior')
+                ]
+            )
+        ]
+    else:
+        fig = [
+                html.Center(
+                [
+                    html.H2('{:,.2f}'.format(data).replace('.',',')),
+                    html.H6('Novos casos a cada 100k habitantes')
+                ]
+            ),
+            html.Center(
+                [
+                    html.H3('▼ ' + '{:,.2f}'.format(diff).replace('.',',').replace('-','')),
+                    html.H6('Desde a semana anterior')
+                ]
+            )
+        ]
+    return(fig)
+
+def get_growth_data(df):
+    group_ew = df.groupby(['epidemiological_week'])['new_confirmed'].sum()
+    pop = df['estimated_population_2019'].iloc[0].item()
+    current = (group_ew.iloc[-2].item() / pop) * 100000
+    last = (group_ew.iloc[-3].item() / pop) * 100000
+    return(current, last)
 
 def generate_graphs(ibge):
     df = get_data(ibge)
@@ -176,14 +238,22 @@ def generate_graphs(ibge):
     childrens.append(deaths_week)
 
     ind_cases = generate_indicator(
-        data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
-        change=df.loc[df['is_last']==True, 'new_confirmed'].item())
+        data=str('{:,d}'.format(df.loc[df['is_last']==True, 'last_available_confirmed'].item())).replace(',','.'),
+        change=str('{:,d}'.format(df.loc[df['is_last']==True, 'new_confirmed'].item())).replace(',','.'),
+        type='confirmed'
+    )
     childrens.append(ind_cases)
 
     ind_deaths = generate_indicator(
         data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
-        change=df.loc[df['is_last']==True, 'new_deaths'].item())
+        change=df.loc[df['is_last']==True, 'new_deaths'].item(),
+        type='deaths'
+    )
     childrens.append(ind_deaths)
+
+    data, change = get_growth_data(df)
+    ind_growth = generate_growth_indicator(data, change)
+    childrens.append(ind_growth)
 
     return(childrens)
 
@@ -195,7 +265,6 @@ NAVBAR = dbc.Navbar(
                 [
                     dbc.Col(html.Img(src=LOGO, height="50px")),
                 ],
-                align="center",
                 no_gutters=True,
             ),
         )
@@ -239,7 +308,7 @@ INDICATORS = [
         [
             dbc.Card(
                 [
-                    dbc.CardHeader('CASOS ACUMULADOS', style={'text-align': 'center'}),
+                    dbc.CardHeader('CASOS', style={'text-align': 'center'}),
                     dbc.CardBody([html.Div([], id="indicator-cases")])
                 ],
                 color='info', inverse=True, style={"marginTop": 15},
@@ -251,10 +320,22 @@ INDICATORS = [
         [
              dbc.Card(
                 [
-                    dbc.CardHeader('ÓBITOS ACUMULADOS', style={'text-align': 'center'}),
+                    dbc.CardHeader('ÓBITOS', style={'text-align': 'center'}),
                     dbc.CardBody([html.Div([], id="indicator-deaths")])
                 ],
                 color='danger', inverse=True, style={"marginTop": 15},
+            )
+        ],
+        sm=3, lg=3,
+    ),
+    dbc.Col(
+        [
+             dbc.Card(
+                [
+                    dbc.CardHeader('CRESCIMENTO SEMANAL', style={'text-align': 'center'}),
+                    dbc.CardBody([html.Div([], id="indicator-growth")])
+                ],
+                color='warning', inverse=True, style={"marginTop": 15},
             )
         ],
         sm=3, lg=3,
@@ -323,9 +404,9 @@ BODY = dbc.Container(
         dbc.Spinner(
             [
                 dbc.Row(INDICATORS, justify='center', style={"marginTop": 15}),
-                dbc.Row(GRAPH_CASES, style={"marginTop": 15}), 
-                dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
+                dbc.Row(GRAPH_CASES, style={"marginTop": 15}),
                 dbc.Row([CASES_PER_WEEK, DEATHS_PER_WEEK], style={"marginTop": 15}),
+                dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
             ]
         )
     ], fluid=True
@@ -348,7 +429,7 @@ app.title = 'Brashboard: situação do coronavírus nas cidades'
 
 server = app.server
 
-app.layout = dbc.Container([NAVBAR, BODY], fluid=True)
+app.layout = dbc.Container([NAVBAR, BODY], fluid=True, style={'padding-right':'0px', 'padding-left':'0px'})
 
 @app.callback(
     [Output('city', 'options'),
@@ -369,7 +450,8 @@ def update_dropdowns(state):
     Output('graph-cases-week', 'children'),
     Output('graph-deaths-week', 'children'),
     Output('indicator-cases', 'children'),
-    Output('indicator-deaths', 'children')],
+    Output('indicator-deaths', 'children'),
+    Output('indicator-growth', 'children')],
 
     [Input('submit-button', 'n_clicks')],
 
@@ -382,63 +464,78 @@ def update_dropdowns(state):
     State('graph-cases-week', 'children'),
     State('graph-deaths-week', 'children'),
     State('indicator-cases', 'children'),
-    State('indicator-deaths', 'children')])
+    State('indicator-deaths', 'children'),
+    State('indicator-growth', 'children')])
 def update_graphs(click, state, city,
                     children_cases, children_deaths,
                     children_cases_day, children_deaths_day,
                     children_cases_week, children_deaths_week,
-                    ind_cases, ind_deaths):
+                    ind_cases, ind_deaths, ind_growth):
     if(city is not None):
-        [
-            children_cases, children_deaths,
-            children_cases_day, children_deaths_day,
-            children_cases_week, children_deaths_week,
-            ind_cases, ind_deaths
-        ] = generate_graphs(city)
+        childrens = generate_graphs(city)
 
     else:
         if(state is not None):
-            [
-                children_cases, children_deaths,
-                children_cases_day, children_deaths_day,
-                children_cases_week, children_deaths_week,
-                ind_cases, ind_deaths
-            ] = generate_graphs(state)
+            childrens = generate_graphs(state)
         else:
             # National data
-            ind_cases = generate_indicator(
-                data=br_date.iloc[-1]['last_available_confirmed'].item(),
-                change=br_date.iloc[-1]['new_confirmed'].item()
-            )
-            ind_deaths = generate_indicator(
-                data=br_date.iloc[-1]['last_available_deaths'].item(),
-                change=br_date.iloc[-1]['new_deaths'].item()
-            )
-            children_cases  = dcc.Graph(
+            childrens = []
+            cases  = dcc.Graph(
                 figure = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_confirmed'], type='last_available_confirmed'),
                 config = {'displayModeBar': False}
             )
-            children_deaths = dcc.Graph(
+            childrens.append(cases)
+
+            deaths = dcc.Graph(
                 figure = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_deaths'], type='last_available_deaths'),
                 config = {'displayModeBar': False}
             )
-            children_cases_day = dcc.Graph(
+            childrens.append(deaths)
+
+            cases_day = dcc.Graph(
                 figure = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], type='new_confirmed'),
                 config = {'displayModeBar': False}
             )
-            children_deaths_day = dcc.Graph(
+            childrens.append(cases_day)
+
+            deaths_day = dcc.Graph(
                 figure = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths'),
                 config = {'displayModeBar': False}
             )
-            children_cases_week = dcc.Graph(
+            childrens.append(deaths_day)
+
+            cases_week = dcc.Graph(
                 figure = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_confirmed'], type='new_confirmed'),
                 config = {'displayModeBar': False}
             )
-            children_deaths_week = dcc.Graph(
+            childrens.append(cases_week)
+
+            deaths_week = dcc.Graph(
                 figure = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_deaths'], type='new_deaths'),
                 config = {'displayModeBar': False}
             )
-    return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
+            childrens.append(deaths_week)
+
+            ind_cases = generate_indicator(
+                data='{:,d}'.format(br_date.iloc[-1]['last_available_confirmed'].item()).replace(',','.'),
+                change='{:,d}'.format(br_date.iloc[-1]['new_confirmed'].item()).replace(',','.'),
+                type='confirmed'
+            )
+            childrens.append(ind_cases)
+
+            ind_deaths = generate_indicator(
+                data='{:,d}'.format(br_date.iloc[-1]['last_available_deaths'].item()).replace(',','.'),
+                change='{:,d}'.format(br_date.iloc[-1]['new_deaths'].item()).replace(',','.'),
+                type='deaths'
+            )
+            childrens.append(ind_deaths)
+
+            current = (br_ew.iloc[-2]['new_confirmed'].item() / POP_BR) * 100000
+            last = (br_ew.iloc[-3]['new_confirmed'].item() / POP_BR) * 100000
+            ind_growth = generate_growth_indicator(current, last)
+            childrens.append(ind_growth)
+
+    return(childrens)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
