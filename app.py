@@ -13,6 +13,7 @@ pd.set_option('mode.chained_assignment', None)
 URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
 URL_ibge = 'https://raw.githubusercontent.com/leonardokume/covid-br-dashboard/master/dados/cities_ibge_code.csv'
 BRA_FLAG = 'https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg'
+LOGO = './assets/logo.png'
 
 def add_sep(s, sep='.'):
    return s if len(s) <= 3 else add_sep(s[:-3], sep) + sep + s[-3:]
@@ -131,149 +132,68 @@ def generate_indicator(data, change):
     ]
     return(fig)
 
-def generate_graphs(state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths):
-    if(city is not None):
-        # Get city data
-        df = get_data(city)
-        num = df._get_numeric_data()
-        num[num < 0] = 0
+def generate_graphs(ibge):
+    df = get_data(ibge)
+    num = df._get_numeric_data()
+    num[num < 0] = 0
 
-        fig1 = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed')
-        fig2 = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths')
-        fig3 = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed')
-        fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
-        fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
-        fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
-        ind_cases = generate_indicator(
-            data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
-            change=df.loc[df['is_last']==True, 'new_confirmed'].item())
-        ind_deaths = generate_indicator(
-            data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
-            change=df.loc[df['is_last']==True, 'new_deaths'].item())
+    childrens = []
 
-        children_cases = dcc.Graph(
-            figure = fig1,
-            config = {'displayModeBar': False}
-        )
-        children_deaths = dcc.Graph(
-            figure = fig2,
-            config = {'displayModeBar': False}
-        )
-        children_cases_day = dcc.Graph(
-            figure = fig3,
-            config = {'displayModeBar': False}
-        )
-        
-        children_deaths_day = dcc.Graph(
-            figure = fig4,
-            config = {'displayModeBar': False}
-        )
-        
-        children_cases_week = dcc.Graph(
-            figure = fig5,
-            config = {'displayModeBar': False}
-        )
-        children_deaths_week = dcc.Graph(
-            figure = fig6,
-            config = {'displayModeBar': False}
-        )
-    else:
-        if(state is not None):
-            # Get state data
-            df = get_data(state)
-            num = df._get_numeric_data()
-            num[num < 0] = 0
-            
-            fig1 = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed')
-            fig2 = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths')
-            fig3 = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed')
-            fig4 = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths')
-            fig5 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed')
-            fig6 = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths')
-            ind_cases = generate_indicator(
-                data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
-                change=df.loc[df['is_last']==True, 'new_confirmed'].item())
-            ind_deaths = generate_indicator(
-                data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
-                change=df.loc[df['is_last']==True, 'new_deaths'].item())
-            
-            children_cases = dcc.Graph(
-                figure = fig1,
-                config = {'displayModeBar': False}
-            )
-            children_deaths = dcc.Graph(
-                figure = fig2,
-                config = {'displayModeBar': False}
-            )
-            children_cases_day = dcc.Graph(
-                figure = fig3,
-                config = {'displayModeBar': False}
-            )
-            children_deaths_day = dcc.Graph(
-                figure = fig4,
-                config = {'displayModeBar': False}
-            )
-            children_cases_week = dcc.Graph(
-                figure = fig5,
-                config = {'displayModeBar': False}
-            )
-            children_deaths_week = dcc.Graph(
-                figure = fig6,
-                config = {'displayModeBar': False}
-            )
-        else:
-            # City is not selected and State is not selected, return empty children
-            
-            fig1 = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_confirmed'], type='last_available_confirmed')
-            fig2 = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_deaths'], type='last_available_deaths')
-            fig3 = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], type='new_confirmed')
-            fig4 = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths')
-            fig5 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_confirmed'], type='new_confirmed')
-            fig6 = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_deaths'], type='new_deaths')
-            ind_cases = generate_indicator(
-                data=br_date.iloc[-1]['last_available_confirmed'].item(),
-                change=br_date.iloc[-1]['new_confirmed'].item()
-            )
-            ind_deaths = generate_indicator(
-                data=br_date.iloc[-1]['last_available_deaths'].item(),
-                change=br_date.iloc[-1]['new_deaths'].item()
-            )
+    cases = dcc.Graph(
+        figure = generate_scatter_fig(x=df['date'], y=df['last_available_confirmed'], type='last_available_confirmed'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(cases)
 
-            children_cases  = dcc.Graph(
-                figure = fig1,
-                config = {'displayModeBar': False}
-            )
-            children_deaths = dcc.Graph(
-                figure = fig2,
-                config = {'displayModeBar': False}
-            )
-            children_cases_day = dcc.Graph(
-                figure = fig3,
-                config = {'displayModeBar': False}
-            )
-            children_deaths_day = dcc.Graph(
-                figure = fig4,
-                config = {'displayModeBar': False}
-            )
-            children_cases_week = dcc.Graph(
-                figure = fig5,
-                config = {'displayModeBar': False}
-            )
-            children_deaths_week = dcc.Graph(
-                figure = fig6,
-                config = {'displayModeBar': False}
-            )
-    return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
+    deaths = dcc.Graph(
+        figure = generate_scatter_fig(x=df['date'], y=df['last_available_deaths'], type='last_available_deaths'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(deaths)
 
+    cases_day = dcc.Graph(
+        figure = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(cases_day)
+
+    deaths_day = dcc.Graph(
+        figure = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(deaths_day)
+
+    cases_week = dcc.Graph(
+        figure = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_confirmed'], type='new_confirmed'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(cases_week)
+
+    deaths_week = dcc.Graph(
+        figure = generate_histogram_fig(x=df['epidemiological_week'], y=df['new_deaths'], type='new_deaths'),
+        config = {'displayModeBar': False}
+    )
+    childrens.append(deaths_week)
+
+    ind_cases = generate_indicator(
+        data=df.loc[df['is_last']==True, 'last_available_confirmed'].item(),
+        change=df.loc[df['is_last']==True, 'new_confirmed'].item())
+    childrens.append(ind_cases)
+
+    ind_deaths = generate_indicator(
+        data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
+        change=df.loc[df['is_last']==True, 'new_deaths'].item())
+    childrens.append(ind_deaths)
+
+    return(childrens)
+
+    
 NAVBAR = dbc.Navbar(
-    children=[
+    [
         html.A(
             dbc.Row(
                 [
-                    dbc.Col(html.Img(src=BRA_FLAG, height="35px")),
-                    dbc.Col(
-                        dbc.NavbarBrand("SITUAÇÃO DO CORONAVÍRUS NAS CIDADES", className="ml-2"), width="300px"
-                    ),
+                    dbc.Col(html.Img(src=LOGO, height="50px")),
                 ],
                 align="center",
                 no_gutters=True,
@@ -406,10 +326,9 @@ BODY = dbc.Container(
                 dbc.Row(GRAPH_CASES, style={"marginTop": 15}), 
                 dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
                 dbc.Row([CASES_PER_WEEK, DEATHS_PER_WEEK], style={"marginTop": 15}),
-            ] 
+            ]
         )
-    ],
-    fluid=True,
+    ], fluid=True
 )
 
 df = get_br_data()
@@ -425,11 +344,11 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED],
     }],
 )
 
-app.title = 'BRASHBOARD'
+app.title = 'Brashboard: situação do coronavírus nas cidades'
 
 server = app.server
 
-app.layout = html.Div(children=[NAVBAR, BODY])
+app.layout = dbc.Container([NAVBAR, BODY], fluid=True)
 
 @app.callback(
     [Output('city', 'options'),
@@ -464,17 +383,62 @@ def update_dropdowns(state):
     State('graph-deaths-week', 'children'),
     State('indicator-cases', 'children'),
     State('indicator-deaths', 'children')])
-def update_graphs(click, state, city, children_cases, children_deaths,
+def update_graphs(click, state, city,
+                    children_cases, children_deaths,
                     children_cases_day, children_deaths_day,
                     children_cases_week, children_deaths_week,
                     ind_cases, ind_deaths):
-    children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths = generate_graphs(
-        state, city, children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
+    if(city is not None):
+        [
+            children_cases, children_deaths,
+            children_cases_day, children_deaths_day,
+            children_cases_week, children_deaths_week,
+            ind_cases, ind_deaths
+        ] = generate_graphs(city)
 
-    if(state is None):
-        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
     else:
-        return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
+        if(state is not None):
+            [
+                children_cases, children_deaths,
+                children_cases_day, children_deaths_day,
+                children_cases_week, children_deaths_week,
+                ind_cases, ind_deaths
+            ] = generate_graphs(state)
+        else:
+            # National data
+            ind_cases = generate_indicator(
+                data=br_date.iloc[-1]['last_available_confirmed'].item(),
+                change=br_date.iloc[-1]['new_confirmed'].item()
+            )
+            ind_deaths = generate_indicator(
+                data=br_date.iloc[-1]['last_available_deaths'].item(),
+                change=br_date.iloc[-1]['new_deaths'].item()
+            )
+            children_cases  = dcc.Graph(
+                figure = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_confirmed'], type='last_available_confirmed'),
+                config = {'displayModeBar': False}
+            )
+            children_deaths = dcc.Graph(
+                figure = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_deaths'], type='last_available_deaths'),
+                config = {'displayModeBar': False}
+            )
+            children_cases_day = dcc.Graph(
+                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], type='new_confirmed'),
+                config = {'displayModeBar': False}
+            )
+            children_deaths_day = dcc.Graph(
+                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths'),
+                config = {'displayModeBar': False}
+            )
+            children_cases_week = dcc.Graph(
+                figure = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_confirmed'], type='new_confirmed'),
+                config = {'displayModeBar': False}
+            )
+            children_deaths_week = dcc.Graph(
+                figure = generate_histogram_fig(x=br_ew['epidemiological_week'], y=br_ew['new_deaths'], type='new_deaths'),
+                config = {'displayModeBar': False}
+            )
+    return(children_cases, children_deaths, children_cases_day, children_deaths_day, children_cases_week, children_deaths_week, ind_cases, ind_deaths)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
