@@ -11,26 +11,35 @@ from dash.dependencies import Input, Output, State
 pd.set_option('mode.chained_assignment', None)
 
 URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
+URL_GITHUB = 'https://github.com/leonardokume/brashboard'
 LOGO = './assets/logo.png'
+GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
 POP_BR = 210147125
+IBGE = pd.read_csv('./dados/cities_ibge_code.csv')
 
 
 def get_dropdown_states():
-    ibge = pd.read_csv('./dados/cities_ibge_code.csv')
-    states = ibge.loc[ibge['type']=='state']
+    states = IBGE.loc[IBGE['type']=='state']
     states['value'] = states['value'].astype(str)
     states['value'] = states['value'].str.replace('.0', '', regex=False)
     dropdown = states.drop(labels=['type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_dropdown_cities(state):
-    ibge = pd.read_csv('./dados/cities_ibge_code.csv')
-    state_abr = ibge.loc[ibge['value']==int(state)].state.item()
-    cities = ibge.loc[(ibge['type']=='city') & (ibge['state']==state_abr)]
+    state_abr = IBGE.loc[IBGE['value']==int(state)].state.item()
+    cities = IBGE.loc[(IBGE['type']=='city') & (IBGE['state']==state_abr)]
     cities['value'] = cities['value'].astype(str)
     cities['value'] = cities['value'].str.replace('.0', '', regex=False)
     dropdown = cities.drop(labels=['type', 'state'], axis=1).to_dict('records')
     return(dropdown)
+
+def get_ibge_label(ibge_code, type):
+    if(type == 'city'):
+        label = IBGE.loc[IBGE['value'] == int(ibge_code)].label.item()
+        label = '{} ({})'.format(label, IBGE.loc[IBGE['value'] == int(ibge_code)].state.item())
+    else:
+        label = IBGE.loc[IBGE['value'] == int(ibge_code)].label.item()
+    return(label)
 
 def get_data(ibge_code):
     PARAMS = {'city_ibge_code':ibge_code}
@@ -46,7 +55,6 @@ def get_br_data():
     data = r.json()
     data = data['results']
     df = pd.read_json(json.dumps(data))
-    df
     return (df)
 
 def generate_scatter_fig(x, y, type):
@@ -128,7 +136,7 @@ def generate_histogram_fig(x, y, type):
     )
     return(fig)
 
-def generate_indicator(data, change, type):
+def generate_indicator(data, change, date, type):
     if(type == 'deaths'):
         fig = [
             html.Center(
@@ -136,7 +144,7 @@ def generate_indicator(data, change, type):
                     html.H2(data),
                     html.H6('Óbitos totais'),
                     html.Center(html.H3(change)),
-                    html.H6('Novos óbitos')
+                    html.H6('Novos óbitos em {:%d/%m}'.format(date))
                 ]
             )
         ]
@@ -147,7 +155,7 @@ def generate_indicator(data, change, type):
                     html.H2(data),
                     html.H6('Casos totais'),
                     html.Center(html.H3(change)),
-                    html.H6('Novos casos')
+                    html.H6('Novos casos em {:%d/%m}'.format(date))
                 ]
             )
         ]
@@ -194,8 +202,8 @@ def get_growth_data(df):
     last = (group_ew.iloc[-3].item() / pop) * 100000
     return(current, last)
 
-def generate_graphs(ibge):
-    df = get_data(ibge)
+def generate_graphs(ibge_code):
+    df = get_data(ibge_code)
     num = df._get_numeric_data()
     num[num < 0] = 0
 
@@ -238,15 +246,17 @@ def generate_graphs(ibge):
     childrens.append(deaths_week)
 
     ind_cases = generate_indicator(
-        data=str('{:,d}'.format(df.loc[df['is_last']==True, 'last_available_confirmed'].item())).replace(',','.'),
-        change=str('{:,d}'.format(df.loc[df['is_last']==True, 'new_confirmed'].item())).replace(',','.'),
+        data='{:,d}'.format(df.loc[df['is_last']==True, 'last_available_confirmed'].item()).replace(',','.'),
+        change='{:,d}'.format(df.loc[df['is_last']==True, 'new_confirmed'].item()).replace(',','.'),
+        date=df.loc[df['is_last']==True, 'date'].item(),
         type='confirmed'
     )
     childrens.append(ind_cases)
 
     ind_deaths = generate_indicator(
-        data=df.loc[df['is_last']==True, 'last_available_deaths'].item(),
-        change=df.loc[df['is_last']==True, 'new_deaths'].item(),
+        data='{:,d}'.format(df.loc[df['is_last']==True, 'last_available_deaths'].item()).replace(',', '.'),
+        change='{:,d}'.format(df.loc[df['is_last']==True, 'new_deaths'].item()).replace(',','.'),
+        date=df.loc[df['is_last']==True, 'date'].item(),
         type='deaths'
     )
     childrens.append(ind_deaths)
@@ -303,30 +313,34 @@ DROPDOWNS = [
     ),
 ]
 
+CURRENT_DATA = [
+    html.Center(html.H1(id='location-header'))
+]
+
 INDICATORS = [
     dbc.Col(
         [
             dbc.Card(
                 [
-                    dbc.CardHeader('CASOS', style={'text-align': 'center'}),
+                    dbc.CardHeader('CASOS CONFIRMADOS', style={'text-align': 'center'}),
                     dbc.CardBody([html.Div([], id="indicator-cases")])
                 ],
                 color='info', inverse=True, style={"marginTop": 15},
             ),
         ],
-        sm=3, lg=3,
+        sm=12, md=6, lg=4, xl=3,
     ),
     dbc.Col(
         [
              dbc.Card(
                 [
-                    dbc.CardHeader('ÓBITOS', style={'text-align': 'center'}),
+                    dbc.CardHeader('ÓBITOS CONFIRMADOS', style={'text-align': 'center'}),
                     dbc.CardBody([html.Div([], id="indicator-deaths")])
                 ],
                 color='danger', inverse=True, style={"marginTop": 15},
             )
         ],
-        sm=3, lg=3,
+        sm=12, md=6, lg=4, xl=3,
     ),
     dbc.Col(
         [
@@ -338,19 +352,21 @@ INDICATORS = [
                 color='warning', inverse=True, style={"marginTop": 15},
             )
         ],
-        sm=3, lg=3,
+        sm=12, md=12, lg=4, xl=3
     )
 ]
 
 
 GRAPH_CASES = [
     dbc.Col(
-        dbc.Card(
-            [
-                dbc.CardHeader('Casos acumulados'),
-                dbc.CardBody([html.Div([], id="graph-cases")])
-            ]
-        ), lg={'order':1, 'size':6}, style={"marginTop": 15}
+        [
+            dbc.Card(
+                [
+                    dbc.CardHeader('Casos acumulados'),
+                    dbc.CardBody([html.Div([], id="graph-cases")])
+                ]
+            ),
+        ], sm=12, lg=6, style={"marginTop": 15}
     ), 
     dbc.Col(
         dbc.Card(
@@ -358,7 +374,7 @@ GRAPH_CASES = [
                 dbc.CardHeader('Óbitos acumulados'),
                 dbc.CardBody([html.Div([], id="graph-deaths")])
             ]
-        ), lg={'order':12, 'size':6}, style={"marginTop": 15}
+        ), sm=12, lg=6, style={"marginTop": 15}
     )
 ]
 
@@ -368,7 +384,7 @@ CASES_PER_DAY = dbc.Col(
             dbc.CardHeader('Casos por dia de notificação'),
             dbc.CardBody([html.Div([], id="graph-cases-day")])
         ]
-    ), lg={'order':1, 'size':6}, style={"marginTop": 15}
+    ), sm=12, lg=6, style={"marginTop": 15}
 )
 
 DEATHS_PER_DAY = dbc.Col(
@@ -377,7 +393,7 @@ DEATHS_PER_DAY = dbc.Col(
             dbc.CardHeader('Óbitos por dia de notificação'),
             dbc.CardBody([html.Div([], id="graph-deaths-day")])
         ]
-    ), lg={'order':12, 'size':6}, style={"marginTop": 15}
+    ), sm=12, lg=6, style={"marginTop": 15}
 )
 
 CASES_PER_WEEK = dbc.Col(
@@ -398,9 +414,40 @@ DEATHS_PER_WEEK = dbc.Col(
     ), lg={'order':12, 'size':6}, style={"marginTop": 15}
 )
 
+ABOUT = [
+    dbc.Col(
+        dbc.Card(
+            [
+                html.Center(dbc.CardHeader('Fonte dos dados')),
+                dbc.CardBody(
+                    [
+                        html.P("""Os dados do brashboard são provenientes do projeto brasil.io, 
+                        que compila os dados das Secretarias Estaduais de Saúde em uma base dados unificada."""),
+                        html.P(["Para mais informações acesse o site: ", html.A('brasil.io', href='https://brasil.io')]),
+                        
+                    ]
+                )
+            ]
+        ), sm=12, lg=9, style={"marginTop": 15, 'marginBottom': 15}
+    ),
+    dbc.Col(
+        dbc.Card(
+            [
+                html.Center(dbc.CardHeader('Código fonte')),
+                dbc.CardBody(
+                    [
+                        html.Center(html.A(html.Img(src=GITHUB_LOGO, height='80px'), href=URL_GITHUB))
+                    ]
+                )
+            ]
+        ), sm=12, lg=3, style={"marginTop": 15, 'marginBottom': 15}
+    )
+]
+
 BODY = dbc.Container(
     [
         dbc.Row(DROPDOWNS, justify='center', style={"marginTop": 30}),
+        dbc.Row(CURRENT_DATA, justify='center', style={"marginTop": 30}),
         dbc.Spinner(
             [
                 dbc.Row(INDICATORS, justify='center', style={"marginTop": 15}),
@@ -408,13 +455,15 @@ BODY = dbc.Container(
                 dbc.Row([CASES_PER_WEEK, DEATHS_PER_WEEK], style={"marginTop": 15}),
                 dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
             ]
-        )
+        ),
+        dbc.Row(html.H2('Sobre o Brashboard'), justify='left', style={"marginTop": 30, 'marginLeft':15}),
+        dbc.Row(ABOUT, justify='center', style={"marginTop": 15, "marginBottom": 30})
     ], fluid=True
 )
 
 df = get_br_data()
 br_date = df.groupby(['date']).sum()
-br_date = br_date.reset_index()
+br_date = br_date.reset_index() 
 br_ew = df.groupby(['epidemiological_week']).sum()
 br_ew = br_ew.reset_index()
 
@@ -451,7 +500,8 @@ def update_dropdowns(state):
     Output('graph-deaths-week', 'children'),
     Output('indicator-cases', 'children'),
     Output('indicator-deaths', 'children'),
-    Output('indicator-growth', 'children')],
+    Output('indicator-growth', 'children'),
+    Output('location-header', 'children')],
 
     [Input('submit-button', 'n_clicks')],
 
@@ -473,13 +523,19 @@ def update_graphs(click, state, city,
                     ind_cases, ind_deaths, ind_growth):
     if(city is not None):
         childrens = generate_graphs(city)
+        location = get_ibge_label(city, type='city')
+        childrens.append(location)
 
     else:
         if(state is not None):
             childrens = generate_graphs(state)
+            location = get_ibge_label(state, type='state')
+            childrens.append(location)
         else:
             # National data
             childrens = []
+            location = 'Brasil'
+            
             cases  = dcc.Graph(
                 figure = generate_scatter_fig(x=br_date['date'], y=br_date['last_available_confirmed'], type='last_available_confirmed'),
                 config = {'displayModeBar': False}
@@ -519,6 +575,7 @@ def update_graphs(click, state, city,
             ind_cases = generate_indicator(
                 data='{:,d}'.format(br_date.iloc[-1]['last_available_confirmed'].item()).replace(',','.'),
                 change='{:,d}'.format(br_date.iloc[-1]['new_confirmed'].item()).replace(',','.'),
+                date=br_date.iloc[-1]['date'],
                 type='confirmed'
             )
             childrens.append(ind_cases)
@@ -526,6 +583,7 @@ def update_graphs(click, state, city,
             ind_deaths = generate_indicator(
                 data='{:,d}'.format(br_date.iloc[-1]['last_available_deaths'].item()).replace(',','.'),
                 change='{:,d}'.format(br_date.iloc[-1]['new_deaths'].item()).replace(',','.'),
+                date=br_date.iloc[-1]['date'],
                 type='deaths'
             )
             childrens.append(ind_deaths)
@@ -534,6 +592,8 @@ def update_graphs(click, state, city,
             last = (br_ew.iloc[-3]['new_confirmed'].item() / POP_BR) * 100000
             ind_growth = generate_growth_indicator(current, last)
             childrens.append(ind_growth)
+
+            childrens.append(location)
 
     return(childrens)
 
