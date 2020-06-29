@@ -422,7 +422,7 @@ ABOUT = [
                 dbc.CardBody(
                     [
                         html.P("""Os dados do brashboard são provenientes do projeto brasil.io, 
-                        que compila os dados das Secretarias Estaduais de Saúde em uma base dados unificada."""),
+                        que compila os dados das Secretarias Estaduais de Saúde em uma base de dados unificada."""),
                         html.P(["Para mais informações acesse o site: ", html.A('brasil.io', href='https://brasil.io')]),
                         
                     ]
