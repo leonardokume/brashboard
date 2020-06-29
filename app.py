@@ -468,10 +468,16 @@ br_ew = df.groupby(['epidemiological_week']).sum()
 br_ew = br_ew.reset_index()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED],
-    meta_tags=[{
+    meta_tags=[
+        {
         'name': 'viewport',
         'content': 'width=device-width, initial-scale=1.0'
-    }],
+        },
+        {
+            'name':'google-site-verification',
+            'content':'bWc3qO1Kvej2eSTItnsNmF_6sgpe_yKTOtlrwvjVP6M'
+        }
+    ],
 )
 
 app.title = 'Brashboard: situação do coronavírus nas cidades'
