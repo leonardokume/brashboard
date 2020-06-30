@@ -168,7 +168,7 @@ def generate_growth_indicator(data, change):
             html.Center(
                 [
                     html.H2('{:,.2f}'.format(data).replace('.',',')),
-                    html.H6('Novos casos a cada 100k habitantes')
+                    html.H6('Novos casos a cada 100 mil habitantes')
                 ]
             ),
             html.Center(
@@ -183,7 +183,7 @@ def generate_growth_indicator(data, change):
                 html.Center(
                 [
                     html.H2('{:,.2f}'.format(data).replace('.',',')),
-                    html.H6('Novos casos a cada 100k habitantes')
+                    html.H6('Novos casos a cada 100 mil habitantes')
                 ]
             ),
             html.Center(
@@ -313,7 +313,7 @@ DROPDOWNS = [
     ),
 ]
 
-CURRENT_DATA = [
+LOCATION_LABEL = [
     html.Center(html.H1(id='location-header'))
 ]
 
@@ -402,7 +402,7 @@ CASES_PER_WEEK = dbc.Col(
             dbc.CardHeader('Casos por semana epidemiológica'),
             dbc.CardBody([html.Div([], id="graph-cases-week")])
         ]
-    ), lg={'order':1, 'size':6}, style={"marginTop": 15}
+    ), sm=12, lg=6, style={"marginTop": 15}
 )
 
 DEATHS_PER_WEEK = dbc.Col(
@@ -411,7 +411,7 @@ DEATHS_PER_WEEK = dbc.Col(
             dbc.CardHeader('Óbitos por semana epidemiológica'),
             dbc.CardBody([html.Div([], id="graph-deaths-week")])
         ]
-    ), lg={'order':12, 'size':6}, style={"marginTop": 15}
+    ), sm=12, lg=6, style={"marginTop": 15}
 )
 
 ABOUT = [
@@ -421,10 +421,8 @@ ABOUT = [
                 html.Center(dbc.CardHeader('Fonte dos dados')),
                 dbc.CardBody(
                     [
-                        html.P("""Os dados do brashboard são provenientes do projeto brasil.io, 
-                        que compila os dados das Secretarias Estaduais de Saúde em uma base de dados unificada."""),
-                        html.P(["Para mais informações acesse o site: ", html.A('brasil.io', href='https://brasil.io')]),
-                        
+                        html.P(["Os dados do brashboard são provenientes do projeto ", html.A('brasil.io', href='https://brasil.io'),
+                        ", que compila os dados das Secretarias Estaduais de Saúde em uma base de dados unificada."])                   
                     ]
                 )
             ]
@@ -436,27 +434,27 @@ ABOUT = [
                 html.Center(dbc.CardHeader('Código fonte')),
                 dbc.CardBody(
                     [
-                        html.Center(html.A(html.Img(src=GITHUB_LOGO, height='80px'), href=URL_GITHUB))
+                        html.Center(html.A(html.Img(src=GITHUB_LOGO, height='40px'), href=URL_GITHUB))
                     ]
                 )
             ]
-        ), sm=12, lg=3, style={"marginTop": 15, 'marginBottom': 15}
+        ), sm=12, lg=2, style={"marginTop": 15, 'marginBottom': 15}
     )
 ]
 
 BODY = dbc.Container(
     [
         dbc.Row(DROPDOWNS, justify='center', style={"marginTop": 30}),
-        dbc.Row(CURRENT_DATA, justify='center', style={"marginTop": 30}),
         dbc.Spinner(
             [
+                dbc.Row(LOCATION_LABEL, justify='center', style={"marginTop": 30}),
                 dbc.Row(INDICATORS, justify='center', style={"marginTop": 15}),
                 dbc.Row(GRAPH_CASES, style={"marginTop": 15}),
                 dbc.Row([CASES_PER_WEEK, DEATHS_PER_WEEK], style={"marginTop": 15}),
                 dbc.Row([CASES_PER_DAY, DEATHS_PER_DAY], style={"marginTop": 15}),
             ]
         ),
-        dbc.Row(html.H2('Sobre o Brashboard'), justify='left', style={"marginTop": 30, 'marginLeft':15}),
+        dbc.Row(html.H2('Sobre o Brashboard'), justify='center', style={"marginTop": 30, 'marginLeft':15}),
         dbc.Row(ABOUT, justify='center', style={"marginTop": 15, "marginBottom": 30})
     ], fluid=True
 )
