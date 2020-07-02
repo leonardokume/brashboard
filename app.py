@@ -10,48 +10,48 @@ from dash.dependencies import Input, Output, State
 
 pd.set_option('mode.chained_assignment', None)
 
-URL_data = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
+URL_DATA = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
 URL_GITHUB = 'https://github.com/leonardokume/brashboard'
 LOGO = './assets/logo.png'
 GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
 POP_BR = 210147125
-IBGE = pd.read_csv('./dados/cities_ibge_code.csv')
-
+STATES = pd.read_csv('./dados/states_ibge_codes.csv')
+CITIES = pd.read_csv('./dados/cities_ibge_codes.csv')
 
 def get_dropdown_states():
-    states = IBGE.loc[IBGE['type']=='state']
-    states['value'] = states['value'].astype(str)
-    states['value'] = states['value'].str.replace('.0', '', regex=False)
-    dropdown = states.drop(labels=['type', 'state'], axis=1).to_dict('records')
+    """Return a dictionary with states labels and IBGE codes"""
+    dropdown = STATES.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_dropdown_cities(state):
-    state_abr = IBGE.loc[IBGE['value']==int(state)].state.item()
-    cities = IBGE.loc[(IBGE['type']=='city') & (IBGE['state']==state_abr)]
-    cities['value'] = cities['value'].astype(str)
-    cities['value'] = cities['value'].str.replace('.0', '', regex=False)
-    dropdown = cities.drop(labels=['type', 'state'], axis=1).to_dict('records')
+    """Return a dictionary with cities labels and IBGE codes"""
+    state_abr = STATES.loc[STATES['value']==state].state.item()
+    state_cities = CITIES.loc[(CITIES['place_type']=='city') & (CITIES['state']==state_abr)]
+    dropdown = state_cities.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_ibge_label(ibge_code, type):
+    """Return a string containing the label from an IBGE code"""
     if(type == 'city'):
-        label = IBGE.loc[IBGE['value'] == int(ibge_code)].label.item()
-        label = '{} ({})'.format(label, IBGE.loc[IBGE['value'] == int(ibge_code)].state.item())
+        label = CITIES.loc[CITIES['value'] == int(ibge_code)].label.item()
+        label = '{} ({})'.format(label, CITIES.loc[CITIES['value'] == int(ibge_code)].state.item())
     else:
-        label = IBGE.loc[IBGE['value'] == int(ibge_code)].label.item()
+        label = STATES.loc[STATES['value'] == int(ibge_code)].label.item()
     return(label)
 
 def get_data(ibge_code):
+    """Return a dataframe with the data from an IBGE code"""
     PARAMS = {'city_ibge_code':ibge_code}
-    r = requests.get(url = URL_data, params = PARAMS)
+    r = requests.get(url = URL_DATA, params = PARAMS)
     data = r.json()
     data = data['results']
     df = pd.read_json(json.dumps(data))
     return (df)
 
 def get_br_data():
+    """Return a dataframe with the national data, which is the data from every state"""
     PARAMS = {'place_type':'state', 'page_size':'10000'}
-    r = requests.get(url = URL_data, params = PARAMS)
+    r = requests.get(url = URL_DATA, params = PARAMS)
     data = r.json()
     data = data['results']
     df = pd.read_json(json.dumps(data))
@@ -266,7 +266,6 @@ def generate_graphs(ibge_code):
     childrens.append(ind_growth)
 
     return(childrens)
-
     
 NAVBAR = dbc.Navbar(
     [
@@ -355,7 +354,6 @@ INDICATORS = [
         sm=12, md=12, lg=4, xl=3
     )
 ]
-
 
 GRAPH_CASES = [
     dbc.Col(
@@ -459,6 +457,8 @@ BODY = dbc.Container(
     ], fluid=True
 )
 
+# National data is calculated from the sum of the data from all states
+# It is done here and not inside a function to avoid redundant calculations
 df = get_br_data()
 br_date = df.groupby(['date']).sum()
 br_date = br_date.reset_index() 
@@ -468,12 +468,16 @@ br_ew = br_ew.reset_index()
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED],
     meta_tags=[
         {
-        'name': 'viewport',
-        'content': 'width=device-width, initial-scale=1.0'
+            'name': 'viewport',
+            'content': 'width=device-width, initial-scale=1.0'
         },
         {
             'name':'google-site-verification',
             'content':'bWc3qO1Kvej2eSTItnsNmF_6sgpe_yKTOtlrwvjVP6M'
+        },
+        {
+            'name':'description',
+            'content':'Consulte o número de casos, óbitos e evolução da pandemia de COVID-19 na sua cidade.'
         }
     ],
 )
@@ -513,6 +517,7 @@ server = app.server
 
 app.layout = dbc.Container([NAVBAR, BODY], fluid=True, style={'padding-right':'0px', 'padding-left':'0px'})
 
+# Callback to update city dropdown only when a state is selected
 @app.callback(
     [Output('city', 'options'),
     Output('city', 'disabled'),
@@ -524,6 +529,7 @@ def update_dropdowns(state):
     else:
         return([], True, None)
 
+# Callback to update the graphs only after the submit button is pressed
 @app.callback(
     [Output('graph-cases', 'children'),
     Output('graph-deaths', 'children'),

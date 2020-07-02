@@ -1,0 +1,5111 @@
+label,value,place_type,state
+Acrelândia,1200013,city,AC
+Assis Brasil,1200054,city,AC
+Brasiléia,1200104,city,AC
+Bujari,1200138,city,AC
+Capixaba,1200179,city,AC
+Cruzeiro do Sul,1200203,city,AC
+Epitaciolândia,1200252,city,AC
+Feijó,1200302,city,AC
+Jordão,1200328,city,AC
+Mâncio Lima,1200336,city,AC
+Manoel Urbano,1200344,city,AC
+Marechal Thaumaturgo,1200351,city,AC
+Plácido de Castro,1200385,city,AC
+Porto Acre,1200807,city,AC
+Porto Walter,1200393,city,AC
+Rio Branco,1200401,city,AC
+Rodrigues Alves,1200427,city,AC
+Santa Rosa do Purus,1200435,city,AC
+Senador Guiomard,1200450,city,AC
+Sena Madureira,1200500,city,AC
+Tarauacá,1200609,city,AC
+Xapuri,1200708,city,AC
+Açailândia,2100055,city,MA
+Afonso Cunha,2100105,city,MA
+Água Doce do Maranhão,2100154,city,MA
+Alcântara,2100204,city,MA
+Aldeias Altas,2100303,city,MA
+Altamira do Maranhão,2100402,city,MA
+Alto Alegre do Maranhão,2100436,city,MA
+Alto Alegre do Pindaré,2100477,city,MA
+Alto Parnaíba,2100501,city,MA
+Amapá do Maranhão,2100550,city,MA
+Amarante do Maranhão,2100600,city,MA
+Anajatuba,2100709,city,MA
+Anapurus,2100808,city,MA
+Apicum-Açu,2100832,city,MA
+Araguanã,2100873,city,MA
+Araioses,2100907,city,MA
+Arame,2100956,city,MA
+Arari,2101004,city,MA
+Axixá,2101103,city,MA
+Bacabal,2101202,city,MA
+Bacabeira,2101251,city,MA
+Bacuri,2101301,city,MA
+Bacurituba,2101350,city,MA
+Balsas,2101400,city,MA
+Barão de Grajaú,2101509,city,MA
+Barra do Corda,2101608,city,MA
+Barreirinhas,2101707,city,MA
+Belágua,2101731,city,MA
+Bela Vista do Maranhão,2101772,city,MA
+Benedito Leite,2101806,city,MA
+Bequimão,2101905,city,MA
+Bernardo do Mearim,2101939,city,MA
+Boa Vista do Gurupi,2101970,city,MA
+Bom Jardim,2102002,city,MA
+Bom Jesus das Selvas,2102036,city,MA
+Bom Lugar,2102077,city,MA
+Brejo,2102101,city,MA
+Brejo de Areia,2102150,city,MA
+Buriti,2102200,city,MA
+Buriti Bravo,2102309,city,MA
+Buriticupu,2102325,city,MA
+Buritirana,2102358,city,MA
+Cachoeira Grande,2102374,city,MA
+Cajapió,2102408,city,MA
+Cajari,2102507,city,MA
+Campestre do Maranhão,2102556,city,MA
+Cândido Mendes,2102606,city,MA
+Cantanhede,2102705,city,MA
+Capinzal do Norte,2102754,city,MA
+Carolina,2102804,city,MA
+Carutapera,2102903,city,MA
+Caxias,2103000,city,MA
+Cedral,2103109,city,MA
+Central do Maranhão,2103125,city,MA
+Centro do Guilherme,2103158,city,MA
+Centro Novo do Maranhão,2103174,city,MA
+Chapadinha,2103208,city,MA
+Cidelândia,2103257,city,MA
+Codó,2103307,city,MA
+Coelho Neto,2103406,city,MA
+Colinas,2103505,city,MA
+Conceição do Lago-Açu,2103554,city,MA
+Coroatá,2103604,city,MA
+Cururupu,2103703,city,MA
+Davinópolis,2103752,city,MA
+Dom Pedro,2103802,city,MA
+Duque Bacelar,2103901,city,MA
+Esperantinópolis,2104008,city,MA
+Estreito,2104057,city,MA
+Feira Nova do Maranhão,2104073,city,MA
+Fernando Falcão,2104081,city,MA
+Formosa da Serra Negra,2104099,city,MA
+Fortaleza dos Nogueiras,2104107,city,MA
+Fortuna,2104206,city,MA
+Godofredo Viana,2104305,city,MA
+Gonçalves Dias,2104404,city,MA
+Governador Archer,2104503,city,MA
+Governador Edison Lobão,2104552,city,MA
+Governador Eugênio Barros,2104602,city,MA
+Governador Luiz Rocha,2104628,city,MA
+Governador Newton Bello,2104651,city,MA
+Governador Nunes Freire,2104677,city,MA
+Graça Aranha,2104701,city,MA
+Grajaú,2104800,city,MA
+Guimarães,2104909,city,MA
+Humberto de Campos,2105005,city,MA
+Icatu,2105104,city,MA
+Igarapé do Meio,2105153,city,MA
+Igarapé Grande,2105203,city,MA
+Imperatriz,2105302,city,MA
+Itaipava do Grajaú,2105351,city,MA
+Itapecuru Mirim,2105401,city,MA
+Itinga do Maranhão,2105427,city,MA
+Jatobá,2105450,city,MA
+Jenipapo dos Vieiras,2105476,city,MA
+João Lisboa,2105500,city,MA
+Joselândia,2105609,city,MA
+Junco do Maranhão,2105658,city,MA
+Lagoa Grande do Maranhão,2105963,city,MA
+Lago da Pedra,2105708,city,MA
+Lago do Junco,2105807,city,MA
+Lago dos Rodrigues,2105948,city,MA
+Lago Verde,2105906,city,MA
+Lajeado Novo,2105989,city,MA
+Lima Campos,2106003,city,MA
+Loreto,2106102,city,MA
+Luís Domingues,2106201,city,MA
+Magalhães de Almeida,2106300,city,MA
+Maracaçumé,2106326,city,MA
+Marajá do Sena,2106359,city,MA
+Maranhãozinho,2106375,city,MA
+Mata Roma,2106409,city,MA
+Matinha,2106508,city,MA
+Matões,2106607,city,MA
+Matões do Norte,2106631,city,MA
+Milagres do Maranhão,2106672,city,MA
+Mirador,2106706,city,MA
+Miranda do Norte,2106755,city,MA
+Mirinzal,2106805,city,MA
+Monção,2106904,city,MA
+Montes Altos,2107001,city,MA
+Morros,2107100,city,MA
+Nina Rodrigues,2107209,city,MA
+Nova Colinas,2107258,city,MA
+Nova Iorque,2107308,city,MA
+Nova Olinda do Maranhão,2107357,city,MA
+Olho d'Água das Cunhãs,2107407,city,MA
+Olinda Nova do Maranhão,2107456,city,MA
+Paço do Lumiar,2107506,city,MA
+Palmeirândia,2107605,city,MA
+Paraibano,2107704,city,MA
+Parnarama,2107803,city,MA
+Passagem Franca,2107902,city,MA
+Pastos Bons,2108009,city,MA
+Paulino Neves,2108058,city,MA
+Paulo Ramos,2108108,city,MA
+Pedreiras,2108207,city,MA
+Pedro do Rosário,2108256,city,MA
+Penalva,2108306,city,MA
+Peri Mirim,2108405,city,MA
+Peritoró,2108454,city,MA
+Pindaré-Mirim,2108504,city,MA
+Pinheiro,2108603,city,MA
+Pio XII,2108702,city,MA
+Pirapemas,2108801,city,MA
+Poção de Pedras,2108900,city,MA
+Porto Franco,2109007,city,MA
+Porto Rico do Maranhão,2109056,city,MA
+Presidente Dutra,2109106,city,MA
+Presidente Juscelino,2109205,city,MA
+Presidente Médici,2109239,city,MA
+Presidente Sarney,2109270,city,MA
+Presidente Vargas,2109304,city,MA
+Primeira Cruz,2109403,city,MA
+Raposa,2109452,city,MA
+Riachão,2109502,city,MA
+Ribamar Fiquene,2109551,city,MA
+Rosário,2109601,city,MA
+Sambaíba,2109700,city,MA
+Santa Filomena do Maranhão,2109759,city,MA
+Santa Helena,2109809,city,MA
+Santa Inês,2109908,city,MA
+Santa Luzia,2110005,city,MA
+Santa Luzia do Paruá,2110039,city,MA
+Santana do Maranhão,2110237,city,MA
+Santa Quitéria do Maranhão,2110104,city,MA
+Santa Rita,2110203,city,MA
+Santo Amaro do Maranhão,2110278,city,MA
+Santo Antônio dos Lopes,2110302,city,MA
+São Benedito do Rio Preto,2110401,city,MA
+São Bento,2110500,city,MA
+São Bernardo,2110609,city,MA
+São Domingos do Azeitão,2110658,city,MA
+São Domingos do Maranhão,2110708,city,MA
+São Francisco do Brejão,2110856,city,MA
+São Francisco do Maranhão,2110906,city,MA
+São João Batista,2111003,city,MA
+São João do Carú,2111029,city,MA
+São João do Paraíso,2111052,city,MA
+São João do Soter,2111078,city,MA
+São João dos Patos,2111102,city,MA
+São José de Ribamar,2111201,city,MA
+São José dos Basílios,2111250,city,MA
+São Luís,2111300,city,MA
+São Luís Gonzaga do Maranhão,2111409,city,MA
+São Mateus do Maranhão,2111508,city,MA
+São Pedro da Água Branca,2111532,city,MA
+São Pedro dos Crentes,2111573,city,MA
+São Raimundo das Mangabeiras,2111607,city,MA
+São Raimundo do Doca Bezerra,2111631,city,MA
+São Roberto,2111672,city,MA
+São Vicente Ferrer,2111706,city,MA
+Satubinha,2111722,city,MA
+Senador Alexandre Costa,2111748,city,MA
+Senador La Rocque,2111763,city,MA
+Serrano do Maranhão,2111789,city,MA
+Sítio Novo,2111805,city,MA
+Sucupira do Norte,2111904,city,MA
+Sucupira do Riachão,2111953,city,MA
+Tasso Fragoso,2112001,city,MA
+Timbiras,2112100,city,MA
+Timon,2112209,city,MA
+Trizidela do Vale,2112233,city,MA
+Tufilândia,2112274,city,MA
+Tuntum,2112308,city,MA
+Turiaçu,2112407,city,MA
+Turilândia,2112456,city,MA
+Tutóia,2112506,city,MA
+Urbano Santos,2112605,city,MA
+Vargem Grande,2112704,city,MA
+Viana,2112803,city,MA
+Vila Nova dos Martírios,2112852,city,MA
+Vitória do Mearim,2112902,city,MA
+Vitorino Freire,2113009,city,MA
+Zé Doca,2114007,city,MA
+Abadia dos Dourados,3100104,city,MG
+Abaeté,3100203,city,MG
+Abre Campo,3100302,city,MG
+Acaiaca,3100401,city,MG
+Açucena,3100500,city,MG
+Água Comprida,3100708,city,MG
+Aguanil,3100807,city,MG
+Águas Formosas,3100906,city,MG
+Águas Vermelhas,3101003,city,MG
+Aimorés,3101102,city,MG
+Além Paraíba,3101508,city,MG
+Alfenas,3101607,city,MG
+Alfredo Vasconcelos,3101631,city,MG
+Almenara,3101706,city,MG
+Alpercata,3101805,city,MG
+Alpinópolis,3101904,city,MG
+Alterosa,3102001,city,MG
+Alto Caparaó,3102050,city,MG
+Alto Jequitibá,3153509,city,MG
+Alto Rio Doce,3102100,city,MG
+Alvarenga,3102209,city,MG
+Alvinópolis,3102308,city,MG
+Alvorada de Minas,3102407,city,MG
+Amparo do Serra,3102506,city,MG
+Andradas,3102605,city,MG
+Andrelândia,3102803,city,MG
+Antônio Carlos,3102902,city,MG
+Antônio Dias,3103009,city,MG
+Araçaí,3103207,city,MG
+Araçuaí,3103405,city,MG
+Araguari,3103504,city,MG
+Arantina,3103603,city,MG
+Araporã,3103751,city,MG
+Arapuá,3103801,city,MG
+Araújos,3103900,city,MG
+Araxá,3104007,city,MG
+Arceburgo,3104106,city,MG
+Arcos,3104205,city,MG
+Argirita,3104403,city,MG
+Arinos,3104502,city,MG
+Astolfo Dutra,3104601,city,MG
+Ataléia,3104700,city,MG
+Augusto de Lima,3104809,city,MG
+Baependi,3104908,city,MG
+Baldim,3105004,city,MG
+Bandeira,3105202,city,MG
+Barão de Cocais,3105400,city,MG
+Barão de Monte Alto,3105509,city,MG
+Barbacena,3105608,city,MG
+Barra Longa,3105707,city,MG
+Barroso,3105905,city,MG
+Bela Vista de Minas,3106002,city,MG
+Belmiro Braga,3106101,city,MG
+Belo Horizonte,3106200,city,MG
+Belo Oriente,3106309,city,MG
+Belo Vale,3106408,city,MG
+Berilo,3106507,city,MG
+Betim,3106705,city,MG
+Bias Fortes,3106804,city,MG
+Bicas,3106903,city,MG
+Biquinhas,3107000,city,MG
+Boa Esperança,3107109,city,MG
+Bocaina de Minas,3107208,city,MG
+Bocaiúva,3107307,city,MG
+Bom Despacho,3107406,city,MG
+Bom Jardim de Minas,3107505,city,MG
+Bom Jesus do Amparo,3107703,city,MG
+Bom Jesus do Galho,3107802,city,MG
+Bom Repouso,3107901,city,MG
+Bom Sucesso,3108008,city,MG
+Bonfim,3108107,city,MG
+Bonfinópolis de Minas,3108206,city,MG
+Bonito de Minas,3108255,city,MG
+Borda da Mata,3108305,city,MG
+Botelhos,3108404,city,MG
+Brasilândia de Minas,3108552,city,MG
+Brasília de Minas,3108602,city,MG
+Brás Pires,3108701,city,MG
+Braúnas,3108800,city,MG
+Brazópolis,3108909,city,MG
+Brumadinho,3109006,city,MG
+Bueno Brandão,3109105,city,MG
+Buenópolis,3109204,city,MG
+Bugre,3109253,city,MG
+Buritis,3109303,city,MG
+Buritizeiro,3109402,city,MG
+Cabeceira Grande,3109451,city,MG
+Cabo Verde,3109501,city,MG
+Cachoeira da Prata,3109600,city,MG
+Cachoeira de Minas,3109709,city,MG
+Cachoeira de Pajeú,3102704,city,MG
+Cachoeira Dourada,3109808,city,MG
+Caetanópolis,3109907,city,MG
+Caeté,3110004,city,MG
+Caiana,3110103,city,MG
+Cajuri,3110202,city,MG
+Caldas,3110301,city,MG
+Camanducaia,3110509,city,MG
+Cambuí,3110608,city,MG
+Cambuquira,3110707,city,MG
+Campanário,3110806,city,MG
+Campanha,3110905,city,MG
+Campestre,3111002,city,MG
+Campina Verde,3111101,city,MG
+Campo Belo,3111200,city,MG
+Campo do Meio,3111309,city,MG
+Campo Florido,3111408,city,MG
+Campos Altos,3111507,city,MG
+Campos Gerais,3111606,city,MG
+Canápolis,3111804,city,MG
+Cana Verde,3111903,city,MG
+Candeias,3112000,city,MG
+Caparaó,3112109,city,MG
+Capela Nova,3112208,city,MG
+Capelinha,3112307,city,MG
+Capetinga,3112406,city,MG
+Capim Branco,3112505,city,MG
+Capinópolis,3112604,city,MG
+Capitão Andrade,3112653,city,MG
+Capitão Enéas,3112703,city,MG
+Capitólio,3112802,city,MG
+Caraí,3113008,city,MG
+Caranaíba,3113107,city,MG
+Carandaí,3113206,city,MG
+Carangola,3113305,city,MG
+Caratinga,3113404,city,MG
+Carbonita,3113503,city,MG
+Careaçu,3113602,city,MG
+Carlos Chagas,3113701,city,MG
+Carmésia,3113800,city,MG
+Carmo da Cachoeira,3113909,city,MG
+Carmo da Mata,3114006,city,MG
+Carmo de Minas,3114105,city,MG
+Carmo do Cajuru,3114204,city,MG
+Carmo do Paranaíba,3114303,city,MG
+Carmo do Rio Claro,3114402,city,MG
+Carmópolis de Minas,3114501,city,MG
+Carneirinho,3114550,city,MG
+Carvalhópolis,3114709,city,MG
+Cascalho Rico,3115003,city,MG
+Cássia,3115102,city,MG
+Cataguases,3115300,city,MG
+Catas Altas,3115359,city,MG
+Catas Altas da Noruega,3115409,city,MG
+Catuji,3115458,city,MG
+Caxambu,3115508,city,MG
+Central de Minas,3115706,city,MG
+Centralina,3115805,city,MG
+Chácara,3115904,city,MG
+Chalé,3116001,city,MG
+Chiador,3116209,city,MG
+Cipotânea,3116308,city,MG
+Claraval,3116407,city,MG
+Cláudio,3116605,city,MG
+Coimbra,3116704,city,MG
+Comendador Gomes,3116902,city,MG
+Comercinho,3117009,city,MG
+Conceição da Barra de Minas,3115201,city,MG
+Conceição das Alagoas,3117306,city,MG
+Conceição das Pedras,3117207,city,MG
+Conceição do Mato Dentro,3117504,city,MG
+Conceição do Rio Verde,3117702,city,MG
+Conceição dos Ouros,3117801,city,MG
+Cônego Marinho,3117836,city,MG
+Confins,3117876,city,MG
+Congonhal,3117900,city,MG
+Congonhas,3118007,city,MG
+Congonhas do Norte,3118106,city,MG
+Conselheiro Lafaiete,3118304,city,MG
+Conselheiro Pena,3118403,city,MG
+Contagem,3118601,city,MG
+Coqueiral,3118700,city,MG
+Coração de Jesus,3118809,city,MG
+Cordisburgo,3118908,city,MG
+Corinto,3119104,city,MG
+Coroaci,3119203,city,MG
+Coromandel,3119302,city,MG
+Coronel Fabriciano,3119401,city,MG
+Coronel Pacheco,3119609,city,MG
+Coronel Xavier Chaves,3119708,city,MG
+Córrego Danta,3119807,city,MG
+Córrego do Bom Jesus,3119906,city,MG
+Córrego Fundo,3119955,city,MG
+Córrego Novo,3120003,city,MG
+Couto de Magalhães de Minas,3120102,city,MG
+Crisólita,3120151,city,MG
+Cristais,3120201,city,MG
+Cristina,3120508,city,MG
+Crucilândia,3120607,city,MG
+Cruzeiro da Fortaleza,3120706,city,MG
+Cruzília,3120805,city,MG
+Cuparaque,3120839,city,MG
+Curral de Dentro,3120870,city,MG
+Curvelo,3120904,city,MG
+Datas,3121001,city,MG
+Delfim Moreira,3121100,city,MG
+Delfinópolis,3121209,city,MG
+Delta,3121258,city,MG
+Descoberto,3121308,city,MG
+Desterro de Entre Rios,3121407,city,MG
+Desterro do Melo,3121506,city,MG
+Diamantina,3121605,city,MG
+Diogo de Vasconcelos,3121704,city,MG
+Dionísio,3121803,city,MG
+Divinésia,3121902,city,MG
+Divino,3122009,city,MG
+Divino das Laranjeiras,3122108,city,MG
+Divinópolis,3122306,city,MG
+Divisa Alegre,3122355,city,MG
+Divisa Nova,3122405,city,MG
+Divisópolis,3122454,city,MG
+Dom Bosco,3122470,city,MG
+Dom Cavati,3122504,city,MG
+Dom Joaquim,3122603,city,MG
+Dom Silvério,3122702,city,MG
+Dores de Campos,3123007,city,MG
+Dores de Guanhães,3123106,city,MG
+Dores do Indaiá,3123205,city,MG
+Doresópolis,3123403,city,MG
+Douradoquara,3123502,city,MG
+Durandé,3123528,city,MG
+Elói Mendes,3123601,city,MG
+Engenheiro Caldas,3123700,city,MG
+Engenheiro Navarro,3123809,city,MG
+Entre Folhas,3123858,city,MG
+Entre Rios de Minas,3123908,city,MG
+Ervália,3124005,city,MG
+Esmeraldas,3124104,city,MG
+Espera Feliz,3124203,city,MG
+Espinosa,3124302,city,MG
+Espírito Santo do Dourado,3124401,city,MG
+Estiva,3124500,city,MG
+Estrela Dalva,3124609,city,MG
+Estrela do Sul,3124807,city,MG
+Eugenópolis,3124906,city,MG
+Ewbank da Câmara,3125002,city,MG
+Extrema,3125101,city,MG
+Faria Lemos,3125309,city,MG
+Felixlândia,3125705,city,MG
+Fernandes Tourinho,3125804,city,MG
+Ferros,3125903,city,MG
+Fervedouro,3125952,city,MG
+Florestal,3126000,city,MG
+Formiga,3126109,city,MG
+Formoso,3126208,city,MG
+Fortaleza de Minas,3126307,city,MG
+Francisco Badaró,3126505,city,MG
+Francisco Dumont,3126604,city,MG
+Francisco Sá,3126703,city,MG
+Frei Gaspar,3126802,city,MG
+Frei Inocêncio,3126901,city,MG
+Fronteira,3127008,city,MG
+Fruta de Leite,3127073,city,MG
+Frutal,3127107,city,MG
+Galiléia,3127305,city,MG
+Glaucilândia,3127354,city,MG
+Goiabeira,3127370,city,MG
+Goianá,3127388,city,MG
+Gonzaga,3127503,city,MG
+Gouveia,3127602,city,MG
+Governador Valadares,3127701,city,MG
+Grão Mogol,3127800,city,MG
+Guanhães,3128006,city,MG
+Guapé,3128105,city,MG
+Guaraciaba,3128204,city,MG
+Guaraciama,3128253,city,MG
+Guaranésia,3128303,city,MG
+Guarani,3128402,city,MG
+Guarará,3128501,city,MG
+Guarda-Mor,3128600,city,MG
+Guaxupé,3128709,city,MG
+Guimarânia,3128907,city,MG
+Guiricema,3129004,city,MG
+Heliodora,3129202,city,MG
+Iapu,3129301,city,MG
+Ibiá,3129509,city,MG
+Ibiaí,3129608,city,MG
+Ibiracatu,3129657,city,MG
+Ibiraci,3129707,city,MG
+Ibirité,3129806,city,MG
+Ibituruna,3130002,city,MG
+Icaraí de Minas,3130051,city,MG
+Igarapé,3130101,city,MG
+Igaratinga,3130200,city,MG
+Iguatama,3130309,city,MG
+Ijaci,3130408,city,MG
+Ilicínea,3130507,city,MG
+Imbé de Minas,3130556,city,MG
+Inconfidentes,3130606,city,MG
+Indianópolis,3130705,city,MG
+Ingaí,3130804,city,MG
+Inhapim,3130903,city,MG
+Inhaúma,3131000,city,MG
+Inimutaba,3131109,city,MG
+Ipaba,3131158,city,MG
+Ipanema,3131208,city,MG
+Ipatinga,3131307,city,MG
+Ipiaçu,3131406,city,MG
+Ipuiúna,3131505,city,MG
+Iraí de Minas,3131604,city,MG
+Itabira,3131703,city,MG
+Itabirinha,3131802,city,MG
+Itabirito,3131901,city,MG
+Itacarambi,3132107,city,MG
+Itaguara,3132206,city,MG
+Itaipé,3132305,city,MG
+Itajubá,3132404,city,MG
+Itamarandiba,3132503,city,MG
+Itamarati de Minas,3132602,city,MG
+Itambacuri,3132701,city,MG
+Itamogi,3132909,city,MG
+Itamonte,3133006,city,MG
+Itanhandu,3133105,city,MG
+Itanhomi,3133204,city,MG
+Itaobim,3133303,city,MG
+Itapagipe,3133402,city,MG
+Itapecerica,3133501,city,MG
+Itapeva,3133600,city,MG
+Itatiaiuçu,3133709,city,MG
+Itaú de Minas,3133758,city,MG
+Itaúna,3133808,city,MG
+Itaverava,3133907,city,MG
+Itinga,3134004,city,MG
+Itueta,3134103,city,MG
+Ituiutaba,3134202,city,MG
+Itumirim,3134301,city,MG
+Iturama,3134400,city,MG
+Jaboticatubas,3134608,city,MG
+Jacinto,3134707,city,MG
+Jacutinga,3134905,city,MG
+Jaguaraçu,3135001,city,MG
+Jaíba,3135050,city,MG
+Jampruca,3135076,city,MG
+Janaúba,3135100,city,MG
+Januária,3135209,city,MG
+Japaraíba,3135308,city,MG
+Jeceaba,3135407,city,MG
+Jenipapo de Minas,3135456,city,MG
+Jequitaí,3135605,city,MG
+Jequitibá,3135704,city,MG
+Jequitinhonha,3135803,city,MG
+Jesuânia,3135902,city,MG
+Joaíma,3136009,city,MG
+Joanésia,3136108,city,MG
+João Monlevade,3136207,city,MG
+João Pinheiro,3136306,city,MG
+Joaquim Felício,3136405,city,MG
+Jordânia,3136504,city,MG
+José Gonçalves de Minas,3136520,city,MG
+Josenópolis,3136579,city,MG
+Juatuba,3136652,city,MG
+Juiz de Fora,3136702,city,MG
+Juramento,3136801,city,MG
+Juruaia,3136900,city,MG
+Ladainha,3137007,city,MG
+Lagamar,3137106,city,MG
+Lagoa da Prata,3137205,city,MG
+Lagoa dos Patos,3137304,city,MG
+Lagoa Dourada,3137403,city,MG
+Lagoa Formosa,3137502,city,MG
+Lagoa Santa,3137601,city,MG
+Lajinha,3137700,city,MG
+Lambari,3137809,city,MG
+Lamim,3137908,city,MG
+Laranjal,3138005,city,MG
+Lassance,3138104,city,MG
+Lavras,3138203,city,MG
+Leandro Ferreira,3138302,city,MG
+Leopoldina,3138401,city,MG
+Lima Duarte,3138609,city,MG
+Limeira do Oeste,3138625,city,MG
+Lontra,3138658,city,MG
+Luisburgo,3138674,city,MG
+Luislândia,3138682,city,MG
+Luminárias,3138708,city,MG
+Luz,3138807,city,MG
+Machacalis,3138906,city,MG
+Machado,3139003,city,MG
+Madre de Deus de Minas,3139102,city,MG
+Malacacheta,3139201,city,MG
+Mamonas,3139250,city,MG
+Manga,3139300,city,MG
+Manhuaçu,3139409,city,MG
+Manhumirim,3139508,city,MG
+Mantena,3139607,city,MG
+Mar de Espanha,3139805,city,MG
+Maria da Fé,3139904,city,MG
+Mariana,3140001,city,MG
+Mário Campos,3140159,city,MG
+Maripá de Minas,3140209,city,MG
+Marliéria,3140308,city,MG
+Martinho Campos,3140506,city,MG
+Martins Soares,3140530,city,MG
+Mata Verde,3140555,city,MG
+Materlândia,3140605,city,MG
+Mateus Leme,3140704,city,MG
+Mathias Lobato,3171501,city,MG
+Matias Barbosa,3140803,city,MG
+Matias Cardoso,3140852,city,MG
+Matipó,3140902,city,MG
+Mato Verde,3141009,city,MG
+Matozinhos,3141108,city,MG
+Medeiros,3141306,city,MG
+Medina,3141405,city,MG
+Mendes Pimentel,3141504,city,MG
+Mercês,3141603,city,MG
+Mesquita,3141702,city,MG
+Minas Novas,3141801,city,MG
+Mirabela,3142007,city,MG
+Miradouro,3142106,city,MG
+Miraí,3142205,city,MG
+Moeda,3142304,city,MG
+Moema,3142403,city,MG
+Monsenhor Paulo,3142601,city,MG
+Montalvânia,3142700,city,MG
+Monte Alegre de Minas,3142809,city,MG
+Monte Azul,3142908,city,MG
+Monte Carmelo,3143104,city,MG
+Monte Formoso,3143153,city,MG
+Monte Santo de Minas,3143203,city,MG
+Montes Claros,3143302,city,MG
+Monte Sião,3143401,city,MG
+Montezuma,3143450,city,MG
+Morro da Garça,3143609,city,MG
+Morro do Pilar,3143708,city,MG
+Munhoz,3143807,city,MG
+Muriaé,3143906,city,MG
+Mutum,3144003,city,MG
+Muzambinho,3144102,city,MG
+Nacip Raydan,3144201,city,MG
+Nanuque,3144300,city,MG
+Naque,3144359,city,MG
+Natércia,3144409,city,MG
+Nazareno,3144508,city,MG
+Nepomuceno,3144607,city,MG
+Ninheira,3144656,city,MG
+Nova Belém,3144672,city,MG
+Nova Era,3144706,city,MG
+Nova Lima,3144805,city,MG
+Nova Módica,3144904,city,MG
+Nova Ponte,3145000,city,MG
+Nova Porteirinha,3145059,city,MG
+Nova Resende,3145109,city,MG
+Nova Serrana,3145208,city,MG
+Nova União,3136603,city,MG
+Novo Cruzeiro,3145307,city,MG
+Novo Oriente de Minas,3145356,city,MG
+Novorizonte,3145372,city,MG
+Olaria,3145406,city,MG
+Olímpio Noronha,3145505,city,MG
+Oliveira,3145604,city,MG
+Oratórios,3145851,city,MG
+Orizânia,3145877,city,MG
+Ouro Branco,3145901,city,MG
+Ouro Fino,3146008,city,MG
+Ouro Preto,3146107,city,MG
+Padre Carvalho,3146255,city,MG
+Padre Paraíso,3146305,city,MG
+Paineiras,3146404,city,MG
+Pains,3146503,city,MG
+Pai Pedro,3146552,city,MG
+Paiva,3146602,city,MG
+Palma,3146701,city,MG
+Papagaios,3146909,city,MG
+Paracatu,3147006,city,MG
+Pará de Minas,3147105,city,MG
+Paraguaçu,3147204,city,MG
+Paraisópolis,3147303,city,MG
+Paraopeba,3147402,city,MG
+Passa Quatro,3147600,city,MG
+Passa Tempo,3147709,city,MG
+Passa-Vinte,3147808,city,MG
+Passos,3147907,city,MG
+Patos de Minas,3148004,city,MG
+Patrocínio,3148103,city,MG
+Patrocínio do Muriaé,3148202,city,MG
+Pedra Azul,3148707,city,MG
+Pedra do Indaiá,3148905,city,MG
+Pedra Dourada,3149002,city,MG
+Pedralva,3149101,city,MG
+Pedrinópolis,3149200,city,MG
+Pedro Leopoldo,3149309,city,MG
+Perdigão,3149705,city,MG
+Perdizes,3149804,city,MG
+Perdões,3149903,city,MG
+Periquito,3149952,city,MG
+Pescador,3150000,city,MG
+Piedade de Caratinga,3150158,city,MG
+Piedade de Ponte Nova,3150208,city,MG
+Piedade do Rio Grande,3150307,city,MG
+Piedade dos Gerais,3150406,city,MG
+Pimenta,3150505,city,MG
+Pingo-d'Água,3150539,city,MG
+Pintópolis,3150570,city,MG
+Piracema,3150604,city,MG
+Pirajuba,3150703,city,MG
+Piranga,3150802,city,MG
+Piranguçu,3150901,city,MG
+Piranguinho,3151008,city,MG
+Pirapetinga,3151107,city,MG
+Pirapora,3151206,city,MG
+Piraúba,3151305,city,MG
+Pitangui,3151404,city,MG
+Piumhi,3151503,city,MG
+Planura,3151602,city,MG
+Poço Fundo,3151701,city,MG
+Poços de Caldas,3151800,city,MG
+Pocrane,3151909,city,MG
+Pompéu,3152006,city,MG
+Ponte Nova,3152105,city,MG
+Ponto dos Volantes,3152170,city,MG
+Porteirinha,3152204,city,MG
+Porto Firme,3152303,city,MG
+Poté,3152402,city,MG
+Pouso Alegre,3152501,city,MG
+Pouso Alto,3152600,city,MG
+Prados,3152709,city,MG
+Prata,3152808,city,MG
+Pratápolis,3152907,city,MG
+Pratinha,3153004,city,MG
+Presidente Juscelino,3153202,city,MG
+Presidente Kubitschek,3153301,city,MG
+Presidente Olegário,3153400,city,MG
+Raposos,3153905,city,MG
+Raul Soares,3154002,city,MG
+Recreio,3154101,city,MG
+Reduto,3154150,city,MG
+Resende Costa,3154200,city,MG
+Resplendor,3154309,city,MG
+Riachinho,3154457,city,MG
+Riacho dos Machados,3154507,city,MG
+Ribeirão das Neves,3154606,city,MG
+Rio Acima,3154804,city,MG
+Rio Casca,3154903,city,MG
+Rio do Prado,3155108,city,MG
+Rio Espera,3155207,city,MG
+Rio Manso,3155306,city,MG
+Rio Novo,3155405,city,MG
+Rio Paranaíba,3155504,city,MG
+Rio Pardo de Minas,3155603,city,MG
+Rio Piracicaba,3155702,city,MG
+Rio Pomba,3155801,city,MG
+Rio Vermelho,3156007,city,MG
+Rochedo de Minas,3156205,city,MG
+Rodeiro,3156304,city,MG
+Romaria,3156403,city,MG
+Rosário da Limeira,3156452,city,MG
+Rubelita,3156502,city,MG
+Rubim,3156601,city,MG
+Sabará,3156700,city,MG
+Sabinópolis,3156809,city,MG
+Sacramento,3156908,city,MG
+Salinas,3157005,city,MG
+Salto da Divisa,3157104,city,MG
+Santa Bárbara,3157203,city,MG
+Santa Bárbara do Leste,3157252,city,MG
+Santa Bárbara do Monte Verde,3157278,city,MG
+Santa Bárbara do Tugúrio,3157302,city,MG
+Santa Cruz de Minas,3157336,city,MG
+Santa Cruz do Escalvado,3157401,city,MG
+Santa Efigênia de Minas,3157500,city,MG
+Santa Helena de Minas,3157658,city,MG
+Santa Juliana,3157708,city,MG
+Santa Luzia,3157807,city,MG
+Santa Margarida,3157906,city,MG
+Santa Maria de Itabira,3158003,city,MG
+Santa Maria do Salto,3158102,city,MG
+Santa Maria do Suaçuí,3158201,city,MG
+Santana da Vargem,3158300,city,MG
+Santana de Cataguases,3158409,city,MG
+Santana de Pirapama,3158508,city,MG
+Santana do Deserto,3158607,city,MG
+Santana do Manhuaçu,3158904,city,MG
+Santana do Paraíso,3158953,city,MG
+Santa Rita de Caldas,3159209,city,MG
+Santa Rita de Jacutinga,3159308,city,MG
+Santa Rita de Minas,3159357,city,MG
+Santa Rita do Itueto,3159506,city,MG
+Santa Rita do Sapucaí,3159605,city,MG
+Santa Rosa da Serra,3159704,city,MG
+Santa Vitória,3159803,city,MG
+Santo Antônio do Amparo,3159902,city,MG
+Santo Antônio do Aventureiro,3160009,city,MG
+Santo Antônio do Grama,3160108,city,MG
+Santo Antônio do Jacinto,3160306,city,MG
+Santo Antônio do Monte,3160405,city,MG
+Santo Antônio do Retiro,3160454,city,MG
+Santo Antônio do Rio Abaixo,3160504,city,MG
+Santo Hipólito,3160603,city,MG
+Santos Dumont,3160702,city,MG
+São Bento Abade,3160801,city,MG
+São Brás do Suaçuí,3160900,city,MG
+São Domingos das Dores,3160959,city,MG
+São Domingos do Prata,3161007,city,MG
+São Félix de Minas,3161056,city,MG
+São Francisco,3161106,city,MG
+São Francisco de Paula,3161205,city,MG
+São Francisco de Sales,3161304,city,MG
+São Francisco do Glória,3161403,city,MG
+São Geraldo,3161502,city,MG
+São Geraldo da Piedade,3161601,city,MG
+São Geraldo do Baixio,3161650,city,MG
+São Gonçalo do Abaeté,3161700,city,MG
+São Gonçalo do Pará,3161809,city,MG
+São Gonçalo do Rio Abaixo,3161908,city,MG
+São Gonçalo do Rio Preto,3125507,city,MG
+São Gonçalo do Sapucaí,3162005,city,MG
+São Gotardo,3162104,city,MG
+São João Batista do Glória,3162203,city,MG
+São João da Lagoa,3162252,city,MG
+São João da Mata,3162302,city,MG
+São João da Ponte,3162401,city,MG
+São João das Missões,3162450,city,MG
+São João del Rei,3162500,city,MG
+São João do Manhuaçu,3162559,city,MG
+São João do Manteninha,3162575,city,MG
+São João do Oriente,3162609,city,MG
+São João do Paraíso,3162708,city,MG
+São João Evangelista,3162807,city,MG
+São João Nepomuceno,3162906,city,MG
+São Joaquim de Bicas,3162922,city,MG
+São José da Barra,3162948,city,MG
+São José da Lapa,3162955,city,MG
+São José da Safira,3163003,city,MG
+São José do Divino,3163300,city,MG
+São José do Goiabal,3163409,city,MG
+São José do Jacuri,3163508,city,MG
+São José do Mantimento,3163607,city,MG
+São Lourenço,3163706,city,MG
+São Miguel do Anta,3163805,city,MG
+São Pedro dos Ferros,3164001,city,MG
+São Pedro do Suaçuí,3164100,city,MG
+São Romão,3164209,city,MG
+São Roque de Minas,3164308,city,MG
+São Sebastião da Bela Vista,3164407,city,MG
+São Sebastião da Vargem Alegre,3164431,city,MG
+São Sebastião do Anta,3164472,city,MG
+São Sebastião do Maranhão,3164506,city,MG
+São Sebastião do Oeste,3164605,city,MG
+São Sebastião do Paraíso,3164704,city,MG
+São Sebastião do Rio Preto,3164803,city,MG
+São Tiago,3165008,city,MG
+São Tomás de Aquino,3165107,city,MG
+São Vicente de Minas,3165305,city,MG
+Sardoá,3165503,city,MG
+Sarzedo,3165537,city,MG
+Sem-Peixe,3165560,city,MG
+Senador Amaral,3165578,city,MG
+Senador Cortes,3165602,city,MG
+Senador Firmino,3165701,city,MG
+Senador José Bento,3165800,city,MG
+Senador Modestino Gonçalves,3165909,city,MG
+Senhora de Oliveira,3166006,city,MG
+Senhora do Porto,3166105,city,MG
+Senhora dos Remédios,3166204,city,MG
+Serra dos Aimorés,3166709,city,MG
+Serra do Salitre,3166808,city,MG
+Serrania,3166907,city,MG
+Serranópolis de Minas,3166956,city,MG
+Serranos,3167004,city,MG
+Serro,3167103,city,MG
+Sete Lagoas,3167202,city,MG
+Silveirânia,3167301,city,MG
+Silvianópolis,3167400,city,MG
+Simão Pereira,3167509,city,MG
+Simonésia,3167608,city,MG
+Sobrália,3167707,city,MG
+Tabuleiro,3167905,city,MG
+Taiobeiras,3168002,city,MG
+Taparuba,3168051,city,MG
+Tapira,3168101,city,MG
+Taquaraçu de Minas,3168309,city,MG
+Tarumirim,3168408,city,MG
+Teixeiras,3168507,city,MG
+Teófilo Otoni,3168606,city,MG
+Timóteo,3168705,city,MG
+Tiradentes,3168804,city,MG
+Tiros,3168903,city,MG
+Tocantins,3169000,city,MG
+Toledo,3169109,city,MG
+Tombos,3169208,city,MG
+Três Corações,3169307,city,MG
+Três Marias,3169356,city,MG
+Três Pontas,3169406,city,MG
+Tupaciguara,3169604,city,MG
+Turmalina,3169703,city,MG
+Ubá,3169901,city,MG
+Ubaí,3170008,city,MG
+Ubaporanga,3170057,city,MG
+Uberaba,3170107,city,MG
+Uberlândia,3170206,city,MG
+Unaí,3170404,city,MG
+União de Minas,3170438,city,MG
+Uruana de Minas,3170479,city,MG
+Urucânia,3170503,city,MG
+Urucuia,3170529,city,MG
+Vargem Alegre,3170578,city,MG
+Varginha,3170701,city,MG
+Varjão de Minas,3170750,city,MG
+Várzea da Palma,3170800,city,MG
+Varzelândia,3170909,city,MG
+Vazante,3171006,city,MG
+Vespasiano,3171204,city,MG
+Viçosa,3171303,city,MG
+Vieiras,3171402,city,MG
+Virgem da Lapa,3171600,city,MG
+Virgolândia,3171907,city,MG
+Visconde do Rio Branco,3172004,city,MG
+Volta Grande,3172103,city,MG
+Wenceslau Braz,3172202,city,MG
+Abaetetuba,1500107,city,PA
+Abel Figueiredo,1500131,city,PA
+Acará,1500206,city,PA
+Afuá,1500305,city,PA
+Água Azul do Norte,1500347,city,PA
+Alenquer,1500404,city,PA
+Almeirim,1500503,city,PA
+Altamira,1500602,city,PA
+Anajás,1500701,city,PA
+Ananindeua,1500800,city,PA
+Anapu,1500859,city,PA
+Augusto Corrêa,1500909,city,PA
+Aurora do Pará,1500958,city,PA
+Aveiro,1501006,city,PA
+Bagre,1501105,city,PA
+Baião,1501204,city,PA
+Bannach,1501253,city,PA
+Barcarena,1501303,city,PA
+Belém,1501402,city,PA
+Belterra,1501451,city,PA
+Benevides,1501501,city,PA
+Bom Jesus do Tocantins,1501576,city,PA
+Bonito,1501600,city,PA
+Bragança,1501709,city,PA
+Brasil Novo,1501725,city,PA
+Brejo Grande do Araguaia,1501758,city,PA
+Breu Branco,1501782,city,PA
+Breves,1501808,city,PA
+Bujaru,1501907,city,PA
+Cachoeira do Arari,1502004,city,PA
+Cachoeira do Piriá,1501956,city,PA
+Cametá,1502103,city,PA
+Canaã dos Carajás,1502152,city,PA
+Capanema,1502202,city,PA
+Capitão Poço,1502301,city,PA
+Castanhal,1502400,city,PA
+Chaves,1502509,city,PA
+Colares,1502608,city,PA
+Conceição do Araguaia,1502707,city,PA
+Concórdia do Pará,1502756,city,PA
+Cumaru do Norte,1502764,city,PA
+Curionópolis,1502772,city,PA
+Curralinho,1502806,city,PA
+Curuá,1502855,city,PA
+Curuçá,1502905,city,PA
+Dom Eliseu,1502939,city,PA
+Eldorado do Carajás,1502954,city,PA
+Faro,1503002,city,PA
+Floresta do Araguaia,1503044,city,PA
+Garrafão do Norte,1503077,city,PA
+Goianésia do Pará,1503093,city,PA
+Gurupá,1503101,city,PA
+Igarapé-Açu,1503200,city,PA
+Igarapé-Miri,1503309,city,PA
+Inhangapi,1503408,city,PA
+Ipixuna do Pará,1503457,city,PA
+Irituia,1503507,city,PA
+Itaituba,1503606,city,PA
+Itupiranga,1503705,city,PA
+Jacareacanga,1503754,city,PA
+Jacundá,1503804,city,PA
+Juruti,1503903,city,PA
+Limoeiro do Ajuru,1504000,city,PA
+Mãe do Rio,1504059,city,PA
+Magalhães Barata,1504109,city,PA
+Marabá,1504208,city,PA
+Maracanã,1504307,city,PA
+Marapanim,1504406,city,PA
+Marituba,1504422,city,PA
+Medicilândia,1504455,city,PA
+Melgaço,1504505,city,PA
+Mocajuba,1504604,city,PA
+Moju,1504703,city,PA
+Mojuí dos Campos,1504752,city,PA
+Monte Alegre,1504802,city,PA
+Muaná,1504901,city,PA
+Nova Esperança do Piriá,1504950,city,PA
+Nova Ipixuna,1504976,city,PA
+Nova Timboteua,1505007,city,PA
+Novo Progresso,1505031,city,PA
+Novo Repartimento,1505064,city,PA
+Óbidos,1505106,city,PA
+Oeiras do Pará,1505205,city,PA
+Oriximiná,1505304,city,PA
+Ourém,1505403,city,PA
+Ourilândia do Norte,1505437,city,PA
+Pacajá,1505486,city,PA
+Palestina do Pará,1505494,city,PA
+Paragominas,1505502,city,PA
+Parauapebas,1505536,city,PA
+Pau D'Arco,1505551,city,PA
+Peixe-Boi,1505601,city,PA
+Piçarra,1505635,city,PA
+Placas,1505650,city,PA
+Ponta de Pedras,1505700,city,PA
+Portel,1505809,city,PA
+Porto de Moz,1505908,city,PA
+Prainha,1506005,city,PA
+Primavera,1506104,city,PA
+Quatipuru,1506112,city,PA
+Redenção,1506138,city,PA
+Rio Maria,1506161,city,PA
+Rondon do Pará,1506187,city,PA
+Rurópolis,1506195,city,PA
+Salinópolis,1506203,city,PA
+Salvaterra,1506302,city,PA
+Santa Bárbara do Pará,1506351,city,PA
+Santa Cruz do Arari,1506401,city,PA
+Santa Izabel do Pará,1506500,city,PA
+Santa Luzia do Pará,1506559,city,PA
+Santa Maria das Barreiras,1506583,city,PA
+Santa Maria do Pará,1506609,city,PA
+Santana do Araguaia,1506708,city,PA
+Santarém,1506807,city,PA
+Santarém Novo,1506906,city,PA
+Santo Antônio do Tauá,1507003,city,PA
+São Caetano de Odivelas,1507102,city,PA
+São Domingos do Araguaia,1507151,city,PA
+São Domingos do Capim,1507201,city,PA
+São Félix do Xingu,1507300,city,PA
+São Francisco do Pará,1507409,city,PA
+São Geraldo do Araguaia,1507458,city,PA
+São João da Ponta,1507466,city,PA
+São João de Pirabas,1507474,city,PA
+São João do Araguaia,1507508,city,PA
+São Miguel do Guamá,1507607,city,PA
+São Sebastião da Boa Vista,1507706,city,PA
+Sapucaia,1507755,city,PA
+Senador José Porfírio,1507805,city,PA
+Soure,1507904,city,PA
+Tailândia,1507953,city,PA
+Terra Alta,1507961,city,PA
+Terra Santa,1507979,city,PA
+Tomé-Açu,1508001,city,PA
+Tracuateua,1508035,city,PA
+Trairão,1508050,city,PA
+Tucumã,1508084,city,PA
+Tucuruí,1508100,city,PA
+Ulianópolis,1508126,city,PA
+Uruará,1508159,city,PA
+Vigia,1508209,city,PA
+Viseu,1508308,city,PA
+Vitória do Xingu,1508357,city,PA
+Xinguara,1508407,city,PA
+Água Santa,4300059,city,RS
+Agudo,4300109,city,RS
+Ajuricaba,4300208,city,RS
+Alecrim,4300307,city,RS
+Alegrete,4300406,city,RS
+Alegria,4300455,city,RS
+Alpestre,4300505,city,RS
+Alto Feliz,4300570,city,RS
+Alvorada,4300604,city,RS
+Ametista do Sul,4300646,city,RS
+André da Rocha,4300661,city,RS
+Anta Gorda,4300703,city,RS
+Antônio Prado,4300802,city,RS
+Araricá,4300877,city,RS
+Aratiba,4300901,city,RS
+Arroio do Meio,4301008,city,RS
+Arroio do Sal,4301057,city,RS
+Arroio dos Ratos,4301107,city,RS
+Arroio Grande,4301305,city,RS
+Arvorezinha,4301404,city,RS
+Áurea,4301552,city,RS
+Bagé,4301602,city,RS
+Balneário Pinhal,4301636,city,RS
+Barão,4301651,city,RS
+Barão de Cotegipe,4301701,city,RS
+Barracão,4301800,city,RS
+Barra do Ribeiro,4301909,city,RS
+Barra do Rio Azul,4301925,city,RS
+Barra Funda,4301958,city,RS
+Barros Cassal,4302006,city,RS
+Benjamin Constant do Sul,4302055,city,RS
+Bento Gonçalves,4302105,city,RS
+Boa Vista das Missões,4302154,city,RS
+Boa Vista do Sul,4302253,city,RS
+Bom Jesus,4302303,city,RS
+Bom Princípio,4302352,city,RS
+Bom Progresso,4302378,city,RS
+Bom Retiro do Sul,4302402,city,RS
+Bossoroca,4302501,city,RS
+Braga,4302600,city,RS
+Brochier,4302659,city,RS
+Butiá,4302709,city,RS
+Caçapava do Sul,4302808,city,RS
+Cacequi,4302907,city,RS
+Cachoeira do Sul,4303004,city,RS
+Cachoeirinha,4303103,city,RS
+Cacique Doble,4303202,city,RS
+Caiçara,4303400,city,RS
+Camaquã,4303509,city,RS
+Camargo,4303558,city,RS
+Cambará do Sul,4303608,city,RS
+Campestre da Serra,4303673,city,RS
+Campinas do Sul,4303806,city,RS
+Campo Bom,4303905,city,RS
+Campo Novo,4304002,city,RS
+Candelária,4304200,city,RS
+Cândido Godói,4304309,city,RS
+Candiota,4304358,city,RS
+Canela,4304408,city,RS
+Canguçu,4304507,city,RS
+Canoas,4304606,city,RS
+Canudos do Vale,4304614,city,RS
+Capão da Canoa,4304630,city,RS
+Capão do Cipó,4304655,city,RS
+Capão do Leão,4304663,city,RS
+Capela de Santana,4304689,city,RS
+Capitão,4304697,city,RS
+Caraá,4304713,city,RS
+Carazinho,4304705,city,RS
+Carlos Barbosa,4304804,city,RS
+Casca,4304903,city,RS
+Caseiros,4304952,city,RS
+Catuípe,4305009,city,RS
+Caxias do Sul,4305108,city,RS
+Centenário,4305116,city,RS
+Cerro Grande do Sul,4305173,city,RS
+Cerro Largo,4305207,city,RS
+Chapada,4305306,city,RS
+Charqueadas,4305355,city,RS
+Charrua,4305371,city,RS
+Chiapetta,4305405,city,RS
+Chuí,4305439,city,RS
+Chuvisca,4305447,city,RS
+Cidreira,4305454,city,RS
+Ciríaco,4305504,city,RS
+Colinas,4305587,city,RS
+Colorado,4305603,city,RS
+Condor,4305702,city,RS
+Constantina,4305801,city,RS
+Coqueiros do Sul,4305850,city,RS
+Coronel Barros,4305871,city,RS
+Coronel Bicaco,4305900,city,RS
+Coronel Pilar,4305934,city,RS
+Cotiporã,4305959,city,RS
+Coxilha,4305975,city,RS
+Crissiumal,4306007,city,RS
+Cristal do Sul,4306072,city,RS
+Cruz Alta,4306106,city,RS
+Cruzaltense,4306130,city,RS
+Cruzeiro do Sul,4306205,city,RS
+David Canabarro,4306304,city,RS
+Derrubadas,4306320,city,RS
+Dezesseis de Novembro,4306353,city,RS
+Dois Irmãos,4306403,city,RS
+Dois Lajeados,4306452,city,RS
+Dom Feliciano,4306502,city,RS
+Dom Pedrito,4306601,city,RS
+Dom Pedro de Alcântara,4306551,city,RS
+Doutor Maurício Cardoso,4306734,city,RS
+Doutor Ricardo,4306759,city,RS
+Eldorado do Sul,4306767,city,RS
+Encantado,4306809,city,RS
+Encruzilhada do Sul,4306908,city,RS
+Engenho Velho,4306924,city,RS
+Entre-Ijuís,4306932,city,RS
+Entre Rios do Sul,4306957,city,RS
+Erebango,4306973,city,RS
+Erechim,4307005,city,RS
+Ernestina,4307054,city,RS
+Erval Grande,4307203,city,RS
+Esmeralda,4307401,city,RS
+Esperança do Sul,4307450,city,RS
+Espumoso,4307500,city,RS
+Estação,4307559,city,RS
+Estância Velha,4307609,city,RS
+Esteio,4307708,city,RS
+Estrela,4307807,city,RS
+Eugênio de Castro,4307831,city,RS
+Farroupilha,4307906,city,RS
+Faxinal do Soturno,4308003,city,RS
+Faxinalzinho,4308052,city,RS
+Fazenda Vilanova,4308078,city,RS
+Feliz,4308102,city,RS
+Flores da Cunha,4308201,city,RS
+Floriano Peixoto,4308250,city,RS
+Fontoura Xavier,4308300,city,RS
+Formigueiro,4308409,city,RS
+Forquetinha,4308433,city,RS
+Fortaleza dos Valos,4308458,city,RS
+Frederico Westphalen,4308508,city,RS
+Garibaldi,4308607,city,RS
+Gaurama,4308706,city,RS
+General Câmara,4308805,city,RS
+Gentil,4308854,city,RS
+Getúlio Vargas,4308904,city,RS
+Giruá,4309001,city,RS
+Glorinha,4309050,city,RS
+Gramado,4309100,city,RS
+Gramado dos Loureiros,4309126,city,RS
+Gramado Xavier,4309159,city,RS
+Gravataí,4309209,city,RS
+Guabiju,4309258,city,RS
+Guaíba,4309308,city,RS
+Guaporé,4309407,city,RS
+Guarani das Missões,4309506,city,RS
+Harmonia,4309555,city,RS
+Horizontina,4309605,city,RS
+Hulha Negra,4309654,city,RS
+Humaitá,4309704,city,RS
+Ibiaçá,4309803,city,RS
+Ibiraiaras,4309902,city,RS
+Ibirapuitã,4309951,city,RS
+Ibirubá,4310009,city,RS
+Igrejinha,4310108,city,RS
+Ijuí,4310207,city,RS
+Imbé,4310330,city,RS
+Imigrante,4310363,city,RS
+Independência,4310405,city,RS
+Inhacorá,4310413,city,RS
+Ipê,4310439,city,RS
+Iraí,4310504,city,RS
+Itaara,4310538,city,RS
+Itacurubi,4310553,city,RS
+Itaqui,4310603,city,RS
+Itati,4310652,city,RS
+Itatiba do Sul,4310702,city,RS
+Ivorá,4310751,city,RS
+Ivoti,4310801,city,RS
+Jaboticaba,4310850,city,RS
+Jacutinga,4310900,city,RS
+Jaguarão,4311007,city,RS
+Jaguari,4311106,city,RS
+Jaquirana,4311122,city,RS
+Jóia,4311155,city,RS
+Júlio de Castilhos,4311205,city,RS
+Lagoa Vermelha,4311304,city,RS
+Lajeado,4311403,city,RS
+Lajeado do Bugre,4311429,city,RS
+Lavras do Sul,4311502,city,RS
+Liberato Salzano,4311601,city,RS
+Lindolfo Collor,4311627,city,RS
+Machadinho,4311700,city,RS
+Manoel Viana,4311759,city,RS
+Maquiné,4311775,city,RS
+Maratá,4311791,city,RS
+Marau,4311809,city,RS
+Marcelino Ramos,4311908,city,RS
+Mariana Pimentel,4311981,city,RS
+Mariano Moro,4312005,city,RS
+Marques de Souza,4312054,city,RS
+Mata,4312104,city,RS
+Mato Castelhano,4312138,city,RS
+Mato Leitão,4312153,city,RS
+Maximiliano de Almeida,4312203,city,RS
+Minas do Leão,4312252,city,RS
+Miraguaí,4312302,city,RS
+Montauri,4312351,city,RS
+Monte Alegre dos Campos,4312377,city,RS
+Monte Belo do Sul,4312385,city,RS
+Montenegro,4312401,city,RS
+Mormaço,4312427,city,RS
+Morrinhos do Sul,4312443,city,RS
+Morro Reuter,4312476,city,RS
+Mostardas,4312500,city,RS
+Muçum,4312609,city,RS
+Muliterno,4312625,city,RS
+Não-Me-Toque,4312658,city,RS
+Nicolau Vergueiro,4312674,city,RS
+Nonoai,4312708,city,RS
+Nova Alvorada,4312757,city,RS
+Nova Araçá,4312807,city,RS
+Nova Bassano,4312906,city,RS
+Nova Bréscia,4313003,city,RS
+Nova Candelária,4313011,city,RS
+Nova Hartz,4313060,city,RS
+Nova Pádua,4313086,city,RS
+Nova Petrópolis,4313201,city,RS
+Nova Prata,4313300,city,RS
+Nova Roma do Sul,4313359,city,RS
+Nova Santa Rita,4313375,city,RS
+Novo Barreiro,4313490,city,RS
+Novo Hamburgo,4313409,city,RS
+Novo Machado,4313425,city,RS
+Osório,4313508,city,RS
+Paim Filho,4313607,city,RS
+Palmares do Sul,4313656,city,RS
+Palmeira das Missões,4313706,city,RS
+Palmitinho,4313805,city,RS
+Panambi,4313904,city,RS
+Pantano Grande,4313953,city,RS
+Paraí,4314001,city,RS
+Paraíso do Sul,4314027,city,RS
+Pareci Novo,4314035,city,RS
+Parobé,4314050,city,RS
+Passo do Sobrado,4314076,city,RS
+Passo Fundo,4314100,city,RS
+Paulo Bento,4314134,city,RS
+Paverama,4314159,city,RS
+Pejuçara,4314308,city,RS
+Pelotas,4314407,city,RS
+Picada Café,4314423,city,RS
+Pinhal,4314456,city,RS
+Pinheirinho do Vale,4314498,city,RS
+Pinheiro Machado,4314506,city,RS
+Pinto Bandeira,4314548,city,RS
+Piratini,4314605,city,RS
+Planalto,4314704,city,RS
+Poço das Antas,4314753,city,RS
+Pontão,4314779,city,RS
+Ponte Preta,4314787,city,RS
+Portão,4314803,city,RS
+Porto Alegre,4314902,city,RS
+Porto Mauá,4315057,city,RS
+Porto Xavier,4315107,city,RS
+Pouso Novo,4315131,city,RS
+Presidente Lucena,4315149,city,RS
+Progresso,4315156,city,RS
+Protásio Alves,4315172,city,RS
+Quaraí,4315305,city,RS
+Quatro Irmãos,4315313,city,RS
+Quevedos,4315321,city,RS
+Quinze de Novembro,4315354,city,RS
+Redentora,4315404,city,RS
+Relvado,4315453,city,RS
+Restinga Sêca,4315503,city,RS
+Rio dos Índios,4315552,city,RS
+Rio Grande,4315602,city,RS
+Rio Pardo,4315701,city,RS
+Roca Sales,4315800,city,RS
+Rodeio Bonito,4315909,city,RS
+Rolante,4316006,city,RS
+Ronda Alta,4316105,city,RS
+Rondinha,4316204,city,RS
+Roque Gonzales,4316303,city,RS
+Rosário do Sul,4316402,city,RS
+Sagrada Família,4316428,city,RS
+Saldanha Marinho,4316436,city,RS
+Salto do Jacuí,4316451,city,RS
+Salvador do Sul,4316501,city,RS
+Sananduva,4316600,city,RS
+Santa Bárbara do Sul,4316709,city,RS
+Santa Cecília do Sul,4316733,city,RS
+Santa Clara do Sul,4316758,city,RS
+Santa Cruz do Sul,4316808,city,RS
+Santa Margarida do Sul,4316972,city,RS
+Santa Maria,4316907,city,RS
+Santa Maria do Herval,4316956,city,RS
+Sant'Ana do Livramento,4317103,city,RS
+Santa Rosa,4317202,city,RS
+Santa Tereza,4317251,city,RS
+Santa Vitória do Palmar,4317301,city,RS
+Santiago,4317400,city,RS
+Santo Ângelo,4317509,city,RS
+Santo Antônio da Patrulha,4317608,city,RS
+Santo Antônio das Missões,4317707,city,RS
+Santo Antônio do Palma,4317558,city,RS
+Santo Augusto,4317806,city,RS
+Santo Cristo,4317905,city,RS
+Santo Expedito do Sul,4317954,city,RS
+São Borja,4318002,city,RS
+São Domingos do Sul,4318051,city,RS
+São Francisco de Assis,4318101,city,RS
+São Francisco de Paula,4318200,city,RS
+São Gabriel,4318309,city,RS
+São Jerônimo,4318408,city,RS
+São João da Urtiga,4318424,city,RS
+São Jorge,4318440,city,RS
+São José das Missões,4318457,city,RS
+São José do Herval,4318465,city,RS
+São José do Hortêncio,4318481,city,RS
+São José do Norte,4318507,city,RS
+São José do Ouro,4318606,city,RS
+São José do Sul,4318614,city,RS
+São Leopoldo,4318705,city,RS
+São Lourenço do Sul,4318804,city,RS
+São Luiz Gonzaga,4318903,city,RS
+São Marcos,4319000,city,RS
+São Martinho,4319109,city,RS
+São Martinho da Serra,4319125,city,RS
+São Miguel das Missões,4319158,city,RS
+São Paulo das Missões,4319307,city,RS
+São Pedro da Serra,4319356,city,RS
+São Pedro das Missões,4319364,city,RS
+São Pedro do Butiá,4319372,city,RS
+São Pedro do Sul,4319406,city,RS
+São Sebastião do Caí,4319505,city,RS
+São Sepé,4319604,city,RS
+São Valentim,4319703,city,RS
+São Valentim do Sul,4319711,city,RS
+São Valério do Sul,4319737,city,RS
+São Vendelino,4319752,city,RS
+São Vicente do Sul,4319802,city,RS
+Sapiranga,4319901,city,RS
+Sapucaia do Sul,4320008,city,RS
+Sarandi,4320107,city,RS
+Seberi,4320206,city,RS
+Selbach,4320305,city,RS
+Serafina Corrêa,4320404,city,RS
+Sério,4320453,city,RS
+Sertão,4320503,city,RS
+Sertão Santana,4320552,city,RS
+Severiano de Almeida,4320602,city,RS
+Soledade,4320800,city,RS
+Tabaí,4320859,city,RS
+Tapejara,4320909,city,RS
+Tapera,4321006,city,RS
+Tapes,4321105,city,RS
+Taquara,4321204,city,RS
+Taquari,4321303,city,RS
+Tavares,4321352,city,RS
+Tenente Portela,4321402,city,RS
+Terra de Areia,4321436,city,RS
+Teutônia,4321451,city,RS
+Tio Hugo,4321469,city,RS
+Tiradentes do Sul,4321477,city,RS
+Torres,4321501,city,RS
+Tramandaí,4321600,city,RS
+Travesseiro,4321626,city,RS
+Três Arroios,4321634,city,RS
+Três Cachoeiras,4321667,city,RS
+Três Coroas,4321709,city,RS
+Três de Maio,4321808,city,RS
+Três Forquilhas,4321832,city,RS
+Três Palmeiras,4321857,city,RS
+Três Passos,4321907,city,RS
+Trindade do Sul,4321956,city,RS
+Triunfo,4322004,city,RS
+Tucunduva,4322103,city,RS
+Tunas,4322152,city,RS
+Tupanciretã,4322202,city,RS
+Tupandi,4322251,city,RS
+Tuparendi,4322301,city,RS
+União da Serra,4322350,city,RS
+Unistalda,4322376,city,RS
+Uruguaiana,4322400,city,RS
+Vacaria,4322509,city,RS
+Vale Real,4322541,city,RS
+Vale Verde,4322525,city,RS
+Vanini,4322558,city,RS
+Venâncio Aires,4322608,city,RS
+Vera Cruz,4322707,city,RS
+Veranópolis,4322806,city,RS
+Vespasiano Corrêa,4322855,city,RS
+Viadutos,4322905,city,RS
+Viamão,4323002,city,RS
+Victor Graeff,4323200,city,RS
+Vila Flores,4323309,city,RS
+Vila Lângaro,4323358,city,RS
+Vila Maria,4323408,city,RS
+Vila Nova do Sul,4323457,city,RS
+Vista Alegre do Prata,4323606,city,RS
+Vista Gaúcha,4323705,city,RS
+Vitória das Missões,4323754,city,RS
+Westfália,4323770,city,RS
+Xangri-lá,4323804,city,RS
+Água Branca,2700102,city,AL
+Anadia,2700201,city,AL
+Arapiraca,2700300,city,AL
+Atalaia,2700409,city,AL
+Barra de Santo Antônio,2700508,city,AL
+Barra de São Miguel,2700607,city,AL
+Batalha,2700706,city,AL
+Belém,2700805,city,AL
+Belo Monte,2700904,city,AL
+Boca da Mata,2701001,city,AL
+Branquinha,2701100,city,AL
+Cacimbinhas,2701209,city,AL
+Cajueiro,2701308,city,AL
+Campestre,2701357,city,AL
+Campo Alegre,2701407,city,AL
+Campo Grande,2701506,city,AL
+Canapi,2701605,city,AL
+Capela,2701704,city,AL
+Carneiros,2701803,city,AL
+Chã Preta,2701902,city,AL
+Coité do Nóia,2702009,city,AL
+Colônia Leopoldina,2702108,city,AL
+Coqueiro Seco,2702207,city,AL
+Coruripe,2702306,city,AL
+Craíbas,2702355,city,AL
+Delmiro Gouveia,2702405,city,AL
+Dois Riachos,2702504,city,AL
+Estrela de Alagoas,2702553,city,AL
+Feira Grande,2702603,city,AL
+Feliz Deserto,2702702,city,AL
+Flexeiras,2702801,city,AL
+Girau do Ponciano,2702900,city,AL
+Ibateguara,2703007,city,AL
+Igaci,2703106,city,AL
+Igreja Nova,2703205,city,AL
+Inhapi,2703304,city,AL
+Jacaré dos Homens,2703403,city,AL
+Jacuípe,2703502,city,AL
+Japaratinga,2703601,city,AL
+Jaramataia,2703700,city,AL
+Jequiá da Praia,2703759,city,AL
+Joaquim Gomes,2703809,city,AL
+Jundiá,2703908,city,AL
+Junqueiro,2704005,city,AL
+Lagoa da Canoa,2704104,city,AL
+Limoeiro de Anadia,2704203,city,AL
+Maceió,2704302,city,AL
+Major Isidoro,2704401,city,AL
+Maragogi,2704500,city,AL
+Maravilha,2704609,city,AL
+Marechal Deodoro,2704708,city,AL
+Maribondo,2704807,city,AL
+Mar Vermelho,2704906,city,AL
+Mata Grande,2705002,city,AL
+Matriz de Camaragibe,2705101,city,AL
+Messias,2705200,city,AL
+Minador do Negrão,2705309,city,AL
+Monteirópolis,2705408,city,AL
+Murici,2705507,city,AL
+Novo Lino,2705606,city,AL
+Olho d'Água das Flores,2705705,city,AL
+Olho d'Água do Casado,2705804,city,AL
+Olho d'Água Grande,2705903,city,AL
+Olivença,2706000,city,AL
+Ouro Branco,2706109,city,AL
+Palestina,2706208,city,AL
+Palmeira dos Índios,2706307,city,AL
+Pão de Açúcar,2706406,city,AL
+Pariconha,2706422,city,AL
+Paripueira,2706448,city,AL
+Passo de Camaragibe,2706505,city,AL
+Paulo Jacinto,2706604,city,AL
+Penedo,2706703,city,AL
+Piaçabuçu,2706802,city,AL
+Pilar,2706901,city,AL
+Pindoba,2707008,city,AL
+Piranhas,2707107,city,AL
+Poço das Trincheiras,2707206,city,AL
+Porto Calvo,2707305,city,AL
+Porto de Pedras,2707404,city,AL
+Porto Real do Colégio,2707503,city,AL
+Quebrangulo,2707602,city,AL
+Rio Largo,2707701,city,AL
+Roteiro,2707800,city,AL
+Santa Luzia do Norte,2707909,city,AL
+Santana do Ipanema,2708006,city,AL
+Santana do Mundaú,2708105,city,AL
+São Brás,2708204,city,AL
+São José da Laje,2708303,city,AL
+São José da Tapera,2708402,city,AL
+São Luís do Quitunde,2708501,city,AL
+São Miguel dos Campos,2708600,city,AL
+São Miguel dos Milagres,2708709,city,AL
+São Sebastião,2708808,city,AL
+Satuba,2708907,city,AL
+Senador Rui Palmeira,2708956,city,AL
+Tanque d'Arca,2709004,city,AL
+Taquarana,2709103,city,AL
+Teotônio Vilela,2709152,city,AL
+Traipu,2709202,city,AL
+União dos Palmares,2709301,city,AL
+Viçosa,2709400,city,AL
+Alvarães,1300029,city,AM
+Amaturá,1300060,city,AM
+Anamã,1300086,city,AM
+Anori,1300102,city,AM
+Apuí,1300144,city,AM
+Atalaia do Norte,1300201,city,AM
+Autazes,1300300,city,AM
+Barcelos,1300409,city,AM
+Barreirinha,1300508,city,AM
+Benjamin Constant,1300607,city,AM
+Beruri,1300631,city,AM
+Boa Vista do Ramos,1300680,city,AM
+Boca do Acre,1300706,city,AM
+Borba,1300805,city,AM
+Caapiranga,1300839,city,AM
+Canutama,1300904,city,AM
+Carauari,1301001,city,AM
+Careiro,1301100,city,AM
+Careiro da Várzea,1301159,city,AM
+Coari,1301209,city,AM
+Codajás,1301308,city,AM
+Eirunepé,1301407,city,AM
+Fonte Boa,1301605,city,AM
+Guajará,1301654,city,AM
+Humaitá,1301704,city,AM
+Ipixuna,1301803,city,AM
+Iranduba,1301852,city,AM
+Itacoatiara,1301902,city,AM
+Itamarati,1301951,city,AM
+Itapiranga,1302009,city,AM
+Japurá,1302108,city,AM
+Juruá,1302207,city,AM
+Jutaí,1302306,city,AM
+Lábrea,1302405,city,AM
+Manacapuru,1302504,city,AM
+Manaquiri,1302553,city,AM
+Manaus,1302603,city,AM
+Manicoré,1302702,city,AM
+Maraã,1302801,city,AM
+Maués,1302900,city,AM
+Nhamundá,1303007,city,AM
+Nova Olinda do Norte,1303106,city,AM
+Novo Airão,1303205,city,AM
+Novo Aripuanã,1303304,city,AM
+Parintins,1303403,city,AM
+Pauini,1303502,city,AM
+Presidente Figueiredo,1303536,city,AM
+Rio Preto da Eva,1303569,city,AM
+Santa Isabel do Rio Negro,1303601,city,AM
+Santo Antônio do Içá,1303700,city,AM
+São Gabriel da Cachoeira,1303809,city,AM
+São Paulo de Olivença,1303908,city,AM
+São Sebastião do Uatumã,1303957,city,AM
+Silves,1304005,city,AM
+Tabatinga,1304062,city,AM
+Tapauá,1304104,city,AM
+Tefé,1304203,city,AM
+Tonantins,1304237,city,AM
+Uarini,1304260,city,AM
+Urucará,1304302,city,AM
+Urucurituba,1304401,city,AM
+Amapá,1600105,city,AP
+Calçoene,1600204,city,AP
+Cutias,1600212,city,AP
+Ferreira Gomes,1600238,city,AP
+Itaubal,1600253,city,AP
+Laranjal do Jari,1600279,city,AP
+Macapá,1600303,city,AP
+Mazagão,1600402,city,AP
+Oiapoque,1600501,city,AP
+Pedra Branca do Amapari,1600154,city,AP
+Porto Grande,1600535,city,AP
+Pracuúba,1600550,city,AP
+Santana,1600600,city,AP
+Serra do Navio,1600055,city,AP
+Tartarugalzinho,1600709,city,AP
+Vitória do Jari,1600808,city,AP
+Abaíra,2900108,city,BA
+Abaré,2900207,city,BA
+Acajutiba,2900306,city,BA
+Adustina,2900355,city,BA
+Água Fria,2900405,city,BA
+Aiquara,2900603,city,BA
+Alagoinhas,2900702,city,BA
+Alcobaça,2900801,city,BA
+Almadina,2900900,city,BA
+Amargosa,2901007,city,BA
+Amélia Rodrigues,2901106,city,BA
+América Dourada,2901155,city,BA
+Anagé,2901205,city,BA
+Andaraí,2901304,city,BA
+Andorinha,2901353,city,BA
+Angical,2901403,city,BA
+Anguera,2901502,city,BA
+Antas,2901601,city,BA
+Antônio Cardoso,2901700,city,BA
+Antônio Gonçalves,2901809,city,BA
+Aporá,2901908,city,BA
+Apuarema,2901957,city,BA
+Araças,2902054,city,BA
+Aracatu,2902005,city,BA
+Araci,2902104,city,BA
+Aramari,2902203,city,BA
+Arataca,2902252,city,BA
+Aratuípe,2902302,city,BA
+Aurelino Leal,2902401,city,BA
+Baianópolis,2902500,city,BA
+Baixa Grande,2902609,city,BA
+Banzaê,2902658,city,BA
+Barra,2902708,city,BA
+Barra da Estiva,2902807,city,BA
+Barra do Choça,2902906,city,BA
+Barra do Mendes,2903003,city,BA
+Barra do Rocha,2903102,city,BA
+Barreiras,2903201,city,BA
+Barrocas,2903276,city,BA
+Barro Preto,2903300,city,BA
+Belmonte,2903409,city,BA
+Biritinga,2903607,city,BA
+Boa Nova,2903706,city,BA
+Boa Vista do Tupim,2903805,city,BA
+Bom Jesus da Lapa,2903904,city,BA
+Bom Jesus da Serra,2903953,city,BA
+Boninal,2904001,city,BA
+Boquira,2904100,city,BA
+Brejões,2904308,city,BA
+Brotas de Macaúbas,2904506,city,BA
+Brumado,2904605,city,BA
+Buerarema,2904704,city,BA
+Buritirama,2904753,city,BA
+Caatiba,2904803,city,BA
+Cabaceiras do Paraguaçu,2904852,city,BA
+Cachoeira,2904902,city,BA
+Caculé,2905008,city,BA
+Caém,2905107,city,BA
+Caetanos,2905156,city,BA
+Caetité,2905206,city,BA
+Cafarnaum,2905305,city,BA
+Cairu,2905404,city,BA
+Caldeirão Grande,2905503,city,BA
+Camacan,2905602,city,BA
+Camaçari,2905701,city,BA
+Camamu,2905800,city,BA
+Campo Alegre de Lourdes,2905909,city,BA
+Campo Formoso,2906006,city,BA
+Canarana,2906204,city,BA
+Canavieiras,2906303,city,BA
+Candeal,2906402,city,BA
+Candeias,2906501,city,BA
+Candiba,2906600,city,BA
+Cândido Sales,2906709,city,BA
+Cansanção,2906808,city,BA
+Canudos,2906824,city,BA
+Capela do Alto Alegre,2906857,city,BA
+Capim Grosso,2906873,city,BA
+Caraíbas,2906899,city,BA
+Caravelas,2906907,city,BA
+Cardeal da Silva,2907004,city,BA
+Carinhanha,2907103,city,BA
+Casa Nova,2907202,city,BA
+Castro Alves,2907301,city,BA
+Catolândia,2907400,city,BA
+Catu,2907509,city,BA
+Chorrochó,2907707,city,BA
+Cícero Dantas,2907806,city,BA
+Cipó,2907905,city,BA
+Coaraci,2908002,city,BA
+Cocos,2908101,city,BA
+Conceição da Feira,2908200,city,BA
+Conceição do Almeida,2908309,city,BA
+Conceição do Coité,2908408,city,BA
+Conceição do Jacuípe,2908507,city,BA
+Conde,2908606,city,BA
+Condeúba,2908705,city,BA
+Coração de Maria,2908903,city,BA
+Cordeiros,2909000,city,BA
+Coribe,2909109,city,BA
+Coronel João Sá,2909208,city,BA
+Correntina,2909307,city,BA
+Cotegipe,2909406,city,BA
+Cravolândia,2909505,city,BA
+Crisópolis,2909604,city,BA
+Cristópolis,2909703,city,BA
+Cruz das Almas,2909802,city,BA
+Curaçá,2909901,city,BA
+Dário Meira,2910008,city,BA
+Dias d'Ávila,2910057,city,BA
+Dom Basílio,2910107,city,BA
+Dom Macedo Costa,2910206,city,BA
+Elísio Medrado,2910305,city,BA
+Encruzilhada,2910404,city,BA
+Entre Rios,2910503,city,BA
+Esplanada,2910602,city,BA
+Euclides da Cunha,2910701,city,BA
+Eunápolis,2910727,city,BA
+Fátima,2910750,city,BA
+Feira da Mata,2910776,city,BA
+Feira de Santana,2910800,city,BA
+Filadélfia,2910859,city,BA
+Firmino Alves,2910909,city,BA
+Floresta Azul,2911006,city,BA
+Formosa do Rio Preto,2911105,city,BA
+Gandu,2911204,city,BA
+Gentio do Ouro,2911303,city,BA
+Glória,2911402,city,BA
+Gongogi,2911501,city,BA
+Governador Mangabeira,2911600,city,BA
+Guajeru,2911659,city,BA
+Guanambi,2911709,city,BA
+Guaratinga,2911808,city,BA
+Heliópolis,2911857,city,BA
+Iaçu,2911907,city,BA
+Ibiassucê,2912004,city,BA
+Ibicaraí,2912103,city,BA
+Ibicoara,2912202,city,BA
+Ibicuí,2912301,city,BA
+Ibipeba,2912400,city,BA
+Ibipitanga,2912509,city,BA
+Ibirapitanga,2912707,city,BA
+Ibirapuã,2912806,city,BA
+Ibirataia,2912905,city,BA
+Ibitiara,2913002,city,BA
+Ibotirama,2913200,city,BA
+Ichu,2913309,city,BA
+Igaporã,2913408,city,BA
+Igrapiúna,2913457,city,BA
+Iguaí,2913507,city,BA
+Ilhéus,2913606,city,BA
+Inhambupe,2913705,city,BA
+Ipecaetá,2913804,city,BA
+Ipiaú,2913903,city,BA
+Ipirá,2914000,city,BA
+Iramaia,2914307,city,BA
+Iraquara,2914406,city,BA
+Irará,2914505,city,BA
+Irecê,2914604,city,BA
+Itabela,2914653,city,BA
+Itaberaba,2914703,city,BA
+Itabuna,2914802,city,BA
+Itacaré,2914901,city,BA
+Itaeté,2915007,city,BA
+Itagi,2915106,city,BA
+Itagibá,2915205,city,BA
+Itagimirim,2915304,city,BA
+Itaju do Colônia,2915403,city,BA
+Itajuípe,2915502,city,BA
+Itamaraju,2915601,city,BA
+Itamari,2915700,city,BA
+Itambé,2915809,city,BA
+Itanagra,2915908,city,BA
+Itanhém,2916005,city,BA
+Itaparica,2916104,city,BA
+Itapé,2916203,city,BA
+Itapebi,2916302,city,BA
+Itapetinga,2916401,city,BA
+Itapicuru,2916500,city,BA
+Itapitanga,2916609,city,BA
+Itaquara,2916708,city,BA
+Itarantim,2916807,city,BA
+Itatim,2916856,city,BA
+Itiruçu,2916906,city,BA
+Itiúba,2917003,city,BA
+Itororó,2917102,city,BA
+Ituaçu,2917201,city,BA
+Ituberá,2917300,city,BA
+Iuiú,2917334,city,BA
+Jaborandi,2917359,city,BA
+Jacaraci,2917409,city,BA
+Jacobina,2917508,city,BA
+Jaguaquara,2917607,city,BA
+Jaguarari,2917706,city,BA
+Jaguaripe,2917805,city,BA
+Jandaíra,2917904,city,BA
+Jequié,2918001,city,BA
+Jeremoabo,2918100,city,BA
+Jiquiriçá,2918209,city,BA
+Jitaúna,2918308,city,BA
+João Dourado,2918357,city,BA
+Juazeiro,2918407,city,BA
+Jucuruçu,2918456,city,BA
+Jussara,2918506,city,BA
+Jussari,2918555,city,BA
+Jussiape,2918605,city,BA
+Lafaiete Coutinho,2918704,city,BA
+Laje,2918803,city,BA
+Lajedão,2918902,city,BA
+Lajedo do Tabocal,2919058,city,BA
+Lamarão,2919108,city,BA
+Lapão,2919157,city,BA
+Lauro de Freitas,2919207,city,BA
+Licínio de Almeida,2919405,city,BA
+Livramento de Nossa Senhora,2919504,city,BA
+Luís Eduardo Magalhães,2919553,city,BA
+Macajuba,2919603,city,BA
+Macarani,2919702,city,BA
+Macaúbas,2919801,city,BA
+Macururé,2919900,city,BA
+Madre de Deus,2919926,city,BA
+Maetinga,2919959,city,BA
+Maiquinique,2920007,city,BA
+Mairi,2920106,city,BA
+Malhada,2920205,city,BA
+Malhada de Pedras,2920304,city,BA
+Manoel Vitorino,2920403,city,BA
+Mansidão,2920452,city,BA
+Maracás,2920502,city,BA
+Maragogipe,2920601,city,BA
+Maraú,2920700,city,BA
+Marcionílio Souza,2920809,city,BA
+Mascote,2920908,city,BA
+Mata de São João,2921005,city,BA
+Medeiros Neto,2921104,city,BA
+Miguel Calmon,2921203,city,BA
+Milagres,2921302,city,BA
+Mirangaba,2921401,city,BA
+Mirante,2921450,city,BA
+Monte Santo,2921500,city,BA
+Morpará,2921609,city,BA
+Morro do Chapéu,2921708,city,BA
+Mortugaba,2921807,city,BA
+Mucugê,2921906,city,BA
+Mucuri,2922003,city,BA
+Mulungu do Morro,2922052,city,BA
+Mundo Novo,2922102,city,BA
+Muniz Ferreira,2922201,city,BA
+Muquém de São Francisco,2922250,city,BA
+Muritiba,2922300,city,BA
+Mutuípe,2922409,city,BA
+Nazaré,2922508,city,BA
+Nilo Peçanha,2922607,city,BA
+Nordestina,2922656,city,BA
+Nova Canaã,2922706,city,BA
+Nova Fátima,2922730,city,BA
+Nova Ibiá,2922755,city,BA
+Nova Itarana,2922805,city,BA
+Nova Redenção,2922854,city,BA
+Nova Soure,2922904,city,BA
+Nova Viçosa,2923001,city,BA
+Novo Triunfo,2923050,city,BA
+Olindina,2923100,city,BA
+Oliveira dos Brejinhos,2923209,city,BA
+Ouriçangas,2923308,city,BA
+Ourolândia,2923357,city,BA
+Palmas de Monte Alto,2923407,city,BA
+Palmeiras,2923506,city,BA
+Paramirim,2923605,city,BA
+Paratinga,2923704,city,BA
+Paripiranga,2923803,city,BA
+Pau Brasil,2923902,city,BA
+Paulo Afonso,2924009,city,BA
+Pé de Serra,2924058,city,BA
+Pedrão,2924108,city,BA
+Pedro Alexandre,2924207,city,BA
+Piatã,2924306,city,BA
+Pilão Arcado,2924405,city,BA
+Pindaí,2924504,city,BA
+Pindobaçu,2924603,city,BA
+Pintadas,2924652,city,BA
+Piraí do Norte,2924678,city,BA
+Piripá,2924702,city,BA
+Piritiba,2924801,city,BA
+Planalto,2925006,city,BA
+Poções,2925105,city,BA
+Pojuca,2925204,city,BA
+Ponto Novo,2925253,city,BA
+Porto Seguro,2925303,city,BA
+Potiraguá,2925402,city,BA
+Prado,2925501,city,BA
+Presidente Dutra,2925600,city,BA
+Presidente Jânio Quadros,2925709,city,BA
+Presidente Tancredo Neves,2925758,city,BA
+Queimadas,2925808,city,BA
+Quijingue,2925907,city,BA
+Quixabeira,2925931,city,BA
+Rafael Jambeiro,2925956,city,BA
+Remanso,2926004,city,BA
+Retirolândia,2926103,city,BA
+Riachão das Neves,2926202,city,BA
+Riachão do Jacuípe,2926301,city,BA
+Riacho de Santana,2926400,city,BA
+Ribeira do Amparo,2926509,city,BA
+Ribeira do Pombal,2926608,city,BA
+Ribeirão do Largo,2926657,city,BA
+Rio do Antônio,2926806,city,BA
+Rio do Pires,2926905,city,BA
+Rio Real,2927002,city,BA
+Rodelas,2927101,city,BA
+Ruy Barbosa,2927200,city,BA
+Salinas da Margarida,2927309,city,BA
+Salvador,2927408,city,BA
+Santa Bárbara,2927507,city,BA
+Santa Brígida,2927606,city,BA
+Santa Cruz Cabrália,2927705,city,BA
+Santa Cruz da Vitória,2927804,city,BA
+Santa Inês,2927903,city,BA
+Santaluz,2928000,city,BA
+Santa Luzia,2928059,city,BA
+Santa Maria da Vitória,2928109,city,BA
+Santanópolis,2928307,city,BA
+Santa Rita de Cássia,2928406,city,BA
+Santa Teresinha,2928505,city,BA
+Santo Amaro,2928604,city,BA
+Santo Antônio de Jesus,2928703,city,BA
+Santo Estêvão,2928802,city,BA
+São Desidério,2928901,city,BA
+São Domingos,2928950,city,BA
+São Felipe,2929107,city,BA
+São Félix,2929008,city,BA
+São Félix do Coribe,2929057,city,BA
+São Francisco do Conde,2929206,city,BA
+São Gabriel,2929255,city,BA
+São Gonçalo dos Campos,2929305,city,BA
+São José da Vitória,2929354,city,BA
+São José do Jacuípe,2929370,city,BA
+São Miguel das Matas,2929404,city,BA
+São Sebastião do Passé,2929503,city,BA
+Sapeaçu,2929602,city,BA
+Sátiro Dias,2929701,city,BA
+Saubara,2929750,city,BA
+Seabra,2929909,city,BA
+Senhor do Bonfim,2930105,city,BA
+Sento Sé,2930204,city,BA
+Serra do Ramalho,2930154,city,BA
+Serra Preta,2930402,city,BA
+Serrinha,2930501,city,BA
+Serrolândia,2930600,city,BA
+Simões Filho,2930709,city,BA
+Sítio do Quinto,2930766,city,BA
+Sobradinho,2930774,city,BA
+Souto Soares,2930808,city,BA
+Tabocas do Brejo Velho,2930907,city,BA
+Tanquinho,2931103,city,BA
+Taperoá,2931202,city,BA
+Tapiramutá,2931301,city,BA
+Teixeira de Freitas,2931350,city,BA
+Teodoro Sampaio,2931400,city,BA
+Teofilândia,2931509,city,BA
+Teolândia,2931608,city,BA
+Terra Nova,2931707,city,BA
+Tremedal,2931806,city,BA
+Tucano,2931905,city,BA
+Uauá,2932002,city,BA
+Ubaíra,2932101,city,BA
+Ubaitaba,2932200,city,BA
+Ubatã,2932309,city,BA
+Uibaí,2932408,city,BA
+Umburanas,2932457,city,BA
+Una,2932507,city,BA
+Urandi,2932606,city,BA
+Uruçuca,2932705,city,BA
+Utinga,2932804,city,BA
+Valença,2932903,city,BA
+Valente,2933000,city,BA
+Várzea da Roça,2933059,city,BA
+Várzea Nova,2933158,city,BA
+Varzedo,2933174,city,BA
+Vera Cruz,2933208,city,BA
+Vereda,2933257,city,BA
+Vitória da Conquista,2933307,city,BA
+Wagner,2933406,city,BA
+Wanderley,2933455,city,BA
+Wenceslau Guimarães,2933505,city,BA
+Xique-Xique,2933604,city,BA
+Abaiara,2300101,city,CE
+Acarape,2300150,city,CE
+Acaraú,2300200,city,CE
+Acopiara,2300309,city,CE
+Aiuaba,2300408,city,CE
+Alcântaras,2300507,city,CE
+Altaneira,2300606,city,CE
+Alto Santo,2300705,city,CE
+Amontada,2300754,city,CE
+Antonina do Norte,2300804,city,CE
+Apuiarés,2300903,city,CE
+Aquiraz,2301000,city,CE
+Aracati,2301109,city,CE
+Aracoiaba,2301208,city,CE
+Ararendá,2301257,city,CE
+Araripe,2301307,city,CE
+Aratuba,2301406,city,CE
+Arneiroz,2301505,city,CE
+Assaré,2301604,city,CE
+Aurora,2301703,city,CE
+Baixio,2301802,city,CE
+Banabuiú,2301851,city,CE
+Barbalha,2301901,city,CE
+Barreira,2301950,city,CE
+Barro,2302008,city,CE
+Barroquinha,2302057,city,CE
+Baturité,2302107,city,CE
+Beberibe,2302206,city,CE
+Bela Cruz,2302305,city,CE
+Boa Viagem,2302404,city,CE
+Brejo Santo,2302503,city,CE
+Camocim,2302602,city,CE
+Campos Sales,2302701,city,CE
+Canindé,2302800,city,CE
+Capistrano,2302909,city,CE
+Caridade,2303006,city,CE
+Cariré,2303105,city,CE
+Caririaçu,2303204,city,CE
+Cariús,2303303,city,CE
+Carnaubal,2303402,city,CE
+Cascavel,2303501,city,CE
+Catarina,2303600,city,CE
+Catunda,2303659,city,CE
+Caucaia,2303709,city,CE
+Cedro,2303808,city,CE
+Chaval,2303907,city,CE
+Choró,2303931,city,CE
+Chorozinho,2303956,city,CE
+Coreaú,2304004,city,CE
+Crateús,2304103,city,CE
+Crato,2304202,city,CE
+Croatá,2304236,city,CE
+Cruz,2304251,city,CE
+Deputado Irapuan Pinheiro,2304269,city,CE
+Ererê,2304277,city,CE
+Eusébio,2304285,city,CE
+Farias Brito,2304301,city,CE
+Forquilha,2304350,city,CE
+Fortaleza,2304400,city,CE
+Fortim,2304459,city,CE
+Frecheirinha,2304509,city,CE
+General Sampaio,2304608,city,CE
+Graça,2304657,city,CE
+Granja,2304707,city,CE
+Granjeiro,2304806,city,CE
+Groaíras,2304905,city,CE
+Guaiúba,2304954,city,CE
+Guaraciaba do Norte,2305001,city,CE
+Guaramiranga,2305100,city,CE
+Hidrolândia,2305209,city,CE
+Horizonte,2305233,city,CE
+Ibaretama,2305266,city,CE
+Ibiapina,2305308,city,CE
+Ibicuitinga,2305332,city,CE
+Icapuí,2305357,city,CE
+Icó,2305407,city,CE
+Iguatu,2305506,city,CE
+Independência,2305605,city,CE
+Ipaporanga,2305654,city,CE
+Ipaumirim,2305704,city,CE
+Ipu,2305803,city,CE
+Ipueiras,2305902,city,CE
+Iracema,2306009,city,CE
+Irauçuba,2306108,city,CE
+Itaiçaba,2306207,city,CE
+Itaitinga,2306256,city,CE
+Itapajé,2306306,city,CE
+Itapipoca,2306405,city,CE
+Itapiúna,2306504,city,CE
+Itarema,2306553,city,CE
+Itatira,2306603,city,CE
+Jaguaretama,2306702,city,CE
+Jaguaribara,2306801,city,CE
+Jaguaribe,2306900,city,CE
+Jaguaruana,2307007,city,CE
+Jardim,2307106,city,CE
+Jati,2307205,city,CE
+Jijoca de Jericoacoara,2307254,city,CE
+Juazeiro do Norte,2307304,city,CE
+Jucás,2307403,city,CE
+Lavras da Mangabeira,2307502,city,CE
+Limoeiro do Norte,2307601,city,CE
+Madalena,2307635,city,CE
+Maracanaú,2307650,city,CE
+Maranguape,2307700,city,CE
+Marco,2307809,city,CE
+Martinópole,2307908,city,CE
+Massapê,2308005,city,CE
+Mauriti,2308104,city,CE
+Meruoca,2308203,city,CE
+Milagres,2308302,city,CE
+Milhã,2308351,city,CE
+Miraíma,2308377,city,CE
+Missão Velha,2308401,city,CE
+Mombaça,2308500,city,CE
+Monsenhor Tabosa,2308609,city,CE
+Morada Nova,2308708,city,CE
+Moraújo,2308807,city,CE
+Morrinhos,2308906,city,CE
+Mucambo,2309003,city,CE
+Mulungu,2309102,city,CE
+Nova Olinda,2309201,city,CE
+Nova Russas,2309300,city,CE
+Novo Oriente,2309409,city,CE
+Ocara,2309458,city,CE
+Orós,2309508,city,CE
+Pacajus,2309607,city,CE
+Pacatuba,2309706,city,CE
+Pacoti,2309805,city,CE
+Pacujá,2309904,city,CE
+Palhano,2310001,city,CE
+Palmácia,2310100,city,CE
+Paracuru,2310209,city,CE
+Paraipaba,2310258,city,CE
+Parambu,2310308,city,CE
+Paramoti,2310407,city,CE
+Pedra Branca,2310506,city,CE
+Penaforte,2310605,city,CE
+Pentecoste,2310704,city,CE
+Pereiro,2310803,city,CE
+Pindoretama,2310852,city,CE
+Piquet Carneiro,2310902,city,CE
+Pires Ferreira,2310951,city,CE
+Poranga,2311009,city,CE
+Porteiras,2311108,city,CE
+Potengi,2311207,city,CE
+Potiretama,2311231,city,CE
+Quiterianópolis,2311264,city,CE
+Quixadá,2311306,city,CE
+Quixelô,2311355,city,CE
+Quixeramobim,2311405,city,CE
+Quixeré,2311504,city,CE
+Redenção,2311603,city,CE
+Reriutaba,2311702,city,CE
+Russas,2311801,city,CE
+Saboeiro,2311900,city,CE
+Salitre,2311959,city,CE
+Santana do Acaraú,2312007,city,CE
+Santana do Cariri,2312106,city,CE
+Santa Quitéria,2312205,city,CE
+São Benedito,2312304,city,CE
+São Gonçalo do Amarante,2312403,city,CE
+São João do Jaguaribe,2312502,city,CE
+São Luís do Curu,2312601,city,CE
+Senador Pompeu,2312700,city,CE
+Senador Sá,2312809,city,CE
+Sobral,2312908,city,CE
+Solonópole,2313005,city,CE
+Tabuleiro do Norte,2313104,city,CE
+Tamboril,2313203,city,CE
+Tarrafas,2313252,city,CE
+Tauá,2313302,city,CE
+Tejuçuoca,2313351,city,CE
+Tianguá,2313401,city,CE
+Trairi,2313500,city,CE
+Tururu,2313559,city,CE
+Ubajara,2313609,city,CE
+Umari,2313708,city,CE
+Umirim,2313757,city,CE
+Uruburetama,2313807,city,CE
+Uruoca,2313906,city,CE
+Varjota,2313955,city,CE
+Várzea Alegre,2314003,city,CE
+Viçosa do Ceará,2314102,city,CE
+Brasília,5300108,city,DF
+Afonso Cláudio,3200102,city,ES
+Água Doce do Norte,3200169,city,ES
+Águia Branca,3200136,city,ES
+Alegre,3200201,city,ES
+Alfredo Chaves,3200300,city,ES
+Alto Rio Novo,3200359,city,ES
+Anchieta,3200409,city,ES
+Apiacá,3200508,city,ES
+Aracruz,3200607,city,ES
+Atilio Vivacqua,3200706,city,ES
+Baixo Guandu,3200805,city,ES
+Barra de São Francisco,3200904,city,ES
+Boa Esperança,3201001,city,ES
+Bom Jesus do Norte,3201100,city,ES
+Brejetuba,3201159,city,ES
+Cachoeiro de Itapemirim,3201209,city,ES
+Cariacica,3201308,city,ES
+Castelo,3201407,city,ES
+Colatina,3201506,city,ES
+Conceição da Barra,3201605,city,ES
+Conceição do Castelo,3201704,city,ES
+Divino de São Lourenço,3201803,city,ES
+Domingos Martins,3201902,city,ES
+Dores do Rio Preto,3202009,city,ES
+Ecoporanga,3202108,city,ES
+Fundão,3202207,city,ES
+Governador Lindenberg,3202256,city,ES
+Guaçuí,3202306,city,ES
+Guarapari,3202405,city,ES
+Ibatiba,3202454,city,ES
+Ibiraçu,3202504,city,ES
+Ibitirama,3202553,city,ES
+Iconha,3202603,city,ES
+Irupi,3202652,city,ES
+Itaguaçu,3202702,city,ES
+Itapemirim,3202801,city,ES
+Itarana,3202900,city,ES
+Iúna,3203007,city,ES
+Jaguaré,3203056,city,ES
+Jerônimo Monteiro,3203106,city,ES
+João Neiva,3203130,city,ES
+Laranja da Terra,3203163,city,ES
+Linhares,3203205,city,ES
+Mantenópolis,3203304,city,ES
+Marataízes,3203320,city,ES
+Marechal Floriano,3203346,city,ES
+Marilândia,3203353,city,ES
+Mimoso do Sul,3203403,city,ES
+Montanha,3203502,city,ES
+Mucurici,3203601,city,ES
+Muniz Freire,3203700,city,ES
+Muqui,3203809,city,ES
+Nova Venécia,3203908,city,ES
+Pancas,3204005,city,ES
+Pedro Canário,3204054,city,ES
+Pinheiros,3204104,city,ES
+Piúma,3204203,city,ES
+Ponto Belo,3204252,city,ES
+Presidente Kennedy,3204302,city,ES
+Rio Bananal,3204351,city,ES
+Rio Novo do Sul,3204401,city,ES
+Santa Leopoldina,3204500,city,ES
+Santa Maria de Jetibá,3204559,city,ES
+Santa Teresa,3204609,city,ES
+São Domingos do Norte,3204658,city,ES
+São Gabriel da Palha,3204708,city,ES
+São José do Calçado,3204807,city,ES
+São Mateus,3204906,city,ES
+São Roque do Canaã,3204955,city,ES
+Serra,3205002,city,ES
+Sooretama,3205010,city,ES
+Vargem Alta,3205036,city,ES
+Venda Nova do Imigrante,3205069,city,ES
+Viana,3205101,city,ES
+Vila Pavão,3205150,city,ES
+Vila Valério,3205176,city,ES
+Vila Velha,3205200,city,ES
+Vitória,3205309,city,ES
+Abadia de Goiás,5200050,city,GO
+Abadiânia,5200100,city,GO
+Acreúna,5200134,city,GO
+Adelândia,5200159,city,GO
+Água Fria de Goiás,5200175,city,GO
+Águas Lindas de Goiás,5200258,city,GO
+Alexânia,5200308,city,GO
+Aloândia,5200506,city,GO
+Alto Horizonte,5200555,city,GO
+Alto Paraíso de Goiás,5200605,city,GO
+Alvorada do Norte,5200803,city,GO
+Amaralina,5200829,city,GO
+Americano do Brasil,5200852,city,GO
+Amorinópolis,5200902,city,GO
+Anápolis,5201108,city,GO
+Anhanguera,5201207,city,GO
+Anicuns,5201306,city,GO
+Aparecida de Goiânia,5201405,city,GO
+Aparecida do Rio Doce,5201454,city,GO
+Araçu,5201603,city,GO
+Aragarças,5201702,city,GO
+Aragoiânia,5201801,city,GO
+Araguapaz,5202155,city,GO
+Aruanã,5202502,city,GO
+Aurilândia,5202601,city,GO
+Avelinópolis,5202809,city,GO
+Barro Alto,5203203,city,GO
+Bela Vista de Goiás,5203302,city,GO
+Bom Jardim de Goiás,5203401,city,GO
+Bom Jesus de Goiás,5203500,city,GO
+Bonfinópolis,5203559,city,GO
+Brazabrantes,5203609,city,GO
+Britânia,5203807,city,GO
+Buriti Alegre,5203906,city,GO
+Buriti de Goiás,5203939,city,GO
+Buritinópolis,5203962,city,GO
+Cabeceiras,5204003,city,GO
+Cachoeira Alta,5204102,city,GO
+Cachoeira Dourada,5204250,city,GO
+Caçu,5204300,city,GO
+Caiapônia,5204409,city,GO
+Caldas Novas,5204508,city,GO
+Caldazinha,5204557,city,GO
+Campestre de Goiás,5204607,city,GO
+Campinorte,5204706,city,GO
+Campo Alegre de Goiás,5204805,city,GO
+Campo Limpo de Goiás,5204854,city,GO
+Campos Belos,5204904,city,GO
+Campos Verdes,5204953,city,GO
+Carmo do Rio Verde,5205000,city,GO
+Castelândia,5205059,city,GO
+Catalão,5205109,city,GO
+Caturaí,5205208,city,GO
+Cavalcante,5205307,city,GO
+Ceres,5205406,city,GO
+Cezarina,5205455,city,GO
+Chapadão do Céu,5205471,city,GO
+Cidade Ocidental,5205497,city,GO
+Cocalzinho de Goiás,5205513,city,GO
+Córrego do Ouro,5205703,city,GO
+Corumbá de Goiás,5205802,city,GO
+Corumbaíba,5205901,city,GO
+Cristalina,5206206,city,GO
+Cristianópolis,5206305,city,GO
+Crixás,5206404,city,GO
+Cromínia,5206503,city,GO
+Cumari,5206602,city,GO
+Damolândia,5206800,city,GO
+Divinópolis de Goiás,5208301,city,GO
+Edealina,5207352,city,GO
+Edéia,5207402,city,GO
+Estrela do Norte,5207501,city,GO
+Faina,5207535,city,GO
+Fazenda Nova,5207600,city,GO
+Firminópolis,5207808,city,GO
+Flores de Goiás,5207907,city,GO
+Formosa,5208004,city,GO
+Gameleira de Goiás,5208152,city,GO
+Goianápolis,5208400,city,GO
+Goiandira,5208509,city,GO
+Goianésia,5208608,city,GO
+Goiânia,5208707,city,GO
+Goianira,5208806,city,GO
+Goiás,5208905,city,GO
+Goiatuba,5209101,city,GO
+Gouvelândia,5209150,city,GO
+Guapó,5209200,city,GO
+Guaraíta,5209291,city,GO
+Guarani de Goiás,5209408,city,GO
+Hidrolândia,5209705,city,GO
+Hidrolina,5209804,city,GO
+Iaciara,5209903,city,GO
+Inaciolândia,5209937,city,GO
+Indiara,5209952,city,GO
+Inhumas,5210000,city,GO
+Ipameri,5210109,city,GO
+Ipiranga de Goiás,5210158,city,GO
+Iporá,5210208,city,GO
+Israelândia,5210307,city,GO
+Itaberaí,5210406,city,GO
+Itaguari,5210562,city,GO
+Itaguaru,5210604,city,GO
+Itajá,5210802,city,GO
+Itapaci,5210901,city,GO
+Itapirapuã,5211008,city,GO
+Itapuranga,5211206,city,GO
+Itarumã,5211305,city,GO
+Itauçu,5211404,city,GO
+Itumbiara,5211503,city,GO
+Ivolândia,5211602,city,GO
+Jandaia,5211701,city,GO
+Jaraguá,5211800,city,GO
+Jataí,5211909,city,GO
+Jaupaci,5212006,city,GO
+Jesúpolis,5212055,city,GO
+Joviânia,5212105,city,GO
+Jussara,5212204,city,GO
+Leopoldo de Bulhões,5212303,city,GO
+Luziânia,5212501,city,GO
+Mara Rosa,5212808,city,GO
+Matrinchã,5212956,city,GO
+Maurilândia,5213004,city,GO
+Mimoso de Goiás,5213053,city,GO
+Minaçu,5213087,city,GO
+Mineiros,5213103,city,GO
+Monte Alegre de Goiás,5213509,city,GO
+Montes Claros de Goiás,5213707,city,GO
+Montividiu,5213756,city,GO
+Montividiu do Norte,5213772,city,GO
+Morrinhos,5213806,city,GO
+Morro Agudo de Goiás,5213855,city,GO
+Mossâmedes,5213905,city,GO
+Mozarlândia,5214002,city,GO
+Mundo Novo,5214051,city,GO
+Mutunópolis,5214101,city,GO
+Nazário,5214408,city,GO
+Nerópolis,5214507,city,GO
+Niquelândia,5214606,city,GO
+Nova América,5214705,city,GO
+Nova Aurora,5214804,city,GO
+Nova Crixás,5214838,city,GO
+Nova Glória,5214861,city,GO
+Nova Iguaçu de Goiás,5214879,city,GO
+Nova Veneza,5215009,city,GO
+Novo Brasil,5215207,city,GO
+Novo Gama,5215231,city,GO
+Orizona,5215306,city,GO
+Ouro Verde de Goiás,5215405,city,GO
+Ouvidor,5215504,city,GO
+Padre Bernardo,5215603,city,GO
+Palmeiras de Goiás,5215702,city,GO
+Palmelo,5215801,city,GO
+Palminópolis,5215900,city,GO
+Panamá,5216007,city,GO
+Paranaiguara,5216304,city,GO
+Paraúna,5216403,city,GO
+Perolândia,5216452,city,GO
+Petrolina de Goiás,5216809,city,GO
+Piracanjuba,5217104,city,GO
+Piranhas,5217203,city,GO
+Pirenópolis,5217302,city,GO
+Pires do Rio,5217401,city,GO
+Planaltina,5217609,city,GO
+Pontalina,5217708,city,GO
+Porangatu,5218003,city,GO
+Porteirão,5218052,city,GO
+Portelândia,5218102,city,GO
+Posse,5218300,city,GO
+Professor Jamil,5218391,city,GO
+Quirinópolis,5218508,city,GO
+Rialma,5218607,city,GO
+Rianápolis,5218706,city,GO
+Rio Verde,5218805,city,GO
+Rubiataba,5218904,city,GO
+Sanclerlândia,5219001,city,GO
+Santa Bárbara de Goiás,5219100,city,GO
+Santa Cruz de Goiás,5219209,city,GO
+Santa Fé de Goiás,5219258,city,GO
+Santa Helena de Goiás,5219308,city,GO
+Santa Isabel,5219357,city,GO
+Santa Rita do Araguaia,5219407,city,GO
+Santa Rita do Novo Destino,5219456,city,GO
+Santa Rosa de Goiás,5219506,city,GO
+Santa Tereza de Goiás,5219605,city,GO
+Santa Terezinha de Goiás,5219704,city,GO
+Santo Antônio da Barra,5219712,city,GO
+Santo Antônio de Goiás,5219738,city,GO
+Santo Antônio do Descoberto,5219753,city,GO
+São Francisco de Goiás,5219902,city,GO
+São João d'Aliança,5220009,city,GO
+São Luís de Montes Belos,5220108,city,GO
+São Luiz do Norte,5220157,city,GO
+São Miguel do Araguaia,5220207,city,GO
+São Simão,5220405,city,GO
+Senador Canedo,5220454,city,GO
+Serranópolis,5220504,city,GO
+Silvânia,5220603,city,GO
+Teresina de Goiás,5221080,city,GO
+Terezópolis de Goiás,5221197,city,GO
+Três Ranchos,5221304,city,GO
+Trindade,5221403,city,GO
+Turvânia,5221502,city,GO
+Turvelândia,5221551,city,GO
+Uruaçu,5221601,city,GO
+Uruana,5221700,city,GO
+Urutaí,5221809,city,GO
+Valparaíso de Goiás,5221858,city,GO
+Varjão,5221908,city,GO
+Vianópolis,5222005,city,GO
+Vicentinópolis,5222054,city,GO
+Vila Boa,5222203,city,GO
+Vila Propício,5222302,city,GO
+Água Clara,5000203,city,MS
+Alcinópolis,5000252,city,MS
+Amambai,5000609,city,MS
+Anastácio,5000708,city,MS
+Angélica,5000856,city,MS
+Aparecida do Taboado,5001003,city,MS
+Aquidauana,5001102,city,MS
+Aral Moreira,5001243,city,MS
+Bandeirantes,5001508,city,MS
+Bataguassu,5001904,city,MS
+Batayporã,5002001,city,MS
+Bela Vista,5002100,city,MS
+Bodoquena,5002159,city,MS
+Bonito,5002209,city,MS
+Brasilândia,5002308,city,MS
+Caarapó,5002407,city,MS
+Camapuã,5002605,city,MS
+Campo Grande,5002704,city,MS
+Caracol,5002803,city,MS
+Cassilândia,5002902,city,MS
+Chapadão do Sul,5002951,city,MS
+Corguinho,5003108,city,MS
+Coronel Sapucaia,5003157,city,MS
+Corumbá,5003207,city,MS
+Costa Rica,5003256,city,MS
+Coxim,5003306,city,MS
+Deodápolis,5003454,city,MS
+Douradina,5003504,city,MS
+Dourados,5003702,city,MS
+Eldorado,5003751,city,MS
+Fátima do Sul,5003801,city,MS
+Glória de Dourados,5004007,city,MS
+Guia Lopes da Laguna,5004106,city,MS
+Iguatemi,5004304,city,MS
+Inocência,5004403,city,MS
+Itaporã,5004502,city,MS
+Itaquiraí,5004601,city,MS
+Ivinhema,5004700,city,MS
+Jardim,5005004,city,MS
+Jateí,5005103,city,MS
+Juti,5005152,city,MS
+Ladário,5005202,city,MS
+Laguna Carapã,5005251,city,MS
+Maracaju,5005400,city,MS
+Miranda,5005608,city,MS
+Mundo Novo,5005681,city,MS
+Naviraí,5005707,city,MS
+Nova Alvorada do Sul,5006002,city,MS
+Nova Andradina,5006200,city,MS
+Novo Horizonte do Sul,5006259,city,MS
+Paraíso das Águas,5006275,city,MS
+Paranaíba,5006309,city,MS
+Paranhos,5006358,city,MS
+Ponta Porã,5006606,city,MS
+Porto Murtinho,5006903,city,MS
+Ribas do Rio Pardo,5007109,city,MS
+Rio Brilhante,5007208,city,MS
+Rio Negro,5007307,city,MS
+Rio Verde de Mato Grosso,5007406,city,MS
+Rochedo,5007505,city,MS
+Santa Rita do Pardo,5007554,city,MS
+São Gabriel do Oeste,5007695,city,MS
+Selvíria,5007802,city,MS
+Sidrolândia,5007901,city,MS
+Sonora,5007935,city,MS
+Tacuru,5007950,city,MS
+Taquarussu,5007976,city,MS
+Terenos,5008008,city,MS
+Três Lagoas,5008305,city,MS
+Vicentina,5008404,city,MS
+Acorizal,5100102,city,MT
+Água Boa,5100201,city,MT
+Alta Floresta,5100250,city,MT
+Alto Araguaia,5100300,city,MT
+Alto Boa Vista,5100359,city,MT
+Alto Garças,5100409,city,MT
+Alto Paraguai,5100508,city,MT
+Alto Taquari,5100607,city,MT
+Apiacás,5100805,city,MT
+Araguaiana,5101001,city,MT
+Araputanga,5101258,city,MT
+Arenápolis,5101308,city,MT
+Aripuanã,5101407,city,MT
+Barão de Melgaço,5101605,city,MT
+Barra do Bugres,5101704,city,MT
+Barra do Garças,5101803,city,MT
+Bom Jesus do Araguaia,5101852,city,MT
+Brasnorte,5101902,city,MT
+Cáceres,5102504,city,MT
+Campinápolis,5102603,city,MT
+Campo Novo do Parecis,5102637,city,MT
+Campos de Júlio,5102686,city,MT
+Campo Verde,5102678,city,MT
+Canabrava do Norte,5102694,city,MT
+Canarana,5102702,city,MT
+Castanheira,5102850,city,MT
+Chapada dos Guimarães,5103007,city,MT
+Cláudia,5103056,city,MT
+Cocalinho,5103106,city,MT
+Colíder,5103205,city,MT
+Colniza,5103254,city,MT
+Comodoro,5103304,city,MT
+Confresa,5103353,city,MT
+Conquista D'Oeste,5103361,city,MT
+Cotriguaçu,5103379,city,MT
+Cuiabá,5103403,city,MT
+Curvelândia,5103437,city,MT
+Denise,5103452,city,MT
+Diamantino,5103502,city,MT
+Dom Aquino,5103601,city,MT
+Feliz Natal,5103700,city,MT
+Figueirópolis D'Oeste,5103809,city,MT
+Gaúcha do Norte,5103858,city,MT
+General Carneiro,5103908,city,MT
+Guarantã do Norte,5104104,city,MT
+Guiratinga,5104203,city,MT
+Indiavaí,5104500,city,MT
+Ipiranga do Norte,5104526,city,MT
+Itanhangá,5104542,city,MT
+Itaúba,5104559,city,MT
+Itiquira,5104609,city,MT
+Jaciara,5104807,city,MT
+Jangada,5104906,city,MT
+Jauru,5105002,city,MT
+Juara,5105101,city,MT
+Juína,5105150,city,MT
+Juruena,5105176,city,MT
+Juscimeira,5105200,city,MT
+Lambari D'Oeste,5105234,city,MT
+Lucas do Rio Verde,5105259,city,MT
+Luciara,5105309,city,MT
+Marcelândia,5105580,city,MT
+Matupá,5105606,city,MT
+Mirassol d'Oeste,5105622,city,MT
+Nobres,5105903,city,MT
+Nortelândia,5106000,city,MT
+Nossa Senhora do Livramento,5106109,city,MT
+Nova Bandeirantes,5106158,city,MT
+Nova Brasilândia,5106208,city,MT
+Nova Canaã do Norte,5106216,city,MT
+Nova Guarita,5108808,city,MT
+Nova Lacerda,5106182,city,MT
+Nova Marilândia,5108857,city,MT
+Nova Maringá,5108907,city,MT
+Nova Monte Verde,5108956,city,MT
+Nova Mutum,5106224,city,MT
+Nova Nazaré,5106174,city,MT
+Nova Olímpia,5106232,city,MT
+Nova Santa Helena,5106190,city,MT
+Nova Ubiratã,5106240,city,MT
+Nova Xavantina,5106257,city,MT
+Novo Horizonte do Norte,5106273,city,MT
+Novo Mundo,5106265,city,MT
+Novo Santo Antônio,5106315,city,MT
+Novo São Joaquim,5106281,city,MT
+Paranaíta,5106299,city,MT
+Paranatinga,5106307,city,MT
+Pedra Preta,5106372,city,MT
+Peixoto de Azevedo,5106422,city,MT
+Poconé,5106505,city,MT
+Pontal do Araguaia,5106653,city,MT
+Ponte Branca,5106703,city,MT
+Pontes e Lacerda,5106752,city,MT
+Porto Alegre do Norte,5106778,city,MT
+Porto dos Gaúchos,5106802,city,MT
+Porto Esperidião,5106828,city,MT
+Porto Estrela,5106851,city,MT
+Poxoréu,5107008,city,MT
+Primavera do Leste,5107040,city,MT
+Querência,5107065,city,MT
+Reserva do Cabaçal,5107156,city,MT
+Ribeirão Cascalheira,5107180,city,MT
+Ribeirãozinho,5107198,city,MT
+Rio Branco,5107206,city,MT
+Rondolândia,5107578,city,MT
+Rondonópolis,5107602,city,MT
+Rosário Oeste,5107701,city,MT
+Salto do Céu,5107750,city,MT
+Santa Carmem,5107248,city,MT
+Santa Cruz do Xingu,5107743,city,MT
+Santa Rita do Trivelato,5107768,city,MT
+Santa Terezinha,5107776,city,MT
+Santo Afonso,5107263,city,MT
+Santo Antônio do Leste,5107792,city,MT
+Santo Antônio do Leverger,5107800,city,MT
+São Félix do Araguaia,5107859,city,MT
+São José do Povo,5107297,city,MT
+São José do Rio Claro,5107305,city,MT
+São José dos Quatro Marcos,5107107,city,MT
+São José do Xingu,5107354,city,MT
+São Pedro da Cipa,5107404,city,MT
+Sapezal,5107875,city,MT
+Serra Nova Dourada,5107883,city,MT
+Sinop,5107909,city,MT
+Sorriso,5107925,city,MT
+Tabaporã,5107941,city,MT
+Tangará da Serra,5107958,city,MT
+Tapurah,5108006,city,MT
+Terra Nova do Norte,5108055,city,MT
+Tesouro,5108105,city,MT
+União do Sul,5108303,city,MT
+Vale de São Domingos,5108352,city,MT
+Várzea Grande,5108402,city,MT
+Vera,5108501,city,MT
+Vila Bela da Santíssima Trindade,5105507,city,MT
+Vila Rica,5108600,city,MT
+Abreu e Lima,2600054,city,PE
+Afogados da Ingazeira,2600104,city,PE
+Afrânio,2600203,city,PE
+Agrestina,2600302,city,PE
+Água Preta,2600401,city,PE
+Águas Belas,2600500,city,PE
+Alagoinha,2600609,city,PE
+Aliança,2600708,city,PE
+Altinho,2600807,city,PE
+Amaraji,2600906,city,PE
+Angelim,2601003,city,PE
+Araçoiaba,2601052,city,PE
+Araripina,2601102,city,PE
+Arcoverde,2601201,city,PE
+Barra de Guabiraba,2601300,city,PE
+Barreiros,2601409,city,PE
+Belém de Maria,2601508,city,PE
+Belém do São Francisco,2601607,city,PE
+Belo Jardim,2601706,city,PE
+Betânia,2601805,city,PE
+Bezerros,2601904,city,PE
+Bodocó,2602001,city,PE
+Bom Conselho,2602100,city,PE
+Bom Jardim,2602209,city,PE
+Bonito,2602308,city,PE
+Brejão,2602407,city,PE
+Brejinho,2602506,city,PE
+Brejo da Madre de Deus,2602605,city,PE
+Buenos Aires,2602704,city,PE
+Buíque,2602803,city,PE
+Cabo de Santo Agostinho,2602902,city,PE
+Cabrobó,2603009,city,PE
+Cachoeirinha,2603108,city,PE
+Caetés,2603207,city,PE
+Calçado,2603306,city,PE
+Calumbi,2603405,city,PE
+Camaragibe,2603454,city,PE
+Camocim de São Félix,2603504,city,PE
+Camutanga,2603603,city,PE
+Canhotinho,2603702,city,PE
+Capoeiras,2603801,city,PE
+Carnaíba,2603900,city,PE
+Carnaubeira da Penha,2603926,city,PE
+Carpina,2604007,city,PE
+Caruaru,2604106,city,PE
+Casinhas,2604155,city,PE
+Catende,2604205,city,PE
+Cedro,2604304,city,PE
+Chã de Alegria,2604403,city,PE
+Chã Grande,2604502,city,PE
+Condado,2604601,city,PE
+Correntes,2604700,city,PE
+Cortês,2604809,city,PE
+Cumaru,2604908,city,PE
+Cupira,2605004,city,PE
+Custódia,2605103,city,PE
+Dormentes,2605152,city,PE
+Escada,2605202,city,PE
+Exu,2605301,city,PE
+Feira Nova,2605400,city,PE
+Fernando de Noronha,2605459,city,PE
+Ferreiros,2605509,city,PE
+Flores,2605608,city,PE
+Floresta,2605707,city,PE
+Frei Miguelinho,2605806,city,PE
+Gameleira,2605905,city,PE
+Garanhuns,2606002,city,PE
+Glória do Goitá,2606101,city,PE
+Goiana,2606200,city,PE
+Granito,2606309,city,PE
+Gravatá,2606408,city,PE
+Iati,2606507,city,PE
+Ibimirim,2606606,city,PE
+Ibirajuba,2606705,city,PE
+Igarassu,2606804,city,PE
+Iguaracy,2606903,city,PE
+Ilha de Itamaracá,2607604,city,PE
+Inajá,2607000,city,PE
+Ingazeira,2607109,city,PE
+Ipojuca,2607208,city,PE
+Ipubi,2607307,city,PE
+Itacuruba,2607406,city,PE
+Itaíba,2607505,city,PE
+Itambé,2607653,city,PE
+Itapetim,2607703,city,PE
+Itapissuma,2607752,city,PE
+Itaquitinga,2607802,city,PE
+Jaboatão dos Guararapes,2607901,city,PE
+Jaqueira,2607950,city,PE
+Jataúba,2608008,city,PE
+Jatobá,2608057,city,PE
+João Alfredo,2608107,city,PE
+Joaquim Nabuco,2608206,city,PE
+Jucati,2608255,city,PE
+Jupi,2608305,city,PE
+Jurema,2608404,city,PE
+Lagoa de Itaenga,2608503,city,PE
+Lagoa do Carro,2608453,city,PE
+Lagoa do Ouro,2608602,city,PE
+Lagoa dos Gatos,2608701,city,PE
+Lagoa Grande,2608750,city,PE
+Lajedo,2608800,city,PE
+Limoeiro,2608909,city,PE
+Macaparana,2609006,city,PE
+Machados,2609105,city,PE
+Maraial,2609204,city,PE
+Moreilândia,2614303,city,PE
+Moreno,2609402,city,PE
+Nazaré da Mata,2609501,city,PE
+Olinda,2609600,city,PE
+Orobó,2609709,city,PE
+Orocó,2609808,city,PE
+Ouricuri,2609907,city,PE
+Palmares,2610004,city,PE
+Palmeirina,2610103,city,PE
+Panelas,2610202,city,PE
+Paranatama,2610301,city,PE
+Parnamirim,2610400,city,PE
+Passira,2610509,city,PE
+Paudalho,2610608,city,PE
+Paulista,2610707,city,PE
+Pedra,2610806,city,PE
+Pesqueira,2610905,city,PE
+Petrolândia,2611002,city,PE
+Petrolina,2611101,city,PE
+Poção,2611200,city,PE
+Pombos,2611309,city,PE
+Primavera,2611408,city,PE
+Quipapá,2611507,city,PE
+Quixaba,2611533,city,PE
+Recife,2611606,city,PE
+Riacho das Almas,2611705,city,PE
+Ribeirão,2611804,city,PE
+Rio Formoso,2611903,city,PE
+Sairé,2612000,city,PE
+Salgadinho,2612109,city,PE
+Salgueiro,2612208,city,PE
+Saloá,2612307,city,PE
+Sanharó,2612406,city,PE
+Santa Cruz,2612455,city,PE
+Santa Cruz da Baixa Verde,2612471,city,PE
+Santa Cruz do Capibaribe,2612505,city,PE
+Santa Filomena,2612554,city,PE
+Santa Maria da Boa Vista,2612604,city,PE
+Santa Maria do Cambucá,2612703,city,PE
+Santa Terezinha,2612802,city,PE
+São Benedito do Sul,2612901,city,PE
+São Bento do Una,2613008,city,PE
+São Caitano,2613107,city,PE
+São João,2613206,city,PE
+São Joaquim do Monte,2613305,city,PE
+São José da Coroa Grande,2613404,city,PE
+São José do Belmonte,2613503,city,PE
+São José do Egito,2613602,city,PE
+São Lourenço da Mata,2613701,city,PE
+São Vicente Ferrer,2613800,city,PE
+Serra Talhada,2613909,city,PE
+Serrita,2614006,city,PE
+Sertânia,2614105,city,PE
+Sirinhaém,2614204,city,PE
+Solidão,2614402,city,PE
+Surubim,2614501,city,PE
+Tabira,2614600,city,PE
+Tacaimbó,2614709,city,PE
+Tacaratu,2614808,city,PE
+Tamandaré,2614857,city,PE
+Taquaritinga do Norte,2615003,city,PE
+Terezinha,2615102,city,PE
+Terra Nova,2615201,city,PE
+Timbaúba,2615300,city,PE
+Toritama,2615409,city,PE
+Tracunhaém,2615508,city,PE
+Trindade,2615607,city,PE
+Triunfo,2615706,city,PE
+Tupanatinga,2615805,city,PE
+Tuparetama,2615904,city,PE
+Venturosa,2616001,city,PE
+Verdejante,2616100,city,PE
+Vertente do Lério,2616183,city,PE
+Vertentes,2616209,city,PE
+Vicência,2616308,city,PE
+Vitória de Santo Antão,2616407,city,PE
+Xexéu,2616506,city,PE
+Acauã,2200053,city,PI
+Agricolândia,2200103,city,PI
+Água Branca,2200202,city,PI
+Alagoinha do Piauí,2200251,city,PI
+Alegrete do Piauí,2200277,city,PI
+Alto Longá,2200301,city,PI
+Altos,2200400,city,PI
+Alvorada do Gurguéia,2200459,city,PI
+Amarante,2200509,city,PI
+Angical do Piauí,2200608,city,PI
+Anísio de Abreu,2200707,city,PI
+Antônio Almeida,2200806,city,PI
+Aroazes,2200905,city,PI
+Assunção do Piauí,2201051,city,PI
+Avelino Lopes,2201101,city,PI
+Baixa Grande do Ribeiro,2201150,city,PI
+Barra D'Alcântara,2201176,city,PI
+Barras,2201200,city,PI
+Barreiras do Piauí,2201309,city,PI
+Barro Duro,2201408,city,PI
+Batalha,2201507,city,PI
+Bela Vista do Piauí,2201556,city,PI
+Belém do Piauí,2201572,city,PI
+Beneditinos,2201606,city,PI
+Bertolínia,2201705,city,PI
+Betânia do Piauí,2201739,city,PI
+Boa Hora,2201770,city,PI
+Bocaina,2201804,city,PI
+Bom Jesus,2201903,city,PI
+Bom Princípio do Piauí,2201919,city,PI
+Bonfim do Piauí,2201929,city,PI
+Boqueirão do Piauí,2201945,city,PI
+Brasileira,2201960,city,PI
+Buriti dos Lopes,2202000,city,PI
+Buriti dos Montes,2202026,city,PI
+Cabeceiras do Piauí,2202059,city,PI
+Cajazeiras do Piauí,2202075,city,PI
+Cajueiro da Praia,2202083,city,PI
+Caldeirão Grande do Piauí,2202091,city,PI
+Campinas do Piauí,2202109,city,PI
+Campo Alegre do Fidalgo,2202117,city,PI
+Campo Grande do Piauí,2202133,city,PI
+Campo Largo do Piauí,2202174,city,PI
+Campo Maior,2202208,city,PI
+Canto do Buriti,2202307,city,PI
+Capitão de Campos,2202406,city,PI
+Capitão Gervásio Oliveira,2202455,city,PI
+Caracol,2202505,city,PI
+Caraúbas do Piauí,2202539,city,PI
+Caridade do Piauí,2202554,city,PI
+Castelo do Piauí,2202604,city,PI
+Caxingó,2202653,city,PI
+Cocal,2202703,city,PI
+Cocal de Telha,2202711,city,PI
+Cocal dos Alves,2202729,city,PI
+Coivaras,2202737,city,PI
+Colônia do Gurguéia,2202752,city,PI
+Colônia do Piauí,2202778,city,PI
+Coronel José Dias,2202851,city,PI
+Corrente,2202901,city,PI
+Cristino Castro,2203107,city,PI
+Curimatá,2203206,city,PI
+Currais,2203230,city,PI
+Curralinhos,2203255,city,PI
+Curral Novo do Piauí,2203271,city,PI
+Demerval Lobão,2203305,city,PI
+Dirceu Arcoverde,2203354,city,PI
+Dom Expedito Lopes,2203404,city,PI
+Domingos Mourão,2203420,city,PI
+Dom Inocêncio,2203453,city,PI
+Elesbão Veloso,2203503,city,PI
+Esperantina,2203701,city,PI
+Fartura do Piauí,2203750,city,PI
+Flores do Piauí,2203800,city,PI
+Floresta do Piauí,2203859,city,PI
+Floriano,2203909,city,PI
+Francinópolis,2204006,city,PI
+Francisco Ayres,2204105,city,PI
+Francisco Santos,2204204,city,PI
+Fronteiras,2204303,city,PI
+Geminiano,2204352,city,PI
+Gilbués,2204402,city,PI
+Guadalupe,2204501,city,PI
+Hugo Napoleão,2204600,city,PI
+Ilha Grande,2204659,city,PI
+Inhuma,2204709,city,PI
+Ipiranga do Piauí,2204808,city,PI
+Isaías Coelho,2204907,city,PI
+Itainópolis,2205003,city,PI
+Itaueira,2205102,city,PI
+Jacobina do Piauí,2205151,city,PI
+Jaicós,2205201,city,PI
+Jatobá do Piauí,2205276,city,PI
+Jerumenha,2205300,city,PI
+Joaquim Pires,2205409,city,PI
+Joca Marques,2205458,city,PI
+José de Freitas,2205508,city,PI
+Juazeiro do Piauí,2205516,city,PI
+Júlio Borges,2205524,city,PI
+Jurema,2205532,city,PI
+Lagoa Alegre,2205557,city,PI
+Lagoa de São Francisco,2205573,city,PI
+Lagoa do Barro do Piauí,2205565,city,PI
+Lagoa do Piauí,2205581,city,PI
+Lagoa do Sítio,2205599,city,PI
+Lagoinha do Piauí,2205540,city,PI
+Landri Sales,2205607,city,PI
+Luís Correia,2205706,city,PI
+Luzilândia,2205805,city,PI
+Madeiro,2205854,city,PI
+Manoel Emídio,2205904,city,PI
+Marcolândia,2205953,city,PI
+Marcos Parente,2206001,city,PI
+Massapê do Piauí,2206050,city,PI
+Matias Olímpio,2206100,city,PI
+Miguel Alves,2206209,city,PI
+Miguel Leão,2206308,city,PI
+Milton Brandão,2206357,city,PI
+Monsenhor Gil,2206407,city,PI
+Monsenhor Hipólito,2206506,city,PI
+Monte Alegre do Piauí,2206605,city,PI
+Morro Cabeça no Tempo,2206654,city,PI
+Morro do Chapéu do Piauí,2206670,city,PI
+Murici dos Portelas,2206696,city,PI
+Nazaré do Piauí,2206704,city,PI
+Nazária,2206720,city,PI
+Nossa Senhora de Nazaré,2206753,city,PI
+Nossa Senhora dos Remédios,2206803,city,PI
+Novo Oriente do Piauí,2206902,city,PI
+Novo Santo Antônio,2206951,city,PI
+Oeiras,2207009,city,PI
+Olho D'Água do Piauí,2207108,city,PI
+Padre Marcos,2207207,city,PI
+Paes Landim,2207306,city,PI
+Pajeú do Piauí,2207355,city,PI
+Palmeira do Piauí,2207405,city,PI
+Palmeirais,2207504,city,PI
+Paquetá,2207553,city,PI
+Parnaguá,2207603,city,PI
+Parnaíba,2207702,city,PI
+Passagem Franca do Piauí,2207751,city,PI
+Patos do Piauí,2207777,city,PI
+Pau D'Arco do Piauí,2207793,city,PI
+Paulistana,2207801,city,PI
+Pavussu,2207850,city,PI
+Pedro II,2207900,city,PI
+Pedro Laurentino,2207934,city,PI
+Picos,2208007,city,PI
+Pimenteiras,2208106,city,PI
+Pio IX,2208205,city,PI
+Piracuruca,2208304,city,PI
+Piripiri,2208403,city,PI
+Porto,2208502,city,PI
+Prata do Piauí,2208601,city,PI
+Queimada Nova,2208650,city,PI
+Redenção do Gurguéia,2208700,city,PI
+Regeneração,2208809,city,PI
+Ribeira do Piauí,2208874,city,PI
+Ribeiro Gonçalves,2208908,city,PI
+Rio Grande do Piauí,2209005,city,PI
+Santa Cruz do Piauí,2209104,city,PI
+Santa Cruz dos Milagres,2209153,city,PI
+Santa Filomena,2209203,city,PI
+Santa Luz,2209302,city,PI
+Santana do Piauí,2209351,city,PI
+Santa Rosa do Piauí,2209377,city,PI
+Santo Antônio de Lisboa,2209401,city,PI
+Santo Antônio dos Milagres,2209450,city,PI
+Santo Inácio do Piauí,2209500,city,PI
+São Félix do Piauí,2209609,city,PI
+São Francisco de Assis do Piauí,2209658,city,PI
+São Francisco do Piauí,2209708,city,PI
+São Gonçalo do Gurguéia,2209757,city,PI
+São Gonçalo do Piauí,2209807,city,PI
+São João da Canabrava,2209856,city,PI
+São João da Fronteira,2209872,city,PI
+São João da Serra,2209906,city,PI
+São João da Varjota,2209955,city,PI
+São João do Arraial,2209971,city,PI
+São João do Piauí,2210003,city,PI
+São José do Divino,2210052,city,PI
+São José do Peixe,2210102,city,PI
+São José do Piauí,2210201,city,PI
+São Julião,2210300,city,PI
+São Lourenço do Piauí,2210359,city,PI
+São Luis do Piauí,2210375,city,PI
+São Miguel da Baixa Grande,2210383,city,PI
+São Miguel do Fidalgo,2210391,city,PI
+São Miguel do Tapuio,2210409,city,PI
+São Pedro do Piauí,2210508,city,PI
+São Raimundo Nonato,2210607,city,PI
+Sebastião Barros,2210623,city,PI
+Sigefredo Pacheco,2210656,city,PI
+Simões,2210706,city,PI
+Simplício Mendes,2210805,city,PI
+Socorro do Piauí,2210904,city,PI
+Sussuapara,2210938,city,PI
+Tanque do Piauí,2210979,city,PI
+Teresina,2211001,city,PI
+União,2211100,city,PI
+Uruçuí,2211209,city,PI
+Valença do Piauí,2211308,city,PI
+Várzea Branca,2211357,city,PI
+Várzea Grande,2211407,city,PI
+Vera Mendes,2211506,city,PI
+Vila Nova do Piauí,2211605,city,PI
+Wall Ferraz,2211704,city,PI
+Abatiá,4100103,city,PR
+Adrianópolis,4100202,city,PR
+Agudos do Sul,4100301,city,PR
+Almirante Tamandaré,4100400,city,PR
+Altamira do Paraná,4100459,city,PR
+Altônia,4100509,city,PR
+Alto Paraíso,4128625,city,PR
+Alto Paraná,4100608,city,PR
+Alto Piquiri,4100707,city,PR
+Alvorada do Sul,4100806,city,PR
+Amaporã,4100905,city,PR
+Ampére,4101002,city,PR
+Anahy,4101051,city,PR
+Andirá,4101101,city,PR
+Ângulo,4101150,city,PR
+Antonina,4101200,city,PR
+Antônio Olinto,4101309,city,PR
+Apucarana,4101408,city,PR
+Arapongas,4101507,city,PR
+Arapoti,4101606,city,PR
+Arapuã,4101655,city,PR
+Araruna,4101705,city,PR
+Araucária,4101804,city,PR
+Assaí,4101903,city,PR
+Assis Chateaubriand,4102000,city,PR
+Astorga,4102109,city,PR
+Atalaia,4102208,city,PR
+Balsa Nova,4102307,city,PR
+Bandeirantes,4102406,city,PR
+Barbosa Ferraz,4102505,city,PR
+Barracão,4102604,city,PR
+Bela Vista do Paraíso,4102802,city,PR
+Bituruna,4102901,city,PR
+Boa Esperança,4103008,city,PR
+Boa Vista da Aparecida,4103057,city,PR
+Bocaiúva do Sul,4103107,city,PR
+Bom Jesus do Sul,4103156,city,PR
+Bom Sucesso,4103206,city,PR
+Braganey,4103354,city,PR
+Brasilândia do Sul,4103370,city,PR
+Cafeara,4103404,city,PR
+Cafelândia,4103453,city,PR
+Cafezal do Sul,4103479,city,PR
+Califórnia,4103503,city,PR
+Cambará,4103602,city,PR
+Cambé,4103701,city,PR
+Cambira,4103800,city,PR
+Campina da Lagoa,4103909,city,PR
+Campina Grande do Sul,4104006,city,PR
+Campo Bonito,4104055,city,PR
+Campo do Tenente,4104105,city,PR
+Campo Largo,4104204,city,PR
+Campo Magro,4104253,city,PR
+Campo Mourão,4104303,city,PR
+Cândido de Abreu,4104402,city,PR
+Candói,4104428,city,PR
+Cantagalo,4104451,city,PR
+Capanema,4104501,city,PR
+Capitão Leônidas Marques,4104600,city,PR
+Carambeí,4104659,city,PR
+Carlópolis,4104709,city,PR
+Cascavel,4104808,city,PR
+Castro,4104907,city,PR
+Catanduvas,4105003,city,PR
+Centenário do Sul,4105102,city,PR
+Cerro Azul,4105201,city,PR
+Céu Azul,4105300,city,PR
+Chopinzinho,4105409,city,PR
+Cianorte,4105508,city,PR
+Cidade Gaúcha,4105607,city,PR
+Clevelândia,4105706,city,PR
+Colombo,4105805,city,PR
+Colorado,4105904,city,PR
+Congonhinhas,4106001,city,PR
+Conselheiro Mairinck,4106100,city,PR
+Contenda,4106209,city,PR
+Corbélia,4106308,city,PR
+Cornélio Procópio,4106407,city,PR
+Coronel Domingos Soares,4106456,city,PR
+Coronel Vivida,4106506,city,PR
+Corumbataí do Sul,4106555,city,PR
+Cruzeiro do Iguaçu,4106571,city,PR
+Cruzeiro do Oeste,4106605,city,PR
+Cruzeiro do Sul,4106704,city,PR
+Cruz Machado,4106803,city,PR
+Cruzmaltina,4106852,city,PR
+Curitiba,4106902,city,PR
+Curiúva,4107009,city,PR
+Diamante D'Oeste,4107157,city,PR
+Diamante do Norte,4107108,city,PR
+Diamante do Sul,4107124,city,PR
+Dois Vizinhos,4107207,city,PR
+Douradina,4107256,city,PR
+Doutor Camargo,4107306,city,PR
+Enéas Marques,4107405,city,PR
+Engenheiro Beltrão,4107504,city,PR
+Entre Rios do Oeste,4107538,city,PR
+Espigão Alto do Iguaçu,4107546,city,PR
+Faxinal,4107603,city,PR
+Fazenda Rio Grande,4107652,city,PR
+Fernandes Pinheiro,4107736,city,PR
+Figueira,4107751,city,PR
+Floraí,4107801,city,PR
+Floresta,4107900,city,PR
+Florestópolis,4108007,city,PR
+Flórida,4108106,city,PR
+Formosa do Oeste,4108205,city,PR
+Foz do Iguaçu,4108304,city,PR
+Foz do Jordão,4108452,city,PR
+Francisco Alves,4108320,city,PR
+Francisco Beltrão,4108403,city,PR
+General Carneiro,4108502,city,PR
+Goioerê,4108601,city,PR
+Goioxim,4108650,city,PR
+Guaíra,4108809,city,PR
+Guairaçá,4108908,city,PR
+Guamiranga,4108957,city,PR
+Guapirama,4109005,city,PR
+Guaporema,4109104,city,PR
+Guaraci,4109203,city,PR
+Guaraniaçu,4109302,city,PR
+Guarapuava,4109401,city,PR
+Guaraqueçaba,4109500,city,PR
+Guaratuba,4109609,city,PR
+Ibaiti,4109708,city,PR
+Ibema,4109757,city,PR
+Ibiporã,4109807,city,PR
+Icaraíma,4109906,city,PR
+Iguaraçu,4110003,city,PR
+Iguatu,4110052,city,PR
+Imbaú,4110078,city,PR
+Imbituva,4110102,city,PR
+Inácio Martins,4110201,city,PR
+Inajá,4110300,city,PR
+Indianópolis,4110409,city,PR
+Ipiranga,4110508,city,PR
+Iporã,4110607,city,PR
+Iracema do Oeste,4110656,city,PR
+Irati,4110706,city,PR
+Iretama,4110805,city,PR
+Itaguajé,4110904,city,PR
+Itaipulândia,4110953,city,PR
+Itambaracá,4111001,city,PR
+Itambé,4111100,city,PR
+Itapejara d'Oeste,4111209,city,PR
+Itaperuçu,4111258,city,PR
+Itaúna do Sul,4111308,city,PR
+Ivaí,4111407,city,PR
+Ivaiporã,4111506,city,PR
+Ivaté,4111555,city,PR
+Ivatuba,4111605,city,PR
+Jaboti,4111704,city,PR
+Jacarezinho,4111803,city,PR
+Jaguapitã,4111902,city,PR
+Jaguariaíva,4112009,city,PR
+Jandaia do Sul,4112108,city,PR
+Janiópolis,4112207,city,PR
+Japira,4112306,city,PR
+Japurá,4112405,city,PR
+Jardim Alegre,4112504,city,PR
+Jardim Olinda,4112603,city,PR
+Jataizinho,4112702,city,PR
+Jesuítas,4112751,city,PR
+Joaquim Távora,4112801,city,PR
+Jundiaí do Sul,4112900,city,PR
+Juranda,4112959,city,PR
+Jussara,4113007,city,PR
+Kaloré,4113106,city,PR
+Lapa,4113205,city,PR
+Laranjeiras do Sul,4113304,city,PR
+Leópolis,4113403,city,PR
+Lidianópolis,4113429,city,PR
+Lindoeste,4113452,city,PR
+Loanda,4113502,city,PR
+Lobato,4113601,city,PR
+Londrina,4113700,city,PR
+Luiziana,4113734,city,PR
+Lunardelli,4113759,city,PR
+Lupionópolis,4113809,city,PR
+Mallet,4113908,city,PR
+Mamborê,4114005,city,PR
+Mandaguaçu,4114104,city,PR
+Mandaguari,4114203,city,PR
+Mandirituba,4114302,city,PR
+Manfrinópolis,4114351,city,PR
+Mangueirinha,4114401,city,PR
+Manoel Ribas,4114500,city,PR
+Marechal Cândido Rondon,4114609,city,PR
+Maria Helena,4114708,city,PR
+Marialva,4114807,city,PR
+Marilândia do Sul,4114906,city,PR
+Marilena,4115002,city,PR
+Mariluz,4115101,city,PR
+Maringá,4115200,city,PR
+Mariópolis,4115309,city,PR
+Maripá,4115358,city,PR
+Marmeleiro,4115408,city,PR
+Marquinho,4115457,city,PR
+Marumbi,4115507,city,PR
+Matelândia,4115606,city,PR
+Matinhos,4115705,city,PR
+Mauá da Serra,4115754,city,PR
+Medianeira,4115804,city,PR
+Mercedes,4115853,city,PR
+Mirador,4115903,city,PR
+Missal,4116059,city,PR
+Moreira Sales,4116109,city,PR
+Morretes,4116208,city,PR
+Munhoz de Melo,4116307,city,PR
+Nova Aliança do Ivaí,4116505,city,PR
+Nova América da Colina,4116604,city,PR
+Nova Aurora,4116703,city,PR
+Nova Esperança,4116901,city,PR
+Nova Esperança do Sudoeste,4116950,city,PR
+Nova Fátima,4117008,city,PR
+Nova Londrina,4117107,city,PR
+Nova Olímpia,4117206,city,PR
+Nova Prata do Iguaçu,4117255,city,PR
+Nova Tebas,4117271,city,PR
+Ortigueira,4117305,city,PR
+Ourizona,4117404,city,PR
+Ouro Verde do Oeste,4117453,city,PR
+Paiçandu,4117503,city,PR
+Palmas,4117602,city,PR
+Palmeira,4117701,city,PR
+Palmital,4117800,city,PR
+Palotina,4117909,city,PR
+Paraíso do Norte,4118006,city,PR
+Paranacity,4118105,city,PR
+Paranaguá,4118204,city,PR
+Paranapoema,4118303,city,PR
+Paranavaí,4118402,city,PR
+Pato Bragado,4118451,city,PR
+Pato Branco,4118501,city,PR
+Paula Freitas,4118600,city,PR
+Paulo Frontin,4118709,city,PR
+Peabiru,4118808,city,PR
+Pérola,4118907,city,PR
+Pérola d'Oeste,4119004,city,PR
+Piên,4119103,city,PR
+Pinhais,4119152,city,PR
+Pinhal de São Bento,4119251,city,PR
+Pinhão,4119301,city,PR
+Piraí do Sul,4119400,city,PR
+Piraquara,4119509,city,PR
+Pitanga,4119608,city,PR
+Planaltina do Paraná,4119707,city,PR
+Planalto,4119806,city,PR
+Ponta Grossa,4119905,city,PR
+Pontal do Paraná,4119954,city,PR
+Porecatu,4120002,city,PR
+Porto Amazonas,4120101,city,PR
+Porto Barreiro,4120150,city,PR
+Porto Vitória,4120309,city,PR
+Prado Ferreira,4120333,city,PR
+Pranchita,4120358,city,PR
+Presidente Castelo Branco,4120408,city,PR
+Primeiro de Maio,4120507,city,PR
+Prudentópolis,4120606,city,PR
+Quarto Centenário,4120655,city,PR
+Quatiguá,4120705,city,PR
+Quatro Barras,4120804,city,PR
+Quatro Pontes,4120853,city,PR
+Quedas do Iguaçu,4120903,city,PR
+Querência do Norte,4121000,city,PR
+Quinta do Sol,4121109,city,PR
+Quitandinha,4121208,city,PR
+Ramilândia,4121257,city,PR
+Rancho Alegre,4121307,city,PR
+Rancho Alegre D'Oeste,4121356,city,PR
+Realeza,4121406,city,PR
+Rebouças,4121505,city,PR
+Renascença,4121604,city,PR
+Reserva,4121703,city,PR
+Reserva do Iguaçu,4121752,city,PR
+Ribeirão Claro,4121802,city,PR
+Ribeirão do Pinhal,4121901,city,PR
+Rio Azul,4122008,city,PR
+Rio Bonito do Iguaçu,4122156,city,PR
+Rio Branco do Ivaí,4122172,city,PR
+Rio Branco do Sul,4122206,city,PR
+Rio Negro,4122305,city,PR
+Rolândia,4122404,city,PR
+Roncador,4122503,city,PR
+Rondon,4122602,city,PR
+Sabáudia,4122701,city,PR
+Salgado Filho,4122800,city,PR
+Salto do Itararé,4122909,city,PR
+Salto do Lontra,4123006,city,PR
+Santa Amélia,4123105,city,PR
+Santa Cecília do Pavão,4123204,city,PR
+Santa Cruz de Monte Castelo,4123303,city,PR
+Santa Fé,4123402,city,PR
+Santa Helena,4123501,city,PR
+Santa Inês,4123600,city,PR
+Santa Isabel do Ivaí,4123709,city,PR
+Santa Izabel do Oeste,4123808,city,PR
+Santa Lúcia,4123824,city,PR
+Santa Mariana,4123907,city,PR
+Santa Mônica,4123956,city,PR
+Santana do Itararé,4124004,city,PR
+Santa Tereza do Oeste,4124020,city,PR
+Santa Terezinha de Itaipu,4124053,city,PR
+Santo Antônio da Platina,4124103,city,PR
+Santo Antônio do Caiuá,4124202,city,PR
+Santo Antônio do Sudoeste,4124400,city,PR
+Santo Inácio,4124509,city,PR
+São Jerônimo da Serra,4124707,city,PR
+São João,4124806,city,PR
+São João do Caiuá,4124905,city,PR
+São João do Ivaí,4125001,city,PR
+São João do Triunfo,4125100,city,PR
+São Jorge d'Oeste,4125209,city,PR
+São Jorge do Ivaí,4125308,city,PR
+São José da Boa Vista,4125407,city,PR
+São José das Palmeiras,4125456,city,PR
+São José dos Pinhais,4125506,city,PR
+São Manoel do Paraná,4125555,city,PR
+São Mateus do Sul,4125605,city,PR
+São Miguel do Iguaçu,4125704,city,PR
+São Pedro do Iguaçu,4125753,city,PR
+São Sebastião da Amoreira,4126009,city,PR
+São Tomé,4126108,city,PR
+Sapopema,4126207,city,PR
+Sarandi,4126256,city,PR
+Saudade do Iguaçu,4126272,city,PR
+Sengés,4126306,city,PR
+Serranópolis do Iguaçu,4126355,city,PR
+Sertaneja,4126405,city,PR
+Sertanópolis,4126504,city,PR
+Siqueira Campos,4126603,city,PR
+Tamarana,4126678,city,PR
+Tamboara,4126702,city,PR
+Tapejara,4126801,city,PR
+Tapira,4126900,city,PR
+Teixeira Soares,4127007,city,PR
+Telêmaco Borba,4127106,city,PR
+Terra Boa,4127205,city,PR
+Terra Rica,4127304,city,PR
+Terra Roxa,4127403,city,PR
+Tibagi,4127502,city,PR
+Tijucas do Sul,4127601,city,PR
+Toledo,4127700,city,PR
+Tomazina,4127809,city,PR
+Três Barras do Paraná,4127858,city,PR
+Tuneiras do Oeste,4127908,city,PR
+Tupãssi,4127957,city,PR
+Turvo,4127965,city,PR
+Ubiratã,4128005,city,PR
+Umuarama,4128104,city,PR
+União da Vitória,4128203,city,PR
+Uraí,4128401,city,PR
+Vera Cruz do Oeste,4128559,city,PR
+Verê,4128609,city,PR
+Virmond,4128658,city,PR
+Vitorino,4128708,city,PR
+Wenceslau Braz,4128500,city,PR
+Angra dos Reis,3300100,city,RJ
+Aperibé,3300159,city,RJ
+Araruama,3300209,city,RJ
+Areal,3300225,city,RJ
+Armação dos Búzios,3300233,city,RJ
+Arraial do Cabo,3300258,city,RJ
+Barra do Piraí,3300308,city,RJ
+Barra Mansa,3300407,city,RJ
+Belford Roxo,3300456,city,RJ
+Bom Jardim,3300506,city,RJ
+Bom Jesus do Itabapoana,3300605,city,RJ
+Cabo Frio,3300704,city,RJ
+Cachoeiras de Macacu,3300803,city,RJ
+Cambuci,3300902,city,RJ
+Campos dos Goytacazes,3301009,city,RJ
+Cantagalo,3301108,city,RJ
+Carapebus,3300936,city,RJ
+Cardoso Moreira,3301157,city,RJ
+Carmo,3301207,city,RJ
+Casimiro de Abreu,3301306,city,RJ
+Comendador Levy Gasparian,3300951,city,RJ
+Conceição de Macabu,3301405,city,RJ
+Cordeiro,3301504,city,RJ
+Duas Barras,3301603,city,RJ
+Duque de Caxias,3301702,city,RJ
+Engenheiro Paulo de Frontin,3301801,city,RJ
+Guapimirim,3301850,city,RJ
+Iguaba Grande,3301876,city,RJ
+Itaboraí,3301900,city,RJ
+Itaguaí,3302007,city,RJ
+Italva,3302056,city,RJ
+Itaocara,3302106,city,RJ
+Itaperuna,3302205,city,RJ
+Itatiaia,3302254,city,RJ
+Japeri,3302270,city,RJ
+Laje do Muriaé,3302304,city,RJ
+Macaé,3302403,city,RJ
+Macuco,3302452,city,RJ
+Magé,3302502,city,RJ
+Mangaratiba,3302601,city,RJ
+Maricá,3302700,city,RJ
+Mendes,3302809,city,RJ
+Mesquita,3302858,city,RJ
+Miguel Pereira,3302908,city,RJ
+Miracema,3303005,city,RJ
+Natividade,3303104,city,RJ
+Nilópolis,3303203,city,RJ
+Niterói,3303302,city,RJ
+Nova Friburgo,3303401,city,RJ
+Nova Iguaçu,3303500,city,RJ
+Paracambi,3303609,city,RJ
+Paraíba do Sul,3303708,city,RJ
+Paraty,3303807,city,RJ
+Paty do Alferes,3303856,city,RJ
+Petrópolis,3303906,city,RJ
+Pinheiral,3303955,city,RJ
+Piraí,3304003,city,RJ
+Porciúncula,3304102,city,RJ
+Porto Real,3304110,city,RJ
+Quatis,3304128,city,RJ
+Queimados,3304144,city,RJ
+Quissamã,3304151,city,RJ
+Resende,3304201,city,RJ
+Rio Bonito,3304300,city,RJ
+Rio Claro,3304409,city,RJ
+Rio das Flores,3304508,city,RJ
+Rio das Ostras,3304524,city,RJ
+Rio de Janeiro,3304557,city,RJ
+Santa Maria Madalena,3304607,city,RJ
+Santo Antônio de Pádua,3304706,city,RJ
+São Fidélis,3304805,city,RJ
+São Francisco de Itabapoana,3304755,city,RJ
+São Gonçalo,3304904,city,RJ
+São João da Barra,3305000,city,RJ
+São João de Meriti,3305109,city,RJ
+São José de Ubá,3305133,city,RJ
+São José do Vale do Rio Preto,3305158,city,RJ
+São Pedro da Aldeia,3305208,city,RJ
+São Sebastião do Alto,3305307,city,RJ
+Sapucaia,3305406,city,RJ
+Saquarema,3305505,city,RJ
+Seropédica,3305554,city,RJ
+Silva Jardim,3305604,city,RJ
+Sumidouro,3305703,city,RJ
+Tanguá,3305752,city,RJ
+Teresópolis,3305802,city,RJ
+Trajano de Moraes,3305901,city,RJ
+Três Rios,3306008,city,RJ
+Valença,3306107,city,RJ
+Varre-Sai,3306156,city,RJ
+Vassouras,3306206,city,RJ
+Volta Redonda,3306305,city,RJ
+Alta Floresta D'Oeste,1100015,city,RO
+Alto Alegre dos Parecis,1100379,city,RO
+Alto Paraíso,1100403,city,RO
+Alvorada D'Oeste,1100346,city,RO
+Ariquemes,1100023,city,RO
+Buritis,1100452,city,RO
+Cabixi,1100031,city,RO
+Cacaulândia,1100601,city,RO
+Cacoal,1100049,city,RO
+Campo Novo de Rondônia,1100700,city,RO
+Candeias do Jamari,1100809,city,RO
+Castanheiras,1100908,city,RO
+Cerejeiras,1100056,city,RO
+Chupinguaia,1100924,city,RO
+Colorado do Oeste,1100064,city,RO
+Corumbiara,1100072,city,RO
+Costa Marques,1100080,city,RO
+Cujubim,1100940,city,RO
+Espigão D'Oeste,1100098,city,RO
+Governador Jorge Teixeira,1101005,city,RO
+Guajará-Mirim,1100106,city,RO
+Itapuã do Oeste,1101104,city,RO
+Jaru,1100114,city,RO
+Ji-Paraná,1100122,city,RO
+Machadinho D'Oeste,1100130,city,RO
+Ministro Andreazza,1101203,city,RO
+Mirante da Serra,1101302,city,RO
+Monte Negro,1101401,city,RO
+Nova Brasilândia D'Oeste,1100148,city,RO
+Nova Mamoré,1100338,city,RO
+Nova União,1101435,city,RO
+Novo Horizonte do Oeste,1100502,city,RO
+Ouro Preto do Oeste,1100155,city,RO
+Parecis,1101450,city,RO
+Pimenta Bueno,1100189,city,RO
+Pimenteiras do Oeste,1101468,city,RO
+Porto Velho,1100205,city,RO
+Presidente Médici,1100254,city,RO
+Primavera de Rondônia,1101476,city,RO
+Rio Crespo,1100262,city,RO
+Rolim de Moura,1100288,city,RO
+Santa Luzia D'Oeste,1100296,city,RO
+São Felipe D'Oeste,1101484,city,RO
+São Francisco do Guaporé,1101492,city,RO
+São Miguel do Guaporé,1100320,city,RO
+Seringueiras,1101500,city,RO
+Teixeirópolis,1101559,city,RO
+Theobroma,1101609,city,RO
+Urupá,1101708,city,RO
+Vale do Anari,1101757,city,RO
+Vale do Paraíso,1101807,city,RO
+Vilhena,1100304,city,RO
+Abdon Batista,4200051,city,SC
+Abelardo Luz,4200101,city,SC
+Agrolândia,4200200,city,SC
+Agronômica,4200309,city,SC
+Água Doce,4200408,city,SC
+Águas de Chapecó,4200507,city,SC
+Águas Frias,4200556,city,SC
+Águas Mornas,4200606,city,SC
+Alfredo Wagner,4200705,city,SC
+Alto Bela Vista,4200754,city,SC
+Anchieta,4200804,city,SC
+Anita Garibaldi,4201000,city,SC
+Anitápolis,4201109,city,SC
+Antônio Carlos,4201208,city,SC
+Apiúna,4201257,city,SC
+Arabutã,4201273,city,SC
+Araquari,4201307,city,SC
+Araranguá,4201406,city,SC
+Armazém,4201505,city,SC
+Arroio Trinta,4201604,city,SC
+Arvoredo,4201653,city,SC
+Ascurra,4201703,city,SC
+Atalanta,4201802,city,SC
+Aurora,4201901,city,SC
+Balneário Arroio do Silva,4201950,city,SC
+Balneário Barra do Sul,4202057,city,SC
+Balneário Camboriú,4202008,city,SC
+Balneário Gaivota,4202073,city,SC
+Balneário Piçarras,4212809,city,SC
+Balneário Rincão,4220000,city,SC
+Barra Velha,4202107,city,SC
+Bela Vista do Toldo,4202131,city,SC
+Benedito Novo,4202206,city,SC
+Biguaçu,4202305,city,SC
+Blumenau,4202404,city,SC
+Bocaina do Sul,4202438,city,SC
+Bombinhas,4202453,city,SC
+Bom Jardim da Serra,4202503,city,SC
+Bom Jesus,4202537,city,SC
+Bom Retiro,4202602,city,SC
+Botuverá,4202701,city,SC
+Braço do Norte,4202800,city,SC
+Braço do Trombudo,4202859,city,SC
+Brunópolis,4202875,city,SC
+Brusque,4202909,city,SC
+Caçador,4203006,city,SC
+Caibi,4203105,city,SC
+Calmon,4203154,city,SC
+Camboriú,4203204,city,SC
+Campo Alegre,4203303,city,SC
+Campo Erê,4203501,city,SC
+Campos Novos,4203600,city,SC
+Canelinha,4203709,city,SC
+Canoinhas,4203808,city,SC
+Capinzal,4203907,city,SC
+Capivari de Baixo,4203956,city,SC
+Catanduvas,4204004,city,SC
+Caxambu do Sul,4204103,city,SC
+Celso Ramos,4204152,city,SC
+Chapecó,4204202,city,SC
+Cocal do Sul,4204251,city,SC
+Concórdia,4204301,city,SC
+Cordilheira Alta,4204350,city,SC
+Coronel Freitas,4204400,city,SC
+Coronel Martins,4204459,city,SC
+Correia Pinto,4204558,city,SC
+Corupá,4204509,city,SC
+Criciúma,4204608,city,SC
+Cunha Porã,4204707,city,SC
+Cunhataí,4204756,city,SC
+Curitibanos,4204806,city,SC
+Descanso,4204905,city,SC
+Dionísio Cerqueira,4205001,city,SC
+Dona Emma,4205100,city,SC
+Entre Rios,4205175,city,SC
+Ermo,4205191,city,SC
+Erval Velho,4205209,city,SC
+Faxinal dos Guedes,4205308,city,SC
+Flor do Sertão,4205357,city,SC
+Florianópolis,4205407,city,SC
+Forquilhinha,4205456,city,SC
+Fraiburgo,4205506,city,SC
+Galvão,4205605,city,SC
+Garopaba,4205704,city,SC
+Garuva,4205803,city,SC
+Gaspar,4205902,city,SC
+Governador Celso Ramos,4206009,city,SC
+Grão Pará,4206108,city,SC
+Gravatal,4206207,city,SC
+Guabiruba,4206306,city,SC
+Guaraciaba,4206405,city,SC
+Guaramirim,4206504,city,SC
+Guarujá do Sul,4206603,city,SC
+Guatambú,4206652,city,SC
+Herval d'Oeste,4206702,city,SC
+Ibicaré,4206801,city,SC
+Ibirama,4206900,city,SC
+Içara,4207007,city,SC
+Ilhota,4207106,city,SC
+Imaruí,4207205,city,SC
+Imbituba,4207304,city,SC
+Imbuia,4207403,city,SC
+Indaial,4207502,city,SC
+Iomerê,4207577,city,SC
+Ipira,4207601,city,SC
+Iporã do Oeste,4207650,city,SC
+Ipuaçu,4207684,city,SC
+Ipumirim,4207700,city,SC
+Iraceminha,4207759,city,SC
+Irani,4207809,city,SC
+Irati,4207858,city,SC
+Itá,4208005,city,SC
+Itaiópolis,4208104,city,SC
+Itajaí,4208203,city,SC
+Itapema,4208302,city,SC
+Itapiranga,4208401,city,SC
+Itapoá,4208450,city,SC
+Ituporanga,4208500,city,SC
+Jaborá,4208609,city,SC
+Jacinto Machado,4208708,city,SC
+Jaguaruna,4208807,city,SC
+Jaraguá do Sul,4208906,city,SC
+Joaçaba,4209003,city,SC
+Joinville,4209102,city,SC
+José Boiteux,4209151,city,SC
+Jupiá,4209177,city,SC
+Lacerdópolis,4209201,city,SC
+Lages,4209300,city,SC
+Laguna,4209409,city,SC
+Lajeado Grande,4209458,city,SC
+Laurentino,4209508,city,SC
+Lauro Muller,4209607,city,SC
+Lebon Régis,4209706,city,SC
+Lindóia do Sul,4209854,city,SC
+Lontras,4209904,city,SC
+Luiz Alves,4210001,city,SC
+Luzerna,4210035,city,SC
+Mafra,4210100,city,SC
+Major Gercino,4210209,city,SC
+Maracajá,4210407,city,SC
+Maravilha,4210506,city,SC
+Marema,4210555,city,SC
+Massaranduba,4210605,city,SC
+Meleiro,4210803,city,SC
+Mirim Doce,4210852,city,SC
+Modelo,4210902,city,SC
+Mondaí,4211009,city,SC
+Monte Carlo,4211058,city,SC
+Monte Castelo,4211108,city,SC
+Morro da Fumaça,4211207,city,SC
+Morro Grande,4211256,city,SC
+Navegantes,4211306,city,SC
+Nova Erechim,4211405,city,SC
+Nova Itaberaba,4211454,city,SC
+Nova Trento,4211504,city,SC
+Nova Veneza,4211603,city,SC
+Orleans,4211702,city,SC
+Otacílio Costa,4211751,city,SC
+Ouro,4211801,city,SC
+Ouro Verde,4211850,city,SC
+Paial,4211876,city,SC
+Painel,4211892,city,SC
+Palhoça,4211900,city,SC
+Palma Sola,4212007,city,SC
+Palmeira,4212056,city,SC
+Palmitos,4212106,city,SC
+Papanduva,4212205,city,SC
+Paraíso,4212239,city,SC
+Passo de Torres,4212254,city,SC
+Passos Maia,4212270,city,SC
+Paulo Lopes,4212304,city,SC
+Pedras Grandes,4212403,city,SC
+Penha,4212502,city,SC
+Peritiba,4212601,city,SC
+Pescaria Brava,4212650,city,SC
+Petrolândia,4212700,city,SC
+Pinhalzinho,4212908,city,SC
+Pinheiro Preto,4213005,city,SC
+Piratuba,4213104,city,SC
+Planalto Alegre,4213153,city,SC
+Pomerode,4213203,city,SC
+Ponte Alta,4213302,city,SC
+Ponte Alta do Norte,4213351,city,SC
+Ponte Serrada,4213401,city,SC
+Porto Belo,4213500,city,SC
+Porto União,4213609,city,SC
+Pouso Redondo,4213708,city,SC
+Praia Grande,4213807,city,SC
+Presidente Castello Branco,4213906,city,SC
+Presidente Getúlio,4214003,city,SC
+Princesa,4214151,city,SC
+Quilombo,4214201,city,SC
+Rancho Queimado,4214300,city,SC
+Rio das Antas,4214409,city,SC
+Rio do Campo,4214508,city,SC
+Rio do Oeste,4214607,city,SC
+Rio dos Cedros,4214706,city,SC
+Rio do Sul,4214805,city,SC
+Rio Fortuna,4214904,city,SC
+Rio Negrinho,4215000,city,SC
+Rio Rufino,4215059,city,SC
+Riqueza,4215075,city,SC
+Rodeio,4215109,city,SC
+Romelândia,4215208,city,SC
+Salete,4215307,city,SC
+Saltinho,4215356,city,SC
+Salto Veloso,4215406,city,SC
+Sangão,4215455,city,SC
+Santa Cecília,4215505,city,SC
+Santa Helena,4215554,city,SC
+Santa Rosa do Sul,4215653,city,SC
+Santa Terezinha,4215679,city,SC
+Santa Terezinha do Progresso,4215687,city,SC
+Santiago do Sul,4215695,city,SC
+Santo Amaro da Imperatriz,4215703,city,SC
+São Bento do Sul,4215802,city,SC
+São Bernardino,4215752,city,SC
+São Bonifácio,4215901,city,SC
+São Carlos,4216008,city,SC
+São Cristovão do Sul,4216057,city,SC
+São Domingos,4216107,city,SC
+São Francisco do Sul,4216206,city,SC
+São João Batista,4216305,city,SC
+São João do Itaperiú,4216354,city,SC
+São João do Oeste,4216255,city,SC
+São João do Sul,4216404,city,SC
+São Joaquim,4216503,city,SC
+São José,4216602,city,SC
+São José do Cedro,4216701,city,SC
+São José do Cerrito,4216800,city,SC
+São Lourenço do Oeste,4216909,city,SC
+São Ludgero,4217006,city,SC
+São Martinho,4217105,city,SC
+São Miguel da Boa Vista,4217154,city,SC
+São Miguel do Oeste,4217204,city,SC
+São Pedro de Alcântara,4217253,city,SC
+Saudades,4217303,city,SC
+Schroeder,4217402,city,SC
+Seara,4217501,city,SC
+Serra Alta,4217550,city,SC
+Siderópolis,4217600,city,SC
+Sombrio,4217709,city,SC
+Sul Brasil,4217758,city,SC
+Taió,4217808,city,SC
+Tangará,4217907,city,SC
+Tigrinhos,4217956,city,SC
+Tijucas,4218004,city,SC
+Timbé do Sul,4218103,city,SC
+Timbó,4218202,city,SC
+Timbó Grande,4218251,city,SC
+Três Barras,4218301,city,SC
+Treviso,4218350,city,SC
+Treze de Maio,4218400,city,SC
+Treze Tílias,4218509,city,SC
+Trombudo Central,4218608,city,SC
+Tubarão,4218707,city,SC
+Tunápolis,4218756,city,SC
+Turvo,4218806,city,SC
+União do Oeste,4218855,city,SC
+Urussanga,4219002,city,SC
+Vargeão,4219101,city,SC
+Vargem,4219150,city,SC
+Vargem Bonita,4219176,city,SC
+Vidal Ramos,4219200,city,SC
+Videira,4219309,city,SC
+Xanxerê,4219507,city,SC
+Xavantina,4219606,city,SC
+Xaxim,4219705,city,SC
+Zortéa,4219853,city,SC
+Adamantina,3500105,city,SP
+Adolfo,3500204,city,SP
+Aguaí,3500303,city,SP
+Águas da Prata,3500402,city,SP
+Águas de Lindóia,3500501,city,SP
+Águas de Santa Bárbara,3500550,city,SP
+Águas de São Pedro,3500600,city,SP
+Agudos,3500709,city,SP
+Alambari,3500758,city,SP
+Alfredo Marcondes,3500808,city,SP
+Altair,3500907,city,SP
+Altinópolis,3501004,city,SP
+Alto Alegre,3501103,city,SP
+Alumínio,3501152,city,SP
+Álvares Florence,3501202,city,SP
+Álvares Machado,3501301,city,SP
+Álvaro de Carvalho,3501400,city,SP
+Alvinlândia,3501509,city,SP
+Americana,3501608,city,SP
+Américo Brasiliense,3501707,city,SP
+Américo de Campos,3501806,city,SP
+Amparo,3501905,city,SP
+Analândia,3502002,city,SP
+Andradina,3502101,city,SP
+Angatuba,3502200,city,SP
+Anhembi,3502309,city,SP
+Anhumas,3502408,city,SP
+Aparecida,3502507,city,SP
+Aparecida d'Oeste,3502606,city,SP
+Apiaí,3502705,city,SP
+Araçariguama,3502754,city,SP
+Araçatuba,3502804,city,SP
+Araçoiaba da Serra,3502903,city,SP
+Aramina,3503000,city,SP
+Arandu,3503109,city,SP
+Arapeí,3503158,city,SP
+Araraquara,3503208,city,SP
+Araras,3503307,city,SP
+Arealva,3503406,city,SP
+Areias,3503505,city,SP
+Areiópolis,3503604,city,SP
+Ariranha,3503703,city,SP
+Artur Nogueira,3503802,city,SP
+Arujá,3503901,city,SP
+Aspásia,3503950,city,SP
+Assis,3504008,city,SP
+Atibaia,3504107,city,SP
+Auriflama,3504206,city,SP
+Avaí,3504305,city,SP
+Avanhandava,3504404,city,SP
+Avaré,3504503,city,SP
+Bady Bassitt,3504602,city,SP
+Bálsamo,3504800,city,SP
+Bananal,3504909,city,SP
+Barão de Antonina,3505005,city,SP
+Barbosa,3505104,city,SP
+Bariri,3505203,city,SP
+Barra Bonita,3505302,city,SP
+Barra do Chapéu,3505351,city,SP
+Barra do Turvo,3505401,city,SP
+Barretos,3505500,city,SP
+Barrinha,3505609,city,SP
+Barueri,3505708,city,SP
+Bastos,3505807,city,SP
+Batatais,3505906,city,SP
+Bauru,3506003,city,SP
+Bebedouro,3506102,city,SP
+Bento de Abreu,3506201,city,SP
+Bernardino de Campos,3506300,city,SP
+Bertioga,3506359,city,SP
+Bilac,3506409,city,SP
+Birigui,3506508,city,SP
+Biritiba-Mirim,3506607,city,SP
+Boa Esperança do Sul,3506706,city,SP
+Bocaina,3506805,city,SP
+Bofete,3506904,city,SP
+Boituva,3507001,city,SP
+Bom Jesus dos Perdões,3507100,city,SP
+Borá,3507209,city,SP
+Boracéia,3507308,city,SP
+Borborema,3507407,city,SP
+Borebi,3507456,city,SP
+Botucatu,3507506,city,SP
+Bragança Paulista,3507605,city,SP
+Braúna,3507704,city,SP
+Brejo Alegre,3507753,city,SP
+Brodowski,3507803,city,SP
+Brotas,3507902,city,SP
+Buri,3508009,city,SP
+Buritama,3508108,city,SP
+Buritizal,3508207,city,SP
+Cabrália Paulista,3508306,city,SP
+Cabreúva,3508405,city,SP
+Caçapava,3508504,city,SP
+Cachoeira Paulista,3508603,city,SP
+Caconde,3508702,city,SP
+Cafelândia,3508801,city,SP
+Caiabu,3508900,city,SP
+Caieiras,3509007,city,SP
+Caiuá,3509106,city,SP
+Cajamar,3509205,city,SP
+Cajati,3509254,city,SP
+Cajobi,3509304,city,SP
+Cajuru,3509403,city,SP
+Campina do Monte Alegre,3509452,city,SP
+Campinas,3509502,city,SP
+Campo Limpo Paulista,3509601,city,SP
+Campos do Jordão,3509700,city,SP
+Campos Novos Paulista,3509809,city,SP
+Cananéia,3509908,city,SP
+Canas,3509957,city,SP
+Cândido Mota,3510005,city,SP
+Cândido Rodrigues,3510104,city,SP
+Capão Bonito,3510203,city,SP
+Capela do Alto,3510302,city,SP
+Capivari,3510401,city,SP
+Caraguatatuba,3510500,city,SP
+Carapicuíba,3510609,city,SP
+Cardoso,3510708,city,SP
+Casa Branca,3510807,city,SP
+Cássia dos Coqueiros,3510906,city,SP
+Castilho,3511003,city,SP
+Catanduva,3511102,city,SP
+Catiguá,3511201,city,SP
+Cedral,3511300,city,SP
+Cerqueira César,3511409,city,SP
+Cerquilho,3511508,city,SP
+Cesário Lange,3511607,city,SP
+Charqueada,3511706,city,SP
+Chavantes,3557204,city,SP
+Clementina,3511904,city,SP
+Colina,3512001,city,SP
+Colômbia,3512100,city,SP
+Conchal,3512209,city,SP
+Conchas,3512308,city,SP
+Cordeirópolis,3512407,city,SP
+Coroados,3512506,city,SP
+Coronel Macedo,3512605,city,SP
+Corumbataí,3512704,city,SP
+Cosmópolis,3512803,city,SP
+Cosmorama,3512902,city,SP
+Cotia,3513009,city,SP
+Cravinhos,3513108,city,SP
+Cristais Paulista,3513207,city,SP
+Cruzeiro,3513405,city,SP
+Cubatão,3513504,city,SP
+Cunha,3513603,city,SP
+Descalvado,3513702,city,SP
+Diadema,3513801,city,SP
+Dirce Reis,3513850,city,SP
+Divinolândia,3513900,city,SP
+Dobrada,3514007,city,SP
+Dois Córregos,3514106,city,SP
+Dolcinópolis,3514205,city,SP
+Dourado,3514304,city,SP
+Dracena,3514403,city,SP
+Duartina,3514502,city,SP
+Dumont,3514601,city,SP
+Echaporã,3514700,city,SP
+Eldorado,3514809,city,SP
+Elias Fausto,3514908,city,SP
+Elisiário,3514924,city,SP
+Embaúba,3514957,city,SP
+Embu das Artes,3515004,city,SP
+Embu-Guaçu,3515103,city,SP
+Emilianópolis,3515129,city,SP
+Engenheiro Coelho,3515152,city,SP
+Espírito Santo do Pinhal,3515186,city,SP
+Espírito Santo do Turvo,3515194,city,SP
+Estiva Gerbi,3557303,city,SP
+Estrela d'Oeste,3515202,city,SP
+Estrela do Norte,3515301,city,SP
+Euclides da Cunha Paulista,3515350,city,SP
+Fartura,3515400,city,SP
+Fernandópolis,3515509,city,SP
+Fernando Prestes,3515608,city,SP
+Ferraz de Vasconcelos,3515707,city,SP
+Flora Rica,3515806,city,SP
+Floreal,3515905,city,SP
+Flórida Paulista,3516002,city,SP
+Franca,3516200,city,SP
+Francisco Morato,3516309,city,SP
+Franco da Rocha,3516408,city,SP
+Gabriel Monteiro,3516507,city,SP
+Gália,3516606,city,SP
+Garça,3516705,city,SP
+Gastão Vidigal,3516804,city,SP
+Gavião Peixoto,3516853,city,SP
+General Salgado,3516903,city,SP
+Getulina,3517000,city,SP
+Glicério,3517109,city,SP
+Guaiçara,3517208,city,SP
+Guaimbê,3517307,city,SP
+Guaíra,3517406,city,SP
+Guapiaçu,3517505,city,SP
+Guapiara,3517604,city,SP
+Guará,3517703,city,SP
+Guaraçaí,3517802,city,SP
+Guaraci,3517901,city,SP
+Guarani d'Oeste,3518008,city,SP
+Guarantã,3518107,city,SP
+Guararapes,3518206,city,SP
+Guararema,3518305,city,SP
+Guaratinguetá,3518404,city,SP
+Guareí,3518503,city,SP
+Guariba,3518602,city,SP
+Guarujá,3518701,city,SP
+Guarulhos,3518800,city,SP
+Guatapará,3518859,city,SP
+Guzolândia,3518909,city,SP
+Herculândia,3519006,city,SP
+Holambra,3519055,city,SP
+Hortolândia,3519071,city,SP
+Iacanga,3519105,city,SP
+Iacri,3519204,city,SP
+Iaras,3519253,city,SP
+Ibaté,3519303,city,SP
+Ibirá,3519402,city,SP
+Ibirarema,3519501,city,SP
+Ibitinga,3519600,city,SP
+Ibiúna,3519709,city,SP
+Icém,3519808,city,SP
+Iepê,3519907,city,SP
+Igaraçu do Tietê,3520004,city,SP
+Igarapava,3520103,city,SP
+Igaratá,3520202,city,SP
+Iguape,3520301,city,SP
+Ilhabela,3520400,city,SP
+Ilha Comprida,3520426,city,SP
+Ilha Solteira,3520442,city,SP
+Indaiatuba,3520509,city,SP
+Indiana,3520608,city,SP
+Indiaporã,3520707,city,SP
+Inúbia Paulista,3520806,city,SP
+Ipaussu,3520905,city,SP
+Iperó,3521002,city,SP
+Ipeúna,3521101,city,SP
+Ipiguá,3521150,city,SP
+Ipuã,3521309,city,SP
+Iracemápolis,3521408,city,SP
+Irapuã,3521507,city,SP
+Irapuru,3521606,city,SP
+Itaberá,3521705,city,SP
+Itaí,3521804,city,SP
+Itajobi,3521903,city,SP
+Itaju,3522000,city,SP
+Itanhaém,3522109,city,SP
+Itaóca,3522158,city,SP
+Itapecerica da Serra,3522208,city,SP
+Itapetininga,3522307,city,SP
+Itapeva,3522406,city,SP
+Itapevi,3522505,city,SP
+Itapira,3522604,city,SP
+Itapirapuã Paulista,3522653,city,SP
+Itápolis,3522703,city,SP
+Itaporanga,3522802,city,SP
+Itapuí,3522901,city,SP
+Itapura,3523008,city,SP
+Itaquaquecetuba,3523107,city,SP
+Itararé,3523206,city,SP
+Itariri,3523305,city,SP
+Itatiba,3523404,city,SP
+Itatinga,3523503,city,SP
+Itirapina,3523602,city,SP
+Itirapuã,3523701,city,SP
+Itobi,3523800,city,SP
+Itu,3523909,city,SP
+Itupeva,3524006,city,SP
+Ituverava,3524105,city,SP
+Jaborandi,3524204,city,SP
+Jaboticabal,3524303,city,SP
+Jacareí,3524402,city,SP
+Jaci,3524501,city,SP
+Jacupiranga,3524600,city,SP
+Jaguariúna,3524709,city,SP
+Jales,3524808,city,SP
+Jambeiro,3524907,city,SP
+Jandira,3525003,city,SP
+Jardinópolis,3525102,city,SP
+Jarinu,3525201,city,SP
+Jaú,3525300,city,SP
+Joanópolis,3525508,city,SP
+João Ramalho,3525607,city,SP
+José Bonifácio,3525706,city,SP
+Júlio Mesquita,3525805,city,SP
+Jumirim,3525854,city,SP
+Jundiaí,3525904,city,SP
+Junqueirópolis,3526001,city,SP
+Juquiá,3526100,city,SP
+Juquitiba,3526209,city,SP
+Laranjal Paulista,3526407,city,SP
+Lavínia,3526506,city,SP
+Lavrinhas,3526605,city,SP
+Leme,3526704,city,SP
+Lençóis Paulista,3526803,city,SP
+Limeira,3526902,city,SP
+Lindóia,3527009,city,SP
+Lins,3527108,city,SP
+Lorena,3527207,city,SP
+Lourdes,3527256,city,SP
+Louveira,3527306,city,SP
+Lucélia,3527405,city,SP
+Lucianópolis,3527504,city,SP
+Luís Antônio,3527603,city,SP
+Luiziânia,3527702,city,SP
+Lupércio,3527801,city,SP
+Lutécia,3527900,city,SP
+Macatuba,3528007,city,SP
+Macaubal,3528106,city,SP
+Macedônia,3528205,city,SP
+Magda,3528304,city,SP
+Mairinque,3528403,city,SP
+Mairiporã,3528502,city,SP
+Manduri,3528601,city,SP
+Marabá Paulista,3528700,city,SP
+Maracaí,3528809,city,SP
+Marapoama,3528858,city,SP
+Mariápolis,3528908,city,SP
+Marília,3529005,city,SP
+Marinópolis,3529104,city,SP
+Martinópolis,3529203,city,SP
+Matão,3529302,city,SP
+Mauá,3529401,city,SP
+Mendonça,3529500,city,SP
+Meridiano,3529609,city,SP
+Mesópolis,3529658,city,SP
+Miguelópolis,3529708,city,SP
+Mineiros do Tietê,3529807,city,SP
+Miracatu,3529906,city,SP
+Mira Estrela,3530003,city,SP
+Mirandópolis,3530102,city,SP
+Mirante do Paranapanema,3530201,city,SP
+Mirassol,3530300,city,SP
+Mirassolândia,3530409,city,SP
+Mococa,3530508,city,SP
+Mogi das Cruzes,3530607,city,SP
+Mogi Guaçu,3530706,city,SP
+Mogi Mirim,3530805,city,SP
+Mombuca,3530904,city,SP
+Monções,3531001,city,SP
+Mongaguá,3531100,city,SP
+Monte Alegre do Sul,3531209,city,SP
+Monte Alto,3531308,city,SP
+Monte Aprazível,3531407,city,SP
+Monte Azul Paulista,3531506,city,SP
+Monteiro Lobato,3531704,city,SP
+Monte Mor,3531803,city,SP
+Morro Agudo,3531902,city,SP
+Morungaba,3532009,city,SP
+Motuca,3532058,city,SP
+Murutinga do Sul,3532108,city,SP
+Natividade da Serra,3532306,city,SP
+Nazaré Paulista,3532405,city,SP
+Neves Paulista,3532504,city,SP
+Nhandeara,3532603,city,SP
+Nipoã,3532702,city,SP
+Nova Aliança,3532801,city,SP
+Nova Campina,3532827,city,SP
+Nova Castilho,3532868,city,SP
+Nova Europa,3532900,city,SP
+Nova Granada,3533007,city,SP
+Nova Guataporanga,3533106,city,SP
+Novais,3533254,city,SP
+Nova Luzitânia,3533304,city,SP
+Nova Odessa,3533403,city,SP
+Novo Horizonte,3533502,city,SP
+Nuporanga,3533601,city,SP
+Ocauçu,3533700,city,SP
+Óleo,3533809,city,SP
+Olímpia,3533908,city,SP
+Onda Verde,3534005,city,SP
+Oriente,3534104,city,SP
+Orlândia,3534302,city,SP
+Osasco,3534401,city,SP
+Oscar Bressane,3534500,city,SP
+Osvaldo Cruz,3534609,city,SP
+Ourinhos,3534708,city,SP
+Ouroeste,3534757,city,SP
+Pacaembu,3534906,city,SP
+Palestina,3535002,city,SP
+Palmares Paulista,3535101,city,SP
+Palmeira d'Oeste,3535200,city,SP
+Palmital,3535309,city,SP
+Panorama,3535408,city,SP
+Paraguaçu Paulista,3535507,city,SP
+Paraibuna,3535606,city,SP
+Paraíso,3535705,city,SP
+Paranapanema,3535804,city,SP
+Paranapuã,3535903,city,SP
+Parapuã,3536000,city,SP
+Pardinho,3536109,city,SP
+Pariquera-Açu,3536208,city,SP
+Parisi,3536257,city,SP
+Patrocínio Paulista,3536307,city,SP
+Paulicéia,3536406,city,SP
+Paulínia,3536505,city,SP
+Paulistânia,3536570,city,SP
+Paulo de Faria,3536604,city,SP
+Pederneiras,3536703,city,SP
+Pedra Bela,3536802,city,SP
+Pedranópolis,3536901,city,SP
+Pedregulho,3537008,city,SP
+Pedreira,3537107,city,SP
+Pedrinhas Paulista,3537156,city,SP
+Pedro de Toledo,3537206,city,SP
+Penápolis,3537305,city,SP
+Pereira Barreto,3537404,city,SP
+Pereiras,3537503,city,SP
+Peruíbe,3537602,city,SP
+Piedade,3537800,city,SP
+Pilar do Sul,3537909,city,SP
+Pindamonhangaba,3538006,city,SP
+Pindorama,3538105,city,SP
+Pinhalzinho,3538204,city,SP
+Piquerobi,3538303,city,SP
+Piquete,3538501,city,SP
+Piracaia,3538600,city,SP
+Piracicaba,3538709,city,SP
+Piraju,3538808,city,SP
+Pirajuí,3538907,city,SP
+Pirangi,3539004,city,SP
+Pirapora do Bom Jesus,3539103,city,SP
+Pirapozinho,3539202,city,SP
+Pirassununga,3539301,city,SP
+Piratininga,3539400,city,SP
+Pitangueiras,3539509,city,SP
+Planalto,3539608,city,SP
+Platina,3539707,city,SP
+Poá,3539806,city,SP
+Poloni,3539905,city,SP
+Pompéia,3540002,city,SP
+Pontal,3540200,city,SP
+Pontalinda,3540259,city,SP
+Pontes Gestal,3540309,city,SP
+Populina,3540408,city,SP
+Porangaba,3540507,city,SP
+Porto Feliz,3540606,city,SP
+Porto Ferreira,3540705,city,SP
+Potim,3540754,city,SP
+Potirendaba,3540804,city,SP
+Pracinha,3540853,city,SP
+Pradópolis,3540903,city,SP
+Praia Grande,3541000,city,SP
+Pratânia,3541059,city,SP
+Presidente Alves,3541109,city,SP
+Presidente Bernardes,3541208,city,SP
+Presidente Epitácio,3541307,city,SP
+Presidente Prudente,3541406,city,SP
+Presidente Venceslau,3541505,city,SP
+Promissão,3541604,city,SP
+Quadra,3541653,city,SP
+Quatá,3541703,city,SP
+Queiroz,3541802,city,SP
+Queluz,3541901,city,SP
+Quintana,3542008,city,SP
+Rafard,3542107,city,SP
+Rancharia,3542206,city,SP
+Redenção da Serra,3542305,city,SP
+Regente Feijó,3542404,city,SP
+Reginópolis,3542503,city,SP
+Registro,3542602,city,SP
+Restinga,3542701,city,SP
+Ribeira,3542800,city,SP
+Ribeirão Bonito,3542909,city,SP
+Ribeirão Branco,3543006,city,SP
+Ribeirão dos Índios,3543238,city,SP
+Ribeirão do Sul,3543204,city,SP
+Ribeirão Grande,3543253,city,SP
+Ribeirão Pires,3543303,city,SP
+Ribeirão Preto,3543402,city,SP
+Rincão,3543709,city,SP
+Rinópolis,3543808,city,SP
+Rio Claro,3543907,city,SP
+Rio das Pedras,3544004,city,SP
+Rio Grande da Serra,3544103,city,SP
+Riolândia,3544202,city,SP
+Riversul,3543501,city,SP
+Rosana,3544251,city,SP
+Roseira,3544301,city,SP
+Rubiácea,3544400,city,SP
+Sabino,3544608,city,SP
+Sagres,3544707,city,SP
+Sales,3544806,city,SP
+Sales Oliveira,3544905,city,SP
+Salesópolis,3545001,city,SP
+Salmourão,3545100,city,SP
+Saltinho,3545159,city,SP
+Salto,3545209,city,SP
+Salto de Pirapora,3545308,city,SP
+Salto Grande,3545407,city,SP
+Sandovalina,3545506,city,SP
+Santa Adélia,3545605,city,SP
+Santa Albertina,3545704,city,SP
+Santa Bárbara d'Oeste,3545803,city,SP
+Santa Branca,3546009,city,SP
+Santa Clara d'Oeste,3546108,city,SP
+Santa Cruz da Conceição,3546207,city,SP
+Santa Cruz da Esperança,3546256,city,SP
+Santa Cruz das Palmeiras,3546306,city,SP
+Santa Cruz do Rio Pardo,3546405,city,SP
+Santa Ernestina,3546504,city,SP
+Santa Fé do Sul,3546603,city,SP
+Santa Gertrudes,3546702,city,SP
+Santa Isabel,3546801,city,SP
+Santa Lúcia,3546900,city,SP
+Santa Maria da Serra,3547007,city,SP
+Santana da Ponte Pensa,3547205,city,SP
+Santana de Parnaíba,3547304,city,SP
+Santa Rita do Passa Quatro,3547502,city,SP
+Santa Rosa de Viterbo,3547601,city,SP
+Santa Salete,3547650,city,SP
+Santo Anastácio,3547700,city,SP
+Santo André,3547809,city,SP
+Santo Antônio da Alegria,3547908,city,SP
+Santo Antônio de Posse,3548005,city,SP
+Santo Antônio do Aracanguá,3548054,city,SP
+Santo Antônio do Jardim,3548104,city,SP
+Santo Antônio do Pinhal,3548203,city,SP
+Santo Expedito,3548302,city,SP
+Santópolis do Aguapeí,3548401,city,SP
+Santos,3548500,city,SP
+São Bento do Sapucaí,3548609,city,SP
+São Bernardo do Campo,3548708,city,SP
+São Caetano do Sul,3548807,city,SP
+São Carlos,3548906,city,SP
+São Francisco,3549003,city,SP
+São João da Boa Vista,3549102,city,SP
+São João das Duas Pontes,3549201,city,SP
+São João de Iracema,3549250,city,SP
+São João do Pau d'Alho,3549300,city,SP
+São Joaquim da Barra,3549409,city,SP
+São José da Bela Vista,3549508,city,SP
+São José do Rio Pardo,3549706,city,SP
+São José do Rio Preto,3549805,city,SP
+São José dos Campos,3549904,city,SP
+São Lourenço da Serra,3549953,city,SP
+São Luiz do Paraitinga,3550001,city,SP
+São Manuel,3550100,city,SP
+São Miguel Arcanjo,3550209,city,SP
+São Paulo,3550308,city,SP
+São Pedro,3550407,city,SP
+São Pedro do Turvo,3550506,city,SP
+São Roque,3550605,city,SP
+São Sebastião,3550704,city,SP
+São Sebastião da Grama,3550803,city,SP
+São Simão,3550902,city,SP
+São Vicente,3551009,city,SP
+Sarapuí,3551108,city,SP
+Sarutaiá,3551207,city,SP
+Sebastianópolis do Sul,3551306,city,SP
+Serra Azul,3551405,city,SP
+Serrana,3551504,city,SP
+Serra Negra,3551603,city,SP
+Sertãozinho,3551702,city,SP
+Sete Barras,3551801,city,SP
+Severínia,3551900,city,SP
+Silveiras,3552007,city,SP
+Socorro,3552106,city,SP
+Sorocaba,3552205,city,SP
+Sud Mennucci,3552304,city,SP
+Sumaré,3552403,city,SP
+Suzanápolis,3552551,city,SP
+Suzano,3552502,city,SP
+Tabapuã,3552601,city,SP
+Tabatinga,3552700,city,SP
+Taboão da Serra,3552809,city,SP
+Taciba,3552908,city,SP
+Taguaí,3553005,city,SP
+Taiaçu,3553104,city,SP
+Taiúva,3553203,city,SP
+Tambaú,3553302,city,SP
+Tanabi,3553401,city,SP
+Tapiraí,3553500,city,SP
+Tapiratiba,3553609,city,SP
+Taquaral,3553658,city,SP
+Taquaritinga,3553708,city,SP
+Taquarituba,3553807,city,SP
+Taquarivaí,3553856,city,SP
+Tarabai,3553906,city,SP
+Tarumã,3553955,city,SP
+Tatuí,3554003,city,SP
+Taubaté,3554102,city,SP
+Tejupá,3554201,city,SP
+Teodoro Sampaio,3554300,city,SP
+Terra Roxa,3554409,city,SP
+Tietê,3554508,city,SP
+Timburi,3554607,city,SP
+Torre de Pedra,3554656,city,SP
+Torrinha,3554706,city,SP
+Trabiju,3554755,city,SP
+Tremembé,3554805,city,SP
+Três Fronteiras,3554904,city,SP
+Tuiuti,3554953,city,SP
+Tupã,3555000,city,SP
+Tupi Paulista,3555109,city,SP
+Turiúba,3555208,city,SP
+Turmalina,3555307,city,SP
+Ubarana,3555356,city,SP
+Ubatuba,3555406,city,SP
+Ubirajara,3555505,city,SP
+Uchoa,3555604,city,SP
+União Paulista,3555703,city,SP
+Urânia,3555802,city,SP
+Uru,3555901,city,SP
+Urupês,3556008,city,SP
+Valentim Gentil,3556107,city,SP
+Valinhos,3556206,city,SP
+Valparaíso,3556305,city,SP
+Vargem,3556354,city,SP
+Vargem Grande do Sul,3556404,city,SP
+Vargem Grande Paulista,3556453,city,SP
+Várzea Paulista,3556503,city,SP
+Vera Cruz,3556602,city,SP
+Vinhedo,3556701,city,SP
+Viradouro,3556800,city,SP
+Vista Alegre do Alto,3556909,city,SP
+Vitória Brasil,3556958,city,SP
+Votorantim,3557006,city,SP
+Votuporanga,3557105,city,SP
+Zacarias,3557154,city,SP
+Abreulândia,1700251,city,TO
+Aguiarnópolis,1700301,city,TO
+Aliança do Tocantins,1700350,city,TO
+Almas,1700400,city,TO
+Alvorada,1700707,city,TO
+Ananás,1701002,city,TO
+Angico,1701051,city,TO
+Aparecida do Rio Negro,1701101,city,TO
+Aragominas,1701309,city,TO
+Araguacema,1701903,city,TO
+Araguaçu,1702000,city,TO
+Araguaína,1702109,city,TO
+Araguanã,1702158,city,TO
+Araguatins,1702208,city,TO
+Arapoema,1702307,city,TO
+Arraias,1702406,city,TO
+Augustinópolis,1702554,city,TO
+Aurora do Tocantins,1702703,city,TO
+Axixá do Tocantins,1702901,city,TO
+Babaçulândia,1703008,city,TO
+Bandeirantes do Tocantins,1703057,city,TO
+Barra do Ouro,1703073,city,TO
+Barrolândia,1703107,city,TO
+Bom Jesus do Tocantins,1703305,city,TO
+Brasilândia do Tocantins,1703602,city,TO
+Brejinho de Nazaré,1703701,city,TO
+Buriti do Tocantins,1703800,city,TO
+Cachoeirinha,1703826,city,TO
+Campos Lindos,1703842,city,TO
+Cariri do Tocantins,1703867,city,TO
+Carmolândia,1703883,city,TO
+Carrasco Bonito,1703891,city,TO
+Caseara,1703909,city,TO
+Chapada de Areia,1704600,city,TO
+Colinas do Tocantins,1705508,city,TO
+Colméia,1716703,city,TO
+Couto Magalhães,1706001,city,TO
+Crixás do Tocantins,1706258,city,TO
+Darcinópolis,1706506,city,TO
+Dianópolis,1707009,city,TO
+Divinópolis do Tocantins,1707108,city,TO
+Dois Irmãos do Tocantins,1707207,city,TO
+Dueré,1707306,city,TO
+Esperantina,1707405,city,TO
+Fátima,1707553,city,TO
+Figueirópolis,1707652,city,TO
+Filadélfia,1707702,city,TO
+Formoso do Araguaia,1708205,city,TO
+Goianorte,1708304,city,TO
+Goiatins,1709005,city,TO
+Guaraí,1709302,city,TO
+Gurupi,1709500,city,TO
+Ipueiras,1709807,city,TO
+Itacajá,1710508,city,TO
+Itaguatins,1710706,city,TO
+Itapiratins,1710904,city,TO
+Juarina,1711803,city,TO
+Lagoa da Confusão,1711902,city,TO
+Lagoa do Tocantins,1711951,city,TO
+Lajeado,1712009,city,TO
+Lizarda,1712405,city,TO
+Luzinópolis,1712454,city,TO
+Marianópolis do Tocantins,1712504,city,TO
+Maurilândia do Tocantins,1712801,city,TO
+Miracema do Tocantins,1713205,city,TO
+Miranorte,1713304,city,TO
+Monte do Carmo,1713601,city,TO
+Muricilândia,1713957,city,TO
+Natividade,1714203,city,TO
+Nazaré,1714302,city,TO
+Nova Olinda,1714880,city,TO
+Nova Rosalândia,1715002,city,TO
+Novo Acordo,1715101,city,TO
+Novo Alegre,1715150,city,TO
+Oliveira de Fátima,1715507,city,TO
+Palmas,1721000,city,TO
+Palmeirante,1715705,city,TO
+Palmeiras do Tocantins,1713809,city,TO
+Palmeirópolis,1715754,city,TO
+Paraíso do Tocantins,1716109,city,TO
+Paranã,1716208,city,TO
+Pau D'Arco,1716307,city,TO
+Pedro Afonso,1716505,city,TO
+Peixe,1716604,city,TO
+Pequizeiro,1716653,city,TO
+Pindorama do Tocantins,1717008,city,TO
+Piraquê,1717206,city,TO
+Pium,1717503,city,TO
+Ponte Alta do Tocantins,1717909,city,TO
+Porto Nacional,1718204,city,TO
+Praia Norte,1718303,city,TO
+Presidente Kennedy,1718402,city,TO
+Pugmil,1718451,city,TO
+Riachinho,1718550,city,TO
+Rio da Conceição,1718659,city,TO
+Rio dos Bois,1718709,city,TO
+Rio Sono,1718758,city,TO
+Sampaio,1718808,city,TO
+Sandolândia,1718840,city,TO
+Santa Fé do Araguaia,1718865,city,TO
+Santa Rosa do Tocantins,1718907,city,TO
+Santa Tereza do Tocantins,1719004,city,TO
+Santa Terezinha do Tocantins,1720002,city,TO
+São Bento do Tocantins,1720101,city,TO
+São Miguel do Tocantins,1720200,city,TO
+São Salvador do Tocantins,1720259,city,TO
+São Sebastião do Tocantins,1720309,city,TO
+Silvanópolis,1720655,city,TO
+Sítio Novo do Tocantins,1720804,city,TO
+Tabocão,1708254,city,TO
+Taguatinga,1720903,city,TO
+Taipas do Tocantins,1720937,city,TO
+Talismã,1720978,city,TO
+Tocantínia,1721109,city,TO
+Tocantinópolis,1721208,city,TO
+Wanderlândia,1722081,city,TO
+Xambioá,1722107,city,TO
+Água Branca,2500106,city,PB
+Aguiar,2500205,city,PB
+Alagoa Grande,2500304,city,PB
+Alagoa Nova,2500403,city,PB
+Alagoinha,2500502,city,PB
+Alcantil,2500536,city,PB
+Algodão de Jandaíra,2500577,city,PB
+Alhandra,2500601,city,PB
+Amparo,2500734,city,PB
+Aparecida,2500775,city,PB
+Araçagi,2500809,city,PB
+Arara,2500908,city,PB
+Araruna,2501005,city,PB
+Areia,2501104,city,PB
+Areia de Baraúnas,2501153,city,PB
+Areial,2501203,city,PB
+Aroeiras,2501302,city,PB
+Assunção,2501351,city,PB
+Baía da Traição,2501401,city,PB
+Bananeiras,2501500,city,PB
+Baraúna,2501534,city,PB
+Barra de Santana,2501575,city,PB
+Barra de Santa Rosa,2501609,city,PB
+Barra de São Miguel,2501708,city,PB
+Bayeux,2501807,city,PB
+Belém,2501906,city,PB
+Belém do Brejo do Cruz,2502003,city,PB
+Bernardino Batista,2502052,city,PB
+Boa Ventura,2502102,city,PB
+Boa Vista,2502151,city,PB
+Bom Jesus,2502201,city,PB
+Bom Sucesso,2502300,city,PB
+Bonito de Santa Fé,2502409,city,PB
+Boqueirão,2502508,city,PB
+Borborema,2502706,city,PB
+Brejo do Cruz,2502805,city,PB
+Brejo dos Santos,2502904,city,PB
+Caaporã,2503001,city,PB
+Cabaceiras,2503100,city,PB
+Cabedelo,2503209,city,PB
+Cachoeira dos Índios,2503308,city,PB
+Cacimba de Areia,2503407,city,PB
+Cacimba de Dentro,2503506,city,PB
+Cacimbas,2503555,city,PB
+Caiçara,2503605,city,PB
+Cajazeiras,2503704,city,PB
+Cajazeirinhas,2503753,city,PB
+Caldas Brandão,2503803,city,PB
+Camalaú,2503902,city,PB
+Campina Grande,2504009,city,PB
+Capim,2504033,city,PB
+Caraúbas,2504074,city,PB
+Carrapateira,2504108,city,PB
+Casserengue,2504157,city,PB
+Catingueira,2504207,city,PB
+Catolé do Rocha,2504306,city,PB
+Caturité,2504355,city,PB
+Conceição,2504405,city,PB
+Condado,2504504,city,PB
+Conde,2504603,city,PB
+Congo,2504702,city,PB
+Coremas,2504801,city,PB
+Coxixola,2504850,city,PB
+Cruz do Espírito Santo,2504900,city,PB
+Cubati,2505006,city,PB
+Cuité,2505105,city,PB
+Cuité de Mamanguape,2505238,city,PB
+Cuitegi,2505204,city,PB
+Curral de Cima,2505279,city,PB
+Curral Velho,2505303,city,PB
+Damião,2505352,city,PB
+Desterro,2505402,city,PB
+Diamante,2505600,city,PB
+Dona Inês,2505709,city,PB
+Duas Estradas,2505808,city,PB
+Emas,2505907,city,PB
+Esperança,2506004,city,PB
+Fagundes,2506103,city,PB
+Frei Martinho,2506202,city,PB
+Gado Bravo,2506251,city,PB
+Guarabira,2506301,city,PB
+Gurinhém,2506400,city,PB
+Gurjão,2506509,city,PB
+Ibiara,2506608,city,PB
+Igaracy,2502607,city,PB
+Imaculada,2506707,city,PB
+Ingá,2506806,city,PB
+Itabaiana,2506905,city,PB
+Itaporanga,2507002,city,PB
+Itapororoca,2507101,city,PB
+Itatuba,2507200,city,PB
+Jacaraú,2507309,city,PB
+Jericó,2507408,city,PB
+João Pessoa,2507507,city,PB
+Joca Claudino,2513653,city,PB
+Juarez Távora,2507606,city,PB
+Juazeirinho,2507705,city,PB
+Junco do Seridó,2507804,city,PB
+Juripiranga,2507903,city,PB
+Juru,2508000,city,PB
+Lagoa,2508109,city,PB
+Lagoa de Dentro,2508208,city,PB
+Lagoa Seca,2508307,city,PB
+Lastro,2508406,city,PB
+Livramento,2508505,city,PB
+Logradouro,2508554,city,PB
+Lucena,2508604,city,PB
+Mãe d'Água,2508703,city,PB
+Malta,2508802,city,PB
+Mamanguape,2508901,city,PB
+Manaíra,2509008,city,PB
+Marcação,2509057,city,PB
+Mari,2509107,city,PB
+Marizópolis,2509156,city,PB
+Massaranduba,2509206,city,PB
+Mataraca,2509305,city,PB
+Matinhas,2509339,city,PB
+Mato Grosso,2509370,city,PB
+Maturéia,2509396,city,PB
+Mogeiro,2509404,city,PB
+Montadas,2509503,city,PB
+Monteiro,2509701,city,PB
+Mulungu,2509800,city,PB
+Natuba,2509909,city,PB
+Nazarezinho,2510006,city,PB
+Nova Floresta,2510105,city,PB
+Nova Olinda,2510204,city,PB
+Nova Palmeira,2510303,city,PB
+Olho d'Água,2510402,city,PB
+Olivedos,2510501,city,PB
+Parari,2510659,city,PB
+Passagem,2510709,city,PB
+Patos,2510808,city,PB
+Paulista,2510907,city,PB
+Pedra Lavrada,2511103,city,PB
+Pedras de Fogo,2511202,city,PB
+Pedro Régis,2512721,city,PB
+Piancó,2511301,city,PB
+Picuí,2511400,city,PB
+Pilar,2511509,city,PB
+Pilões,2511608,city,PB
+Pilõezinhos,2511707,city,PB
+Pirpirituba,2511806,city,PB
+Pitimbu,2511905,city,PB
+Pocinhos,2512002,city,PB
+Poço Dantas,2512036,city,PB
+Pombal,2512101,city,PB
+Princesa Isabel,2512309,city,PB
+Puxinanã,2512408,city,PB
+Queimadas,2512507,city,PB
+Quixaba,2512606,city,PB
+Remígio,2512705,city,PB
+Riachão,2512747,city,PB
+Riachão do Bacamarte,2512754,city,PB
+Riachão do Poço,2512762,city,PB
+Riacho de Santo Antônio,2512788,city,PB
+Riacho dos Cavalos,2512804,city,PB
+Rio Tinto,2512903,city,PB
+Salgadinho,2513000,city,PB
+Salgado de São Félix,2513109,city,PB
+Santa Cecília,2513158,city,PB
+Santa Cruz,2513208,city,PB
+Santa Helena,2513307,city,PB
+Santa Inês,2513356,city,PB
+Santa Luzia,2513406,city,PB
+Santana de Mangueira,2513505,city,PB
+Santana dos Garrotes,2513604,city,PB
+Santa Rita,2513703,city,PB
+Santa Teresinha,2513802,city,PB
+Santo André,2513851,city,PB
+São Bentinho,2513927,city,PB
+São Bento,2513901,city,PB
+São Domingos do Cariri,2513943,city,PB
+São Francisco,2513984,city,PB
+São João do Cariri,2514008,city,PB
+São João do Rio do Peixe,2500700,city,PB
+São João do Tigre,2514107,city,PB
+São José da Lagoa Tapada,2514206,city,PB
+São José de Caiana,2514305,city,PB
+São José de Espinharas,2514404,city,PB
+São José de Piranhas,2514503,city,PB
+São José de Princesa,2514552,city,PB
+São José do Bonfim,2514602,city,PB
+São José do Brejo do Cruz,2514651,city,PB
+São José do Sabugi,2514701,city,PB
+São José dos Cordeiros,2514800,city,PB
+São José dos Ramos,2514453,city,PB
+São Mamede,2514909,city,PB
+São Miguel de Taipu,2515005,city,PB
+São Sebastião de Lagoa de Roça,2515104,city,PB
+São Sebastião do Umbuzeiro,2515203,city,PB
+São Vicente do Seridó,2515401,city,PB
+Sapé,2515302,city,PB
+Serra Branca,2515500,city,PB
+Serra da Raiz,2515609,city,PB
+Serra Grande,2515708,city,PB
+Serra Redonda,2515807,city,PB
+Serraria,2515906,city,PB
+Sertãozinho,2515930,city,PB
+Sobrado,2515971,city,PB
+Solânea,2516003,city,PB
+Soledade,2516102,city,PB
+Sossêgo,2516151,city,PB
+Sousa,2516201,city,PB
+Sumé,2516300,city,PB
+Tacima,2516409,city,PB
+Taperoá,2516508,city,PB
+Tavares,2516607,city,PB
+Teixeira,2516706,city,PB
+Tenório,2516755,city,PB
+Triunfo,2516805,city,PB
+Uiraúna,2516904,city,PB
+Umbuzeiro,2517001,city,PB
+Várzea,2517100,city,PB
+Vieirópolis,2517209,city,PB
+Vista Serrana,2505501,city,PB
+Zabelê,2517407,city,PB
+Acari,2400109,city,RN
+Açu,2400208,city,RN
+Afonso Bezerra,2400307,city,RN
+Água Nova,2400406,city,RN
+Alexandria,2400505,city,RN
+Almino Afonso,2400604,city,RN
+Alto do Rodrigues,2400703,city,RN
+Angicos,2400802,city,RN
+Antônio Martins,2400901,city,RN
+Apodi,2401008,city,RN
+Areia Branca,2401107,city,RN
+Arês,2401206,city,RN
+Baía Formosa,2401404,city,RN
+Baraúna,2401453,city,RN
+Barcelona,2401503,city,RN
+Bento Fernandes,2401602,city,RN
+Bodó,2401651,city,RN
+Bom Jesus,2401701,city,RN
+Brejinho,2401800,city,RN
+Caiçara do Norte,2401859,city,RN
+Caiçara do Rio do Vento,2401909,city,RN
+Caicó,2402006,city,RN
+Campo Redondo,2402105,city,RN
+Canguaretama,2402204,city,RN
+Caraúbas,2402303,city,RN
+Carnaúba dos Dantas,2402402,city,RN
+Carnaubais,2402501,city,RN
+Ceará-Mirim,2402600,city,RN
+Cerro Corá,2402709,city,RN
+Coronel Ezequiel,2402808,city,RN
+Coronel João Pessoa,2402907,city,RN
+Cruzeta,2403004,city,RN
+Currais Novos,2403103,city,RN
+Doutor Severiano,2403202,city,RN
+Encanto,2403301,city,RN
+Equador,2403400,city,RN
+Espírito Santo,2403509,city,RN
+Extremoz,2403608,city,RN
+Felipe Guerra,2403707,city,RN
+Fernando Pedroza,2403756,city,RN
+Florânia,2403806,city,RN
+Francisco Dantas,2403905,city,RN
+Frutuoso Gomes,2404002,city,RN
+Galinhos,2404101,city,RN
+Goianinha,2404200,city,RN
+Governador Dix-Sept Rosado,2404309,city,RN
+Grossos,2404408,city,RN
+Guamaré,2404507,city,RN
+Ielmo Marinho,2404606,city,RN
+Ipanguaçu,2404705,city,RN
+Ipueira,2404804,city,RN
+Itajá,2404853,city,RN
+Itaú,2404903,city,RN
+Jaçanã,2405009,city,RN
+Jandaíra,2405108,city,RN
+Janduís,2405207,city,RN
+Januário Cicco,2405306,city,RN
+Japi,2405405,city,RN
+Jardim de Angicos,2405504,city,RN
+Jardim de Piranhas,2405603,city,RN
+Jardim do Seridó,2405702,city,RN
+João Câmara,2405801,city,RN
+José da Penha,2406007,city,RN
+Jucurutu,2406106,city,RN
+Jundiá,2406155,city,RN
+Lagoa d'Anta,2406205,city,RN
+Lagoa de Pedras,2406304,city,RN
+Lagoa de Velhos,2406403,city,RN
+Lagoa Nova,2406502,city,RN
+Lagoa Salgada,2406601,city,RN
+Lajes,2406700,city,RN
+Lajes Pintadas,2406809,city,RN
+Lucrécia,2406908,city,RN
+Luís Gomes,2407005,city,RN
+Macaíba,2407104,city,RN
+Macau,2407203,city,RN
+Major Sales,2407252,city,RN
+Marcelino Vieira,2407302,city,RN
+Martins,2407401,city,RN
+Maxaranguape,2407500,city,RN
+Messias Targino,2407609,city,RN
+Montanhas,2407708,city,RN
+Monte Alegre,2407807,city,RN
+Monte das Gameleiras,2407906,city,RN
+Mossoró,2408003,city,RN
+Natal,2408102,city,RN
+Nísia Floresta,2408201,city,RN
+Nova Cruz,2408300,city,RN
+Olho-d'Água do Borges,2408409,city,RN
+Ouro Branco,2408508,city,RN
+Paraná,2408607,city,RN
+Paraú,2408706,city,RN
+Parazinho,2408805,city,RN
+Parelhas,2408904,city,RN
+Parnamirim,2403251,city,RN
+Passa e Fica,2409100,city,RN
+Passagem,2409209,city,RN
+Patu,2409308,city,RN
+Pau dos Ferros,2409407,city,RN
+Pedra Grande,2409506,city,RN
+Pedra Preta,2409605,city,RN
+Pedro Avelino,2409704,city,RN
+Pedro Velho,2409803,city,RN
+Pendências,2409902,city,RN
+Pilões,2410009,city,RN
+Poço Branco,2410108,city,RN
+Portalegre,2410207,city,RN
+Porto do Mangue,2410256,city,RN
+Pureza,2410405,city,RN
+Rafael Fernandes,2410504,city,RN
+Rafael Godeiro,2410603,city,RN
+Riacho da Cruz,2410702,city,RN
+Riachuelo,2410900,city,RN
+Rio do Fogo,2408953,city,RN
+Rodolfo Fernandes,2411007,city,RN
+Ruy Barbosa,2411106,city,RN
+Santa Cruz,2411205,city,RN
+Santa Maria,2409332,city,RN
+Santana do Matos,2411403,city,RN
+Santana do Seridó,2411429,city,RN
+Santo Antônio,2411502,city,RN
+São Bento do Norte,2411601,city,RN
+São Bento do Trairí,2411700,city,RN
+São Fernando,2411809,city,RN
+São Francisco do Oeste,2411908,city,RN
+São Gonçalo do Amarante,2412005,city,RN
+São João do Sabugi,2412104,city,RN
+São José de Mipibu,2412203,city,RN
+São José do Campestre,2412302,city,RN
+São José do Seridó,2412401,city,RN
+São Miguel,2412500,city,RN
+São Miguel do Gostoso,2412559,city,RN
+São Paulo do Potengi,2412609,city,RN
+São Pedro,2412708,city,RN
+São Rafael,2412807,city,RN
+São Tomé,2412906,city,RN
+São Vicente,2413003,city,RN
+Senador Elói de Souza,2413102,city,RN
+Senador Georgino Avelino,2413201,city,RN
+Serra Caiada,2410306,city,RN
+Serra de São Bento,2413300,city,RN
+Serra do Mel,2413359,city,RN
+Serra Negra do Norte,2413409,city,RN
+Serrinha,2413508,city,RN
+Serrinha dos Pintos,2413557,city,RN
+Severiano Melo,2413607,city,RN
+Sítio Novo,2413706,city,RN
+Taboleiro Grande,2413805,city,RN
+Taipu,2413904,city,RN
+Tangará,2414001,city,RN
+Tenente Ananias,2414100,city,RN
+Tenente Laurentino Cruz,2414159,city,RN
+Tibau,2411056,city,RN
+Tibau do Sul,2414209,city,RN
+Timbaúba dos Batistas,2414308,city,RN
+Touros,2414407,city,RN
+Triunfo Potiguar,2414456,city,RN
+Umarizal,2414506,city,RN
+Upanema,2414605,city,RN
+Várzea,2414704,city,RN
+Venha-Ver,2414753,city,RN
+Vera Cruz,2414803,city,RN
+Viçosa,2414902,city,RN
+Vila Flor,2415008,city,RN
+Alto Alegre,1400050,city,RR
+Amajari,1400027,city,RR
+Boa Vista,1400100,city,RR
+Bonfim,1400159,city,RR
+Cantá,1400175,city,RR
+Caracaraí,1400209,city,RR
+Caroebe,1400233,city,RR
+Iracema,1400282,city,RR
+Mucajaí,1400308,city,RR
+Normandia,1400407,city,RR
+Pacaraima,1400456,city,RR
+Rorainópolis,1400472,city,RR
+São João da Baliza,1400506,city,RR
+São Luiz,1400605,city,RR
+Uiramutã,1400704,city,RR
+Amparo de São Francisco,2800100,city,SE
+Aquidabã,2800209,city,SE
+Aracaju,2800308,city,SE
+Arauá,2800407,city,SE
+Areia Branca,2800506,city,SE
+Barra dos Coqueiros,2800605,city,SE
+Boquim,2800670,city,SE
+Brejo Grande,2800704,city,SE
+Campo do Brito,2801009,city,SE
+Canhoba,2801108,city,SE
+Canindé de São Francisco,2801207,city,SE
+Capela,2801306,city,SE
+Carira,2801405,city,SE
+Carmópolis,2801504,city,SE
+Cedro de São João,2801603,city,SE
+Cristinápolis,2801702,city,SE
+Cumbe,2801900,city,SE
+Divina Pastora,2802007,city,SE
+Estância,2802106,city,SE
+Feira Nova,2802205,city,SE
+Frei Paulo,2802304,city,SE
+Gararu,2802403,city,SE
+General Maynard,2802502,city,SE
+Graccho Cardoso,2802601,city,SE
+Ilha das Flores,2802700,city,SE
+Indiaroba,2802809,city,SE
+Itabaiana,2802908,city,SE
+Itabaianinha,2803005,city,SE
+Itabi,2803104,city,SE
+Itaporanga d'Ajuda,2803203,city,SE
+Japaratuba,2803302,city,SE
+Japoatã,2803401,city,SE
+Lagarto,2803500,city,SE
+Laranjeiras,2803609,city,SE
+Macambira,2803708,city,SE
+Malhada dos Bois,2803807,city,SE
+Malhador,2803906,city,SE
+Maruim,2804003,city,SE
+Moita Bonita,2804102,city,SE
+Monte Alegre de Sergipe,2804201,city,SE
+Muribeca,2804300,city,SE
+Neópolis,2804409,city,SE
+Nossa Senhora Aparecida,2804458,city,SE
+Nossa Senhora da Glória,2804508,city,SE
+Nossa Senhora das Dores,2804607,city,SE
+Nossa Senhora de Lourdes,2804706,city,SE
+Nossa Senhora do Socorro,2804805,city,SE
+Pacatuba,2804904,city,SE
+Pedra Mole,2805000,city,SE
+Pedrinhas,2805109,city,SE
+Pinhão,2805208,city,SE
+Pirambu,2805307,city,SE
+Poço Redondo,2805406,city,SE
+Poço Verde,2805505,city,SE
+Porto da Folha,2805604,city,SE
+Propriá,2805703,city,SE
+Riachão do Dantas,2805802,city,SE
+Riachuelo,2805901,city,SE
+Ribeirópolis,2806008,city,SE
+Rosário do Catete,2806107,city,SE
+Salgado,2806206,city,SE
+Santa Luzia do Itanhy,2806305,city,SE
+Santana do São Francisco,2806404,city,SE
+Santa Rosa de Lima,2806503,city,SE
+Santo Amaro das Brotas,2806602,city,SE
+São Cristóvão,2806701,city,SE
+São Domingos,2806800,city,SE
+São Francisco,2806909,city,SE
+São Miguel do Aleixo,2807006,city,SE
+Simão Dias,2807105,city,SE
+Siriri,2807204,city,SE
+Telha,2807303,city,SE
+Tobias Barreto,2807402,city,SE
+Tomar do Geru,2807501,city,SE
+Umbaúba,2807600,city,SE
