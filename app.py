@@ -19,19 +19,19 @@ STATES = pd.read_csv('./dados/states_ibge_codes.csv')
 CITIES = pd.read_csv('./dados/cities_ibge_codes.csv')
 
 def get_dropdown_states():
-    """Return a dictionary with states labels and IBGE codes"""
+    """Returns a dictionary with states labels and IBGE codes"""
     dropdown = STATES.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_dropdown_cities(state):
-    """Return a dictionary with cities labels and IBGE codes"""
+    """Returns a dictionary with cities labels and IBGE codes"""
     state_abr = STATES.loc[STATES['value']==state].state.item()
     state_cities = CITIES.loc[(CITIES['place_type']=='city') & (CITIES['state']==state_abr)]
     dropdown = state_cities.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_ibge_label(ibge_code, type):
-    """Return a string containing the label from an IBGE code"""
+    """Returns a string containing the label from an IBGE code"""
     if(type == 'city'):
         label = CITIES.loc[CITIES['value'] == int(ibge_code)].label.item()
         label = '{} ({})'.format(label, CITIES.loc[CITIES['value'] == int(ibge_code)].state.item())
@@ -40,7 +40,7 @@ def get_ibge_label(ibge_code, type):
     return(label)
 
 def get_data(ibge_code):
-    """Return a dataframe with the data from an IBGE code"""
+    """Returns a dataframe with the data from an IBGE code"""
     PARAMS = {'city_ibge_code':ibge_code}
     r = requests.get(url = URL_DATA, params = PARAMS)
     data = r.json()
@@ -49,7 +49,7 @@ def get_data(ibge_code):
     return (df)
 
 def get_br_data():
-    """Return a dataframe with the national data, which is the data from every state"""
+    """Returns a dataframe with the national data"""
     PARAMS = {'place_type':'state', 'page_size':'10000'}
     r = requests.get(url = URL_DATA, params = PARAMS)
     data = r.json()
@@ -148,7 +148,7 @@ def generate_indicator(data, change, date, type):
                 ]
             )
         ]
-    else:
+    elif(type == 'confirmed'):
         fig = [
             html.Center(
                 [
@@ -156,6 +156,17 @@ def generate_indicator(data, change, date, type):
                     html.H6('Casos totais'),
                     html.Center(html.H3(change)),
                     html.H6('Novos casos em {:%d/%m}'.format(date))
+                ]
+            )
+        ]
+    elif(type == 'letality'):
+        fig = [
+            html.Center(
+                [
+                    html.H2(data),
+                    html.H6('Óbitos por 100 mil habitantes'),
+                    html.Center(html.H3(change)),
+                    html.H6('Taxa de letalidade')
                 ]
             )
         ]
@@ -201,6 +212,14 @@ def get_growth_data(df):
     current = (group_ew.iloc[-2].item() / pop) * 100000
     last = (group_ew.iloc[-3].item() / pop) * 100000
     return(current, last)
+
+def get_letality_data(df):
+    pop = df['estimated_population_2019'].iloc[0].item()
+    total_deaths = df.loc[df['is_last']==True, 'last_available_deaths'].item()
+    total_confirmed = df.loc[df['is_last']==True, 'last_available_confirmed'].item()
+    mortality =  (total_deaths / pop) * 100000
+    letality = (total_deaths / total_confirmed) * 100
+    return(mortality, letality)
 
 def generate_graphs(ibge_code):
     df = get_data(ibge_code)
@@ -265,6 +284,15 @@ def generate_graphs(ibge_code):
     ind_growth = generate_growth_indicator(data, change)
     childrens.append(ind_growth)
 
+    mortality, letality = get_letality_data(df)
+    ind_letality = generate_indicator(
+        data='{:,.2f}'.format(mortality).replace('.', ','),
+        change='{:,.2f}%'.format(letality).replace('.',','),
+        date=df.loc[df['is_last']==True, 'date'].item(),
+        type='letality'
+    )
+    childrens.append(ind_letality)
+
     return(childrens)
     
 NAVBAR = dbc.Navbar(
@@ -306,7 +334,7 @@ DROPDOWNS = [
     ),
     dbc.Col(
         [
-            dbc.Button("Submeter", id="submit-button", color="info", className="mr-1")
+            dbc.Button("Enviar", id="submit-button", color="info", className="mr-1")
         ],
         md=12, lg=1, style={'text-align': 'center', "marginTop": 15}
     ),
@@ -351,7 +379,19 @@ INDICATORS = [
                 color='warning', inverse=True, style={"marginTop": 15},
             )
         ],
-        sm=12, md=12, lg=4, xl=3
+        sm=12, md=6, lg=4, xl=3
+    ),
+    dbc.Col(
+        [
+             dbc.Card(
+                [
+                    dbc.CardHeader('LETALIDADE', style={'text-align': 'center'}),
+                    dbc.CardBody([html.Div([], id="indicator-letality")])
+                ],
+                color='dark', inverse=True, style={"marginTop": 15},
+            )
+        ],
+        sm=12, md=6, lg=4, xl=3
     )
 ]
 
@@ -540,26 +580,14 @@ def update_dropdowns(state):
     Output('indicator-cases', 'children'),
     Output('indicator-deaths', 'children'),
     Output('indicator-growth', 'children'),
+    Output('indicator-letality', 'children'),
     Output('location-header', 'children')],
 
     [Input('submit-button', 'n_clicks')],
 
     [State('state', 'value'),
-    State('city', 'value'),
-    State('graph-cases', 'children'),
-    State('graph-deaths', 'children'),
-    State('graph-cases-day', 'children'),
-    State('graph-deaths-day', 'children'),
-    State('graph-cases-week', 'children'),
-    State('graph-deaths-week', 'children'),
-    State('indicator-cases', 'children'),
-    State('indicator-deaths', 'children'),
-    State('indicator-growth', 'children')])
-def update_graphs(click, state, city,
-                    children_cases, children_deaths,
-                    children_cases_day, children_deaths_day,
-                    children_cases_week, children_deaths_week,
-                    ind_cases, ind_deaths, ind_growth):
+    State('city', 'value')])
+def update_graphs(click, state, city):
     if(city is not None):
         childrens = generate_graphs(city)
         location = get_ibge_label(city, type='city')
@@ -631,6 +659,16 @@ def update_graphs(click, state, city,
             last = (br_ew.iloc[-3]['new_confirmed'].item() / POP_BR) * 100000
             ind_growth = generate_growth_indicator(current, last)
             childrens.append(ind_growth)
+
+            mortality = (br_date.iloc[-1]['last_available_deaths'].item() / POP_BR) * 100000
+            letality = (br_date.iloc[-1]['last_available_deaths'].item() / br_date.iloc[-1]['last_available_confirmed'].item()) * 100
+            ind_letality = generate_indicator(
+                data='{:,.2f}'.format(mortality).replace('.', ','),
+                change='{:,.2f}%'.format(letality).replace('.',','),
+                date=br_date.iloc[-1]['date'],
+                type='letality'
+            )
+            childrens.append(ind_letality)
 
             childrens.append(location)
 
