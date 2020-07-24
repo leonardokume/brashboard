@@ -1,6 +1,7 @@
 import dash
 import requests
 import pandas as pd
+import numpy as np
 import json
 import dash_core_components as dcc
 import dash_html_components as html
@@ -17,6 +18,7 @@ GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-
 POP_BR = 210147125
 STATES = pd.read_csv('./dados/states_ibge_codes.csv')
 CITIES = pd.read_csv('./dados/cities_ibge_codes.csv')
+MAVG_WINDOW = 14
 
 def get_dropdown_states():
     """Returns a dictionary with states labels and IBGE codes"""
@@ -46,6 +48,8 @@ def get_data(ibge_code):
     data = r.json()
     data = data['results']
     df = pd.read_json(json.dumps(data))
+    df['cases_moving_average'] = moving_average(df['new_confirmed'], MAVG_WINDOW)
+    df['deaths_moving_average'] = moving_average(df['new_deaths'], MAVG_WINDOW)
     return (df)
 
 def get_br_data():
@@ -85,20 +89,36 @@ def generate_scatter_fig(x, y, type):
     )
     return(fig)
 
-def generate_bar_fig(x, y, type):
+def generate_bar_fig(x, y, mavg, type):
     if(type == 'new_confirmed'):
         color = '#008cff'
+        trace_color = '#ff0000'
     else:
         color = '#ff0000'
+        trace_color = '#000'
 
     fig = go.Figure(data=[go.Bar(
-                        x=x,
-                        y=y,
-                        marker_color=color,
-                        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
-                        )]
-                    )
+        showlegend=False,
+        name='Novos casos',
+        x=x,
+        y=y,
+        marker_color=color,
+        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
+        )]
+    )
+
+    fig.add_trace(go.Scatter(
+        name='Média móvel (14 dias)',
+        x=x,
+        y=mavg,
+        marker_color=trace_color,
+        hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
+    ))
+
     fig.update_layout(
+        legend=dict(
+            x=0.01,
+            y=1),
         margin=dict(l=0, r=0, t=0, b=0),
         dragmode=False,
         paper_bgcolor='rgba(0,0,0,0)',
@@ -124,6 +144,7 @@ def generate_histogram_fig(x, y, type):
         hovertemplate = '%{x}: %{y:.3s}<extra></extra>'
         )]
     )
+
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
         dragmode=False,
@@ -221,6 +242,15 @@ def get_letality_data(df):
     letality = (total_deaths / total_confirmed) * 100
     return(mortality, letality)
 
+def moving_average(data, window):
+    mov_avg = []
+    for i in range(len(data)):
+        if(i + window > len(data)):
+            mov_avg.append(np.mean(data[i:len(data)]))
+        else:
+            mov_avg.append(np.mean(data[i:i+window]))
+    return(mov_avg)
+
 def generate_graphs(ibge_code):
     df = get_data(ibge_code)
     num = df._get_numeric_data()
@@ -241,13 +271,13 @@ def generate_graphs(ibge_code):
     childrens.append(deaths)
 
     cases_day = dcc.Graph(
-        figure = generate_bar_fig(x=df['date'], y=df['new_confirmed'], type='new_confirmed'),
+        figure = generate_bar_fig(x=df['date'], y=df['new_confirmed'], mavg=df['cases_moving_average'], type='new_confirmed'),
         config = {'displayModeBar': False}
     )
     childrens.append(cases_day)
 
     deaths_day = dcc.Graph(
-        figure = generate_bar_fig(x=df['date'], y=df['new_deaths'], type='new_deaths'),
+        figure = generate_bar_fig(x=df['date'], y=df['new_deaths'], mavg=df['deaths_moving_average'], type='new_deaths'),
         config = {'displayModeBar': False}
     )
     childrens.append(deaths_day)
@@ -498,10 +528,13 @@ BODY = dbc.Container(
 )
 
 # National data is calculated from the sum of the data from all states
-# It is done here and not inside a function to avoid redundant calculations
 df = get_br_data()
 br_date = df.groupby(['date']).sum()
-br_date = br_date.reset_index() 
+br_date = br_date.reset_index()
+br_date = br_date.reindex(index=br_date.index[::-1])
+br_date['cases_moving_average'] = moving_average(br_date['new_confirmed'], MAVG_WINDOW)
+br_date['deaths_moving_average'] = moving_average(br_date['new_deaths'], MAVG_WINDOW)
+br_date = br_date.reindex(index=br_date.index[::-1])
 br_ew = df.groupby(['epidemiological_week']).sum()
 br_ew = br_ew.reset_index()
 
@@ -616,13 +649,13 @@ def update_graphs(click, state, city):
             childrens.append(deaths)
 
             cases_day = dcc.Graph(
-                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], type='new_confirmed'),
+                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_confirmed'], mavg=br_date['cases_moving_average'], type='new_confirmed'),
                 config = {'displayModeBar': False}
             )
             childrens.append(cases_day)
 
             deaths_day = dcc.Graph(
-                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], type='new_deaths'),
+                figure = generate_bar_fig(x=br_date['date'], y=br_date['new_deaths'], mavg=br_date['deaths_moving_average'], type='new_deaths'),
                 config = {'displayModeBar': False}
             )
             childrens.append(deaths_day)
