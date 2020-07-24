@@ -18,7 +18,7 @@ while(True):
     ans = input()
     if(ans == 'y' or ans == 'Y'):
         print('Saving file...')
-        new.to_csv('./cities_ibge_codes.csv', index=False, float_format='%.0f')
+        new.to_csv('./dados/cities_ibge_codes.csv', index=False, float_format='%.0f')
     elif(ans == 'n' or ans == 'N'):
         break
     else:
