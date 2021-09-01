@@ -1,28 +1,28 @@
-label,value,place_type,state
-Acre,12,state,AC
-Alagoas,27,state,AL
-Amapá,16,state,AP
-Amazonas,13,state,AM
-Bahia,29,state,BA
-Ceará,23,state,CE
-Distrito Federal,53,state,DF
-Espírito Santo,32,state,ES
-Goiás,52,state,GO
-Maranhão,21,state,MA
-Mato Grosso,51,state,MT
-Mato Grosso do Sul,50,state,MS
-Minas Gerais,31,state,MG
-Pará,15,state,PA
-Paraíba,25,state,PB
-Paraná,41,state,PR
-Pernambuco,26,state,PE
-Piaui,22,state,PI
-Rio de Janeiro,33,state,RJ
-Rio Grande do Norte,24,state,RN
-Rio Grande do Sul,43,state,RS
-Rondônia,11,state,RO
-Roraima,14,state,RR
-Santa Catarina,42,state,SC
-São Paulo,35,state,SP
-Sergipe,28,state,SE
-Tocantins,17,state,TO
+label,value,state
+Acre,12,AC
+Alagoas,27,AL
+Amapá,16,AP
+Amazonas,13,AM
+Bahia,29,BA
+Ceará,23,CE
+Distrito Federal,53,DF
+Espírito Santo,32,ES
+Goiás,52,GO
+Maranhão,21,MA
+Mato Grosso,51,MT
+Mato Grosso do Sul,50,MS
+Minas Gerais,31,MG
+Pará,15,PA
+Paraíba,25,PB
+Paraná,41,PR
+Pernambuco,26,PE
+Piaui,22,PI
+Rio de Janeiro,33,RJ
+Rio Grande do Norte,24,RN
+Rio Grande do Sul,43,RS
+Rondônia,11,RO
+Roraima,14,RR
+Santa Catarina,42,SC
+São Paulo,35,SP
+Sergipe,28,SE
+Tocantins,17,TO

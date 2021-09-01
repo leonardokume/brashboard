@@ -18,7 +18,7 @@ LOGO = './assets/logo.png'
 GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
 POP_BR = 210147125
 STATES = pd.read_csv('./dados/states_ibge_codes.csv')
-CITIES = pd.read_csv('./dados/cities_ibge_codes.csv')
+
 MAVG_WINDOW = 14
 
 def download_data():
@@ -27,16 +27,19 @@ def download_data():
     return(df)
 
 DF = pd.read_csv('../caso_full.csv.gz', compression='gzip', header=0, sep=',', quotechar='"')
+CITIES = DF[["city", "city_ibge_code", "place_type", "state"]].drop_duplicates().sort_values(by="city").dropna()
+CITIES = CITIES.loc[CITIES["place_type"] == "city"]
+CITIES = CITIES.rename(columns={"city":"label", "city_ibge_code":"value"})
 
 def get_dropdown_states():
     """Returns a dictionary with states labels and IBGE codes"""
-    dropdown = STATES.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
+    dropdown = STATES.drop(labels=['state'], axis=1).to_dict('records')
     return(dropdown)
 
 def get_dropdown_cities(state):
     """Returns a dictionary with cities labels and IBGE codes"""
     state_abr = STATES.loc[STATES['value']==state].state.item()
-    state_cities = CITIES.loc[(CITIES['place_type']=='city') & (CITIES['state']==state_abr)]
+    state_cities = CITIES.loc[CITIES['state']==state_abr]
     dropdown = state_cities.drop(labels=['place_type', 'state'], axis=1).to_dict('records')
     return(dropdown)
 
@@ -137,21 +140,27 @@ def generate_histogram_fig(x, y, type):
         color = '#008cff'
     else:
         color = '#ff0000'
-    
-    start = pd.Series(['00', '01', '02', '03', '04', '05', '06', '07', '08'])
-    pad = pd.Series([0]*9)
 
     x1 = x.astype(str).str.slice(4, 6)
-    x2 = x.astype(str).str.slice(0, 4)
+    current_ew = int(x1.iloc[-1])
 
-    x1 = pd.concat([start, x1])
-    x2 = pd.concat([pd.Series([2020]*9), x2])
-    y = pd.concat([pad, y])
+    ew20 = pd.Series([str(x).zfill(2) for x in range(1, 54)])
+    ew21 = pd.Series([str(x).zfill(2) for x in range(1, current_ew+1)])
+    ews = pd.concat([ew20, ew21])
+    y20 = pd.Series([2020]*len(ew20))
+    y21 = pd.Series([2021]*len(ew21))
+    ys = pd.concat([y20, y21])
+    df_ew = pd.DataFrame({"ew":ews, "year":ys})
+    df_ew['ew_int'] = df_ew['year'].astype(str) + df_ew['ew'].astype(str)
+    df_ew['ew_int'] = df_ew['ew_int'].astype(int)
+
+    df_hist = pd.DataFrame({'ew_int':x, 'y':y})
+    df_hist = pd.merge(df_ew, df_hist, how='left', on='ew_int')
 
     fig = go.Figure(data=[go.Histogram(
         histfunc="sum",
-        x=[x2,x1],
-        y=y,
+        x=[df_hist['year'],df_hist['ew']],
+        y=df_hist['y'].fillna(0),
         marker_color=color,
         nbinsx=len(x.unique()),
         autobinx = False,
