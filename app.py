@@ -26,7 +26,7 @@ def download_data():
     df = pd.read_csv(r.raw, compression='gzip', header=0, sep=',', quotechar='"')
     return(df)
 
-DF = pd.read_csv('../caso_full.csv.gz', compression='gzip', header=0, sep=',', quotechar='"')
+DF = download_data()
 CITIES = DF[["city", "city_ibge_code", "place_type", "state"]].drop_duplicates().sort_values(by="city").dropna()
 CITIES = CITIES.loc[CITIES["place_type"] == "city"]
 CITIES = CITIES.rename(columns={"city":"label", "city_ibge_code":"value"})
