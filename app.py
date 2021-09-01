@@ -8,10 +8,11 @@ import dash_html_components as html
 import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 from dash.dependencies import Input, Output, State
+from datetime import datetime
 
 pd.set_option('mode.chained_assignment', None)
 
-URL_DATA = 'https://brasil.io/api/dataset/covid19/caso_full/data/'
+URL_DATA = 'https://data.brasil.io/dataset/covid19/caso_full.csv.gz'
 URL_GITHUB = 'https://github.com/leonardokume/brashboard'
 LOGO = './assets/logo.png'
 GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
@@ -19,6 +20,13 @@ POP_BR = 210147125
 STATES = pd.read_csv('./dados/states_ibge_codes.csv')
 CITIES = pd.read_csv('./dados/cities_ibge_codes.csv')
 MAVG_WINDOW = 14
+
+def download_data():
+    r = requests.get(URL_DATA, stream=True)
+    df = pd.read_csv(r.raw, compression='gzip', header=0, sep=',', quotechar='"')
+    return(df)
+
+DF = pd.read_csv('../caso_full.csv.gz', compression='gzip', header=0, sep=',', quotechar='"')
 
 def get_dropdown_states():
     """Returns a dictionary with states labels and IBGE codes"""
@@ -43,11 +51,7 @@ def get_ibge_label(ibge_code, type):
 
 def get_data(ibge_code):
     """Returns a dataframe with the data from an IBGE code"""
-    PARAMS = {'city_ibge_code':ibge_code}
-    r = requests.get(url = URL_DATA, params = PARAMS)
-    data = r.json()
-    data = data['results']
-    df = pd.read_json(json.dumps(data))
+    df = DF.loc[DF['city_ibge_code'] == ibge_code]
     df['cases_moving_average'] = moving_average(df['new_confirmed'], MAVG_WINDOW)
     df['deaths_moving_average'] = moving_average(df['new_deaths'], MAVG_WINDOW)
     return (df)
@@ -133,10 +137,20 @@ def generate_histogram_fig(x, y, type):
         color = '#008cff'
     else:
         color = '#ff0000'
+    
+    start = pd.Series(['00', '01', '02', '03', '04', '05', '06', '07', '08'])
+    pad = pd.Series([0]*9)
+
+    x1 = x.astype(str).str.slice(4, 6)
+    x2 = x.astype(str).str.slice(0, 4)
+
+    x1 = pd.concat([start, x1])
+    x2 = pd.concat([pd.Series([2020]*9), x2])
+    y = pd.concat([pad, y])
 
     fig = go.Figure(data=[go.Histogram(
         histfunc="sum",
-        x=x,
+        x=[x2,x1],
         y=y,
         marker_color=color,
         nbinsx=len(x.unique()),
@@ -151,13 +165,14 @@ def generate_histogram_fig(x, y, type):
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         yaxis=dict(gridcolor='#d6d6d6'),
-        xaxis_range=(x.min()-0.5, x.max()+0.5),
-        xaxis_dtick=1,
+        #xaxis_range=(x.min()-0.5, x.max()+0.5),
+        xaxis_dtick=2,
         bargap=0.2
     )
     return(fig)
 
 def generate_indicator(data, change, date, type):
+    date = datetime.strptime(date, "%Y-%m-%d")
     if(type == 'deaths'):
         fig = [
             html.Center(
@@ -165,7 +180,7 @@ def generate_indicator(data, change, date, type):
                     html.H2(data),
                     html.H6('Óbitos totais'),
                     html.Center(html.H3(change)),
-                    html.H6('Novos óbitos em {:%d/%m}'.format(date))
+                    html.H6(f'Novos óbitos em {date:%d/%m}')
                 ]
             )
         ]
@@ -176,7 +191,7 @@ def generate_indicator(data, change, date, type):
                     html.H2(data),
                     html.H6('Casos totais'),
                     html.Center(html.H3(change)),
-                    html.H6('Novos casos em {:%d/%m}'.format(date))
+                    html.H6(f'Novos casos em {date:%d/%m}')
                 ]
             )
         ]
@@ -527,15 +542,14 @@ BODY = dbc.Container(
     ], fluid=True
 )
 
-# National data is calculated from the sum of the data from all states
-df = get_br_data()
-br_date = df.groupby(['date']).sum()
+# National data is calculated from the sum of the data from all state
+br_date = DF.groupby(['date']).sum()
 br_date = br_date.reset_index()
 br_date = br_date.reindex(index=br_date.index[::-1])
 br_date['cases_moving_average'] = moving_average(br_date['new_confirmed'], MAVG_WINDOW)
 br_date['deaths_moving_average'] = moving_average(br_date['new_deaths'], MAVG_WINDOW)
 br_date = br_date.reindex(index=br_date.index[::-1])
-br_ew = df.groupby(['epidemiological_week']).sum()
+br_ew = DF.groupby(['epidemiological_week']).sum()
 br_ew = br_ew.reset_index()
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.UNITED],
