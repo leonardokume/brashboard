@@ -18,7 +18,6 @@ LOGO = './assets/logo.png'
 GITHUB_LOGO = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png'
 POP_BR = 210147125
 STATES = pd.read_csv('./dados/states_ibge_codes.csv')
-
 MAVG_WINDOW = 14
 
 def download_data():
