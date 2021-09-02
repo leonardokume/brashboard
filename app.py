@@ -39,6 +39,7 @@ def download_data():
         },
         usecols=[
             'city',
+            'date',
             'city_ibge_code',
             'epidemiological_week',
             'estimated_population',
