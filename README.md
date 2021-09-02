@@ -2,10 +2,8 @@
 <br />
 <p align="center">
   <a href="http://brashboard-env.eba-eirypmgt.sa-east-1.elasticbeanstalk.com/">
-    <img src="assets/logo.png" alt="Logo" width="160" height="30">
+    <img src="assets/logor.png" alt="Logo" width="160" height="30">
   </a>
-
-  <h3 align="center">BRASHBOARD</h3>
 
   <p align="center">
     COVID-19 situation in brazilian cities
