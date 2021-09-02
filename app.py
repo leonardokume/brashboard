@@ -23,7 +23,33 @@ MAVG_WINDOW = 14
 def download_data():
     r = requests.get(URL_DATA, stream=True)
     df = []
-    for chunk in pd.read_csv(r.raw, compression='gzip', header=0, sep=',', quotechar='"', chunksize=5000):
+    for chunk in pd.read_csv(
+        r.raw, compression='gzip', header=0, sep=',', quotechar='"', chunksize=5000,
+            dtype={
+            'city':'category',
+            'place_type':'category',
+            'state':'category',
+            'city_ibge_code':'Int32',
+            'epidemiological_week':'Int32',
+            'estimated_population':'Int32',
+            'last_available_confirmed':'Int32',
+            'last_available_deaths':'Int32',
+            'new_confirmed':'Int32',
+            'new_deaths':'Int32',
+        },
+        usecols=[
+            'city',
+            'city_ibge_code',
+            'epidemiological_week',
+            'estimated_population',
+            'is_last',
+            'last_available_confirmed',
+            'last_available_deaths',
+            'place_type',
+            'state',
+            'new_confirmed',
+            'new_deaths'
+        ]):
         df.append(chunk)
     df = pd.concat(df)
     return(df)
@@ -255,13 +281,13 @@ def generate_growth_indicator(data, change):
 
 def get_growth_data(df):
     group_ew = df.groupby(['epidemiological_week'])['new_confirmed'].sum()
-    pop = df['estimated_population_2019'].iloc[0].item()
+    pop = df['estimated_population'].iloc[0].item()
     current = (group_ew.iloc[-2].item() / pop) * 100000
     last = (group_ew.iloc[-3].item() / pop) * 100000
     return(current, last)
 
 def get_letality_data(df):
-    pop = df['estimated_population_2019'].iloc[0].item()
+    pop = df['estimated_population'].iloc[0].item()
     total_deaths = df.loc[df['is_last']==True, 'last_available_deaths'].item()
     total_confirmed = df.loc[df['is_last']==True, 'last_available_confirmed'].item()
     mortality =  (total_deaths / pop) * 100000
