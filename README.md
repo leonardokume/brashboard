@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="http://brashboard-env.eba-eirypmgt.sa-east-1.elasticbeanstalk.com/">
-    <img src="assets/logor.png" alt="Logo" width="160" height="30">
+    <img src="assets/logor.png" alt="Logo" width="480" height="80">
   </a>
 
   <p align="center">
