@@ -22,7 +22,10 @@ MAVG_WINDOW = 14
 
 def download_data():
     r = requests.get(URL_DATA, stream=True)
-    df = pd.read_csv(r.raw, compression='gzip', header=0, sep=',', quotechar='"')
+    df = []
+    for chunk in pd.read_csv(r.raw, compression='gzip', header=0, sep=',', quotechar='"', chunksize=5000):
+        df.append(chunk)
+    df = pd.concat(df)
     return(df)
 
 DF = download_data()
