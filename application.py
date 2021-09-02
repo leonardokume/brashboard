@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import dash
 import requests
 import pandas as pd
@@ -306,8 +309,8 @@ def moving_average(data, window):
 
 def generate_graphs(ibge_code):
     df = get_data(ibge_code)
-    num = df._get_numeric_data()
-    num[num < 0] = 0
+    # num = df._get_numeric_data()
+    # num[num < 0] = 0
 
     childrens = []
 
@@ -759,5 +762,7 @@ def update_graphs(click, state, city):
 
     return(childrens)
 
+application = app.server
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    #app.run_server(debug=True)
+    application.run(debug=True, port=8080)
